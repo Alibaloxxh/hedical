@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { VisitTracker } from "@/components/VisitTracker";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { createClient } from "@/lib/supabase/server";
 
 const geistSans = Geist({

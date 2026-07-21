@@ -23,7 +23,7 @@
  */
 
 // CONFIG — Set this to your Google Sheet ID
-const SHEET_ID = "YOUR_GOOGLE_SHEET_ID_HERE";
+const SHEET_ID = "16OJZI5mUYnYYrLlzWu9iZAeJw3kNTw3HOaA4SV1aK3Y";
 
 function doPost(e: any) {
   try {
@@ -49,6 +49,14 @@ function doPost(e: any) {
         data.interests || "",
         data.role || "",
       ]);
+      MailApp.sendEmail("hedicalai@gmail.com", "New waitlist signup", [
+        "New waitlist signup:",
+        "",
+        "Name: " + (data.firstName || "") + " " + (data.lastName || ""),
+        "Email: " + (data.email || ""),
+        "Interests: " + (data.interests || ""),
+        "Role: " + (data.role || ""),
+      ].join("\n"));
     } else if (tabName === "Contact") {
       sheet.appendRow([
         data.timestamp || new Date().toISOString(),

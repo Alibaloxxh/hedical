@@ -359,7 +359,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-tertiary">
             <span>Last reviewed: <time dateTime="2026-07-21">July 21, 2026</time></span>
-            <span>Corrections? <a href="mailto:corrections@hedical.online" className="text-teal underline underline-offset-2">Email our team</a></span>
+            <span>Corrections? <a href="mailto:hedicalai@gmail.com" className="text-teal underline underline-offset-2">Email our team</a></span>
             <span>This site does not provide medical advice. <a href="/disclaimer" className="text-teal underline underline-offset-2">Full disclaimer</a>.</span>
           </div>
         </div>

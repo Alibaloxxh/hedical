@@ -89,7 +89,7 @@ const jsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
-    email: "support@hedical.online",
+    email: "hedicalai@gmail.com",
     url: `${siteUrl}/contact`,
   },
 };

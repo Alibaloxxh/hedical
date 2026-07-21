@@ -1,0 +1,105 @@
+import { StateDeadlinesTable } from "@/components/StateDeadlinesTable"
+import { StateVariationCallout } from "@/components/StateVariationCallout"
+
+export const guideMeta = {
+  title: "Insurance Appeal Deadlines by State: How Long You Have to File",
+  description:
+    "Appeal deadlines for denied insurance claims vary by state and plan type. Learn the federal minimum deadlines, state-specific timelines, and how to find your exact appeal window.",
+  published: "2026-07-20",
+  readingTime: "7 min read",
+}
+
+**You generally have at least 180 days from your denial notice to file an internal appeal under federal law for group health plans (29 CFR §2560.503-1).** However, state-regulated plans may have different deadlines, and some states provide only 60 days. Missing your deadline means losing your right to challenge the denial — so finding your exact window is critical.
+
+This guide covers federal minimum deadlines, state-specific timelines, and how to determine which rules apply to your plan.
+
+---
+
+## Federal Minimum Deadlines
+
+If your plan is covered by ERISA (most employer-provided group health plans), federal law sets these minimum deadlines:
+
+| Step | Deadline | Source |
+|---|---|---|
+| File internal appeal | At least **180 days** from denial notice | 29 CFR §2560.503-1(h)(3)(i) |
+| Insurer responds (post-service) | Within **60 days** (standard) or **30 days** (expedited) | 29 CFR §2560.503-1(i)(2)(iii) |
+| File external review | Within **4 months** of final internal denial | 45 CFR §147.136(d)(2)(i) |
+| External review decision | Within **45 days** (standard), **72 hours** (expedited) | 45 CFR §147.136(c)(2)(xii)-(xiii) |
+
+**Important:** These are *minimums* — your specific plan may offer longer deadlines. The denial letter you received is the authoritative source for your plan's deadlines.
+
+---
+
+## Which Rules Apply to Your Plan?
+
+Your appeal rights depend on **how your plan is regulated**:
+
+1. **ERISA (self-funded) plans** — Follow federal minimums; your denial letter must specify your deadlines
+2. **Fully insured plans** — May follow your state's external review process, which could offer different deadlines
+3. **Medicare** — Separate deadlines and processes (typically 120 days for redeterminations)
+4. **Marketplace plans** — Must follow federal external review standards under 45 CFR §147.136
+
+Check your plan document or denial letter for the specific deadline. If it doesn't state a deadline, assume the federal minimums above.
+
+---
+
+## State-Specific Deathlines
+
+The table below shows appeal deadlines for states with data on file. This is sourced from the same protection data used by the Hedical application itself — a single source of truth that stays in sync with the product's logic.
+
+<StateDeadlinesTable />
+
+<StateVariationCallout title="Data may not reflect recent legislation">
+
+State laws change frequently. The deadlines above are based on the most recent available data from CMS and state insurance departments. Always verify your specific deadline:
+1. Check your denial letter first — it must state your plan's deadline
+2. Contact your state insurance department for confirmation
+3. File as early as possible; don't wait until the deadline
+
+</StateVariationCallout>
+
+---
+
+## What Happens If You Miss the Deadline
+
+Missing your appeal deadline has serious consequences:
+
+- **Internal appeal:** You lose the right to challenge the denial through your plan's formal process
+- **External review:** You forfeit your right to independent review
+- **Subsequent claims:** The same denial reason may apply to future claims for the same service
+- **Legal action:** Some states limit your ability to sue if you did not exhaust the administrative appeals process
+
+If you believe you missed a deadline for good cause (e.g., medical incapacity), you may request a late appeal. Insurers are not required to grant it, but some will accept late appeals with a reasonable explanation.
+
+---
+
+## What to File and How
+
+For practical steps on reading your denial notice and filing an effective appeal, see:
+- [How to Read an EOB guide](/guides/how-to-read-an-eob) — understanding your denial notice
+- [CO-50 Denial Code guide](/guides/co-50-denial-code) — step-by-step appeal process
+
+In general, your appeal packet should include:
+
+1. **Cover letter** — Stating the claim number, denial date, and that this is an internal appeal
+2. **Letter of Medical Necessity** — From your provider explaining why the service was necessary
+3. **Medical records** — Supporting the medical necessity of the service
+4. **Plan document excerpts** — Showing that the service is covered (if disputing a coverage exclusion)
+
+---
+
+## How Hedical Can Help
+
+Upload your denial letter to the **Medical Bill & Denial Navigator**. Our AI will check your appeal deadline against federal and state rules and draft a tailored appeal letter.
+
+[Try the Bill & Denial Navigator](/products/bill-denial-navigator) — free for basic analysis.
+
+---
+
+## Sources
+
+- 29 CFR §2560.503-1 — ERISA claims procedure (internal appeal deadlines)
+- 45 CFR §147.136 — External review standards (ACA)
+- CMS State Surprise Billing Profiles
+- National Association of Insurance Commissioners (NAIC) — Uniform External Review Model Act
+- State insurance department regulations (varies by state)

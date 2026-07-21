@@ -1,0 +1,89 @@
+import { SourceDisagreementCallout } from "@/components/SourceDisagreementCallout"
+
+export const guideMeta = {
+  title: "CO-4 Denial Code: Missing or Incorrect Procedure Modifier",
+  description:
+    "A CO-4 denial means the claim was adjusted due to a missing or incorrect procedure modifier. This is one of the most fixable denial codes — usually resolved by the provider resubmitting with the correct modifier.",
+  published: "2026-07-20",
+  readingTime: "5 min read",
+}
+
+**CO-4 means the claim was adjusted because a procedure modifier was missing, incorrect, or not supported by medical records.** This is a Claim Adjustment Reason Code (CARC) with the group code CO (Contractual Obligation), meaning the provider writes off the adjusted amount for in-network care. The good news: CO-4 is one of the most easily corrected denial codes.
+
+If you receive a bill related to a CO-4 denial, it is likely a billing error. Contact the provider's office — they can usually correct and resubmit the claim with the proper modifier.
+
+---
+
+## What Is a Procedure Modifier?
+
+A **procedure modifier** is a two-character code (typically two letters or a letter and a number) added to a CPT or HCPCS procedure code. Modifiers tell the payer:
+
+- That a service was performed on a different body part (e.g., RT for right side, LT for left)
+- That the service was performed by an assistant surgeon (AS)
+- That the service was bilateral (50)
+- That the service was reduced (52) or discontinued (53)
+
+Modifiers are part of the standard medical coding system maintained by the American Medical Association (CPT) and CMS (HCPCS).
+
+---
+
+## Why CO-4 Denials Happen
+
+| Cause | Example |
+|---|---|
+| **Missing modifier** | Billing a bilateral procedure without modifier 50 |
+| **Incorrect modifier** | Using RT when the record supports LT |
+| **Modifier not supported by documentation** | Using modifier 25 (significant, separately identifiable E/M) when the medical record doesn't justify a separate evaluation |
+| **Modifier not recognized by payer** | Using a CMS-specific modifier on a commercial plan that doesn't recognize it |
+| **Modifier inconsistent with policy** | Using modifier 59 (distinct procedural service) when the payer's bundling policy treats the codes as a single service |
+
+---
+
+## What to Do About a CO-4 Denial
+
+**Step 1: Confirm it's CO-4**
+
+Check your EOB for the full code. It should read **CO-4** (or CO 4). Read the accompanying RARC code for the specific reason.
+
+**Step 2: Contact the provider's billing office**
+
+CO-4 denials are almost always fixable at the provider level. Ask the billing office:
+
+- "What modifier was submitted with this claim?"
+- "Can you review whether the modifier was correct for the service performed?"
+- "Can you correct and resubmit the claim?"
+
+**Step 3: Follow up with your insurer**
+
+Once the provider resubmits, confirm with your insurer that the corrected claim was received and processed. Most CO-4 corrections are processed within 30 days.
+
+---
+
+## How CO-4 Differs from Other Denial Codes
+
+| Code | Meaning | Fixability |
+|---|---|---|
+| **CO-4** | Missing/incorrect modifier | Easily correctable — provider resubmits |
+| **CO-16** | Missing/incomplete information | Correctable — provider provides missing info |
+| **CO-50** | Not medically necessary | Requires clinical appeal |
+| **CO-96** | Service not covered by plan | Depends on plan benefits |
+| **CO-57** | Missing prior authorization | Provider can request retro-auth (not guaranteed) |
+
+See the [CO-16 denial code guide](/guides/co-16-denial-code) and [CO-50 denial code guide](/guides/co-50-denial-code) for details on each.
+
+---
+
+## How Hedical Can Help
+
+Upload your EOB or denial letter to the **Medical Bill & Denial Navigator**. Our AI will decode your denial code, explain whether the issue is fixable, and guide you through the next steps.
+
+[Try the Bill & Denial Navigator](/products/bill-denial-navigator) — free for basic analysis.
+
+---
+
+## Sources
+
+- ANSI X12 Claim Adjustment Reason Codes, Washington Publishing Company
+- AMA CPT Professional Edition — modifier definitions and usage
+- CMS HCPCS Level II Modifier Guidelines
+- 29 CFR §2560.503-1 — ERISA claims procedure

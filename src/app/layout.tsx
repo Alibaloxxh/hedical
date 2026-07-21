@@ -27,6 +27,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "q123FKxkkjgWcBuVk_pnuQGz-zy2I-i2tDDhJcVihb4",
+  },
   title: {
     default: "Hedical — AI-Powered Healthcare Navigation",
     template: "%s | Hedical",

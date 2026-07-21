@@ -1,0 +1,121 @@
+import { StateVariationCallout } from "@/components/StateVariationCallout"
+
+export const guideMeta = {
+  title: "PR-50 vs CO-50: What the Group Code on Your EOB Means for Your Wallet",
+  description:
+    "PR-50 and CO-50 both mean 'not medically necessary,' but they have opposite financial outcomes. Learn which one means you owe money and which means the provider writes it off.",
+  published: "2026-07-20",
+  readingTime: "7 min read",
+}
+
+The two-letter prefix on a denial code on your Explanation of Benefits (EOB) determines who pays — not the number. **PR-50 means you may be responsible for the bill. CO-50 means the provider writes it off.** Both codes say the service was not medically necessary, but the group code — the letters before the hyphen — is the most financially significant detail on the entire document.
+
+If you have private (commercial) insurance and saw an in-network provider, a CO-50 denial generally means you owe nothing for that line item. A PR-50 denial means the provider may bill you. This guide explains the difference and what to do next.
+
+---
+
+## What Are Group Codes?
+
+Every Claim Adjustment Reason Code (CARC) on your EOB is paired with a **group code** — two letters before the number. The group code tells you who is financially responsible:
+
+| Group Code | Stands For | Who Bears the Cost |
+|---|---|---|
+| **CO** | Contractual Obligation | The provider writes it off (contractual adjustment) |
+| **PR** | Patient Responsibility | You may owe the amount |
+| **CR** | Correction and Reversal | Prior adjustment being reversed |
+| **OA** | Other Adjustment | Third-party or other adjustments |
+
+The number after the group code (e.g., 50, 4, 96) tells you *why* the adjustment was made. The group code tells you *who pays*.
+
+---
+
+## CO-50: Contractual Obligation — Not Medically Necessary
+
+When you see **CO-50** on your EOB:
+
+- **Meaning:** The insurer determined the service was not medically necessary
+- **Financial impact (in-network):** The provider must write off the denied amount under their participation agreement
+- **Can you be billed?** Generally no, if you saw an in-network provider. Balance billing for a CO adjustment is a contract violation
+
+<StateVariationCallout title="Out-of-network exception">
+
+If you saw an **out-of-network** provider, a CO-50 code does not carry the same contractual protection. Out-of-network providers are not bound by a participation agreement. Your financial responsibility depends on your state's balance billing protections and the No Surprises Act.
+
+</StateVariationCallout>
+
+For a full breakdown, see the detailed [CO-50 denial code guide](/guides/co-50-denial-code).
+
+---
+
+## PR-50: Patient Responsibility — Not Medically Necessary
+
+When you see **PR-50** on your EOB:
+
+- **Meaning:** The insurer determined the service was not medically necessary
+- **Financial impact:** You may be responsible for the charged amount
+- **Can you be billed?** Yes — the provider may pursue collection for this amount
+
+PR-50 is less common with private insurance than with Medicare. Under Medicare, PR-50 typically appears only when the provider obtained a signed **Advance Beneficiary Notice (ABN)** before the service. For private insurance, there is no standardized equivalent of the ABN, but some plans have voluntary waiver forms.
+
+If you see PR-50 on your EOB:
+1. Call the provider's billing office to confirm the code is correct
+2. Ask whether an ABN or similar waiver was signed
+3. If no waiver exists, ask the provider to appeal or correct the claim
+4. File an internal appeal with your insurer if you believe the service was medically necessary
+
+---
+
+## Side-by-Side Comparison
+
+| Detail | CO-50 | PR-50 |
+|---|---|---|
+| Group code meaning | Contractual Obligation | Patient Responsibility |
+| Denial reason | Not medically necessary | Not medically necessary |
+| In-network liability | Provider writes off | You may owe |
+| Out-of-network liability | Depends on state law | You may owe |
+| Medicare ABN required? | No ABN → CO-50 | Signed ABN → PR-50 |
+| Appeal possible? | Yes | Yes |
+
+---
+
+## How the Same Code Gets Different Group Codes
+
+The same service denied for the same reason can show up as CO-50 or PR-50 depending on:
+
+1. **Provider network status** — In-network denials are almost always CO; out-of-network may be PR
+2. **Signed waiver forms** — Medicare ABNs shift CO-50 to PR-50
+3. **State law** — Some states require specific group code usage
+4. **Plan type** — ERISA vs. state-regulated plans handle group codes differently
+
+Your EOB is the authoritative document for your specific situation. Always read the full code — both letters and number — before deciding your next step.
+
+---
+
+## What to Do Regardless of the Code
+
+Whether you see CO-50 or PR-50, you have the right to appeal:
+
+1. **Read the RARC** — The Remittance Advice Remark Code paired with the denial tells you the specific reason
+2. **Contact your provider** — Ask about the diagnosis code submitted and whether it supports medical necessity
+3. **Get a Letter of Medical Necessity** — Ask your doctor to explain why the service was necessary
+4. **File an internal appeal** — You typically have at least 180 days from the denial notice under federal law (29 CFR §2560.503-1)
+
+For practical steps, see the [How to Read an EOB guide](/guides/how-to-read-an-eob).
+
+---
+
+## How Hedical Can Help
+
+Upload your EOB or denial letter to the **Medical Bill & Denial Navigator**. Our AI will decode every CARC, RARC, and group code, explain your financial exposure, and draft an appeal letter tailored to your denial reason.
+
+[Try the Bill & Denial Navigator](/products/bill-denial-navigator) — free for basic analysis.
+
+---
+
+## Sources
+
+- ANSI X12 Claim Adjustment Reason Codes, Washington Publishing Company
+- CMS Medicare Claims Processing Manual, Chapter 22
+- 29 CFR §2560.503-1 — ERISA claims procedure
+- 45 CFR §147.136 — External review standards
+- Patient Advocate Foundation, "Letter of Medical Necessity Guide"

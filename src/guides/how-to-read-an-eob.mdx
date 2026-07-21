@@ -1,0 +1,134 @@
+import { StateVariationCallout } from "@/components/StateVariationCallout"
+
+export const guideMeta = {
+  title: "How to Read Your Explanation of Benefits (EOB): A Plain-Language Guide",
+  description:
+    "Your EOB is not a bill — but it tells you exactly what your insurance paid and what you may owe. Learn how to read every section, decode CARC and RARC codes, and spot errors before you pay.",
+  published: "2026-07-20",
+  readingTime: "10 min read",
+}
+
+**An Explanation of Benefits (EOB) is a summary from your insurance company showing what a medical service cost, what your plan paid, and what you may owe.** It is not a bill — the provider will send a separate bill later. Reading your EOB carefully is the single most effective way to catch billing errors before you pay.
+
+This guide walks through every section of a standard EOB and explains what each part means for your wallet.
+
+---
+
+## EOB vs. Bill: Know the Difference
+
+| Document | Who Sends It | Purpose |
+|---|---|---|
+| **EOB** | Your insurance company | Explains how the claim was processed and what was paid |
+| **Bill** | Your provider (hospital, doctor) | Requests payment for services received |
+
+**You do not pay the EOB amount directly to your insurance company.** You wait for the bill from your provider. However, the EOB tells you what you should expect to see on that bill. If the provider bills you more than the EOB says you owe, that is a red flag.
+
+---
+
+## Anatomy of an EOB
+
+### 1. Header Information
+
+At the top of your EOB, you will find:
+- **Your name and member ID** — Verify these are correct; a wrong member ID could mean the claim was processed under the wrong policy
+- **Claim number** — A unique identifier for this specific claim; reference it in all communications with your insurer
+- **Service date** — The date the medical service was performed
+- **Provider name and NPI** — The doctor, hospital, or facility that provided the service
+
+### 2. Charge and Payment Summary
+
+This is the section that shows the money:
+
+| Term | What It Means |
+|---|---|
+| **Amount Billed** | What the provider charged for the service. This is their list price; almost no one pays this full amount |
+| **Allowed Amount** | The negotiated rate your insurance company and provider have agreed on. This is the maximum that will be paid for the service |
+| **Plan Discount / Write-Off** | The difference between the billed amount and the allowed amount. The provider writes this off; you do not pay it |
+| **Amount Paid** | What your insurance company paid the provider |
+| **Deductible Applied** | How much of the service went toward your annual deductible |
+| **Copay / Coinsurance** | Your share of the cost based on your plan's cost-sharing structure |
+| **Patient Responsibility** | What you may be asked to pay — the total of your deductible, copay, and coinsurance |
+
+### 3. Line-Item Detail
+
+Each service performed will appear as a separate line item with:
+
+- **CPT or HCPCS code** — The standardized code for the procedure or service
+- **Diagnosis code (ICD-10)** — The medical reason for the service
+- **Modifier** — A two-character code providing additional detail (e.g., RT for right side)
+- **Amount billed** per service
+- **Adjustment reason code (CARC)** — A code explaining why the paid amount differs from the billed amount (e.g., CO-50, PR-4)
+- **Remark code (RARC)** — An additional code providing more specific explanation
+
+### 4. Adjustment Codes (CARC and RARC)
+
+This is the most important part for catching errors. Each line item may have an adjustment reason code explaining why the full amount was not paid.
+
+**Common CARCs:**
+
+| Code | Meaning | Fixable? |
+|---|---|---|
+| **CO-50** | Not medically necessary | Yes — clinical appeal |
+| **CO-4** | Missing/incorrect modifier | Yes — provider resubmits |
+| **CO-16** | Missing/incomplete info | Yes — provider provides info |
+| **CO-96** | Service not covered | Maybe — check plan exclusions |
+| **CO-57** | No prior authorization | Maybe — retro-auth possible |
+| **PR-50** | Patient resp. — not medically necessary | Yes — appeal |
+
+For a full breakdown of each, see the [CO-50 denial guide](/guides/co-50-denial-code), [PR-50 vs CO-50 comparison](/guides/pr-50-vs-co-50), and the individual denial code guides.
+
+### 5. Benefit Details
+
+This section shows how the claim was applied to your deductible, out-of-pocket maximum, and benefit limits. Check:
+- **Year-to-date deductible** — How much of your deductible has been met
+- **Year-to-date out-of-pocket** — How much of your OOP max has been met
+- **Benefit limits** — Has this service exceeded your plan's limit (e.g., 12 PT visits)?
+
+---
+
+## How to Spot Common Errors on Your EOB
+
+### Duplicate Charges
+
+Look for the same procedure code appearing twice for the same service date. If you see a duplicate, call your provider's billing office.
+
+### Upcoding
+
+CPT codes correspond to complexity. If the code suggests a more complex (and expensive) service than what actually happened, the provider may have upcoded. Cross-reference the code description with what you remember.
+
+### Unbundling
+
+Some procedures are billed as a single bundled code. If you see separate charges for components that should be bundled (e.g., charging separately for supplies included in a procedure code), ask the provider to rebill with the correct bundled code.
+
+### Wrong Patient Responsibility
+
+If your EOB shows a patient responsibility amount that seems too high, check:
+- Does the amount exceed your copay or coinsurance percentage?
+- Is the service out-of-network (which may have higher cost-sharing)?
+- Was a denial code applied that you believe is incorrect?
+
+---
+
+## What to Do If You Find an Error
+
+1. **Contact the provider's billing office first** — They have the most context and can usually correct claim errors
+2. **Contact your insurer** — If the provider can't help, call the number on your insurance card
+3. **Document everything** — Keep copies of your EOB, provider bill, and notes from every call
+4. **File an appeal** — For denied or underpaid claims, file a formal appeal (see the [appeal deadlines by state guide](/guides/appeal-deadlines-by-state))
+
+---
+
+## How Hedical Can Help
+
+Upload your EOB to the **Medical Bill & Denial Navigator**. Our AI will decode every code, flag potential errors, and generate a plain-English explanation of what you owe — before you pay a cent.
+
+[Try the Bill & Denial Navigator](/products/bill-denial-navigator) — free for basic analysis.
+
+---
+
+## Sources
+
+- CMS, "Your Explanation of Benefits (EOB)" — Medicare.gov
+- ANSI X12 Claim Adjustment Reason Codes, Washington Publishing Company
+- 29 CFR §2560.503-1 — ERISA claims procedure
+- National Association of Insurance Commissioners (NAIC) — EOB model standards

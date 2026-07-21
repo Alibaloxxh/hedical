@@ -29,14 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const trustClaims = [
-  "Non-diagnostic, no clinical claims",
-  "No insurance login needed",
-  "44–78% appeal success rate",
-  "HIPAA-aware architecture",
-  "No data shared with insurers",
-];
-
 const sourceLinks = {
   errorRate: "https://www.kff.org/health-costs/report/",
   denialRate: "https://www.ahip.org/resources/",
@@ -47,101 +39,67 @@ export default function Home() {
   return (
     <>
       {/* ───── Hero ───── */}
-      <section className="bg-paper">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-5 lg:gap-16 items-center">
-            {/* Left: headline + CTA */}
-            <div className="lg:col-span-2">
-              <h1 className="font-serif text-4xl leading-tight text-ink sm:text-5xl lg:text-5xl xl:text-6xl" style={{ fontWeight: 500 }}>
-                Your medical bill,<br />
-                decoded and disputed
-              </h1>
-              <p className="mt-4 text-base text-muted-secondary sm:text-lg leading-relaxed">
-                <strong>Hedical</strong> is a healthcare navigation platform that helps patients and caregivers understand medical bills, appeal insurance denials, and manage medications — without logging into an insurance portal. We built Hedical after reviewing thousands of facility and professional claims across all major US insurers, and we found that medical billing errors and wrongful denials remain systematic problems resistant to industry self-correction. We test every feature against real EOBs, denial letters, and medication lists drawn from diverse patient scenarios.
-              </p>
-              <p className="mt-2 text-xs text-muted-tertiary">
-                Last updated:{" "}
-                <time dateTime="2026-07-21">July 21, 2026</time>
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  href="/dashboard/analyze"
-                  className="rounded-lg bg-teal px-5 py-2.5 text-sm font-medium text-white transition-colors hover:brightness-110"
-                >
-                  Try it free
-                </Link>
-                <Link
-                  href="/pricing"
-                  className="rounded-lg border border-hairline bg-white px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-paper"
-                >
-                  See pricing
-                </Link>
+      <section className="bg-surface-1 rounded-xl px-8 py-10 mx-4 sm:mx-6 lg:mx-8 my-8 max-w-7xl lg:mx-auto">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 items-start">
+          {/* Left */}
+          <div>
+            <span className="inline-block bg-bg-success text-text-success text-xs font-medium px-[10px] py-[4px] rounded-full mb-[14px]">
+              No insurance login needed
+            </span>
+            <h1 className="text-[34px] font-[500] leading-[1.25] text-[#111111] mb-3">
+              Find billing errors in your medical bill — in minutes
+            </h1>
+            <p className="text-base text-[#555555] leading-relaxed max-w-[520px] mb-5">
+              Upload any bill or insurance denial. Hedical flags overcharges and drafts your appeal letter, so you don't pay for a mistake.
+            </p>
+            <div className="flex gap-[10px]">
+              <Link
+                href="/dashboard/analyze"
+                className="bg-fill-primary text-on-primary border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
+              >
+                Try it free
+              </Link>
+              <Link
+                href="/pricing"
+                className="bg-transparent text-[#111111] border border-[#e0e0e0] px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
+              >
+                See pricing
+              </Link>
+            </div>
+          </div>
+
+          {/* Right: bill card */}
+          <div className="bg-white border-[0.5px] border-[#e0e0e0] rounded-xl p-5 max-w-[480px]">
+            <div className="flex justify-between mb-[10px]">
+              <div>
+                <p className="text-[11px] uppercase text-[#999999] m-0">Statement</p>
+                <p className="text-sm font-[500] text-[#111111] mt-[2px] m-0">Mercy General Hospital</p>
               </div>
-              {/* Trust tags below CTA */}
-              <div className="mt-8 flex flex-wrap gap-2">
-                {trustClaims.map((claim) => (
-                  <span
-                    key={claim}
-                    className="inline-flex items-center rounded-full bg-tag-bg px-3 py-1 text-xs font-medium text-ink"
-                  >
-                    {claim}
-                  </span>
-                ))}
+              <div className="text-right">
+                <p className="text-xs text-[#999999] m-0">Date: 06/15/2026</p>
+                <p className="text-xs text-[#999999] m-0">Acct: #4829-71</p>
               </div>
             </div>
-
-            {/* Right: annotated sample bill */}
-            <div className="lg:col-span-3">
-              <div className="rounded-xl border border-hairline bg-white p-5 sm:p-7">
-                {/* Bill header */}
-                <div className="flex items-center justify-between border-b border-hairline pb-3">
-                  <div>
-                    <p className="text-xs text-muted-tertiary uppercase tracking-wider">Statement</p>
-                    <p className="text-sm font-semibold text-ink">Mercy General Hospital</p>
-                  </div>
-                  <div className="text-right text-xs text-muted-tertiary">
-                    <p>Date: 06/15/2026</p>
-                    <p>Acct: #4829-71</p>
-                  </div>
+            <div className="border-t-[0.5px] border-[#e0e0e0] pt-2">
+              <div className="flex justify-between py-[6px] text-[13px]">
+                <span><span className="font-mono text-[11px] text-[#999999] mr-2">0750</span>Facility fee — ER</span>
+                <span className="font-[500]">$2,350.00</span>
+              </div>
+              <div className="flex justify-between py-[6px] text-[13px]">
+                <span><span className="font-mono text-[11px] text-[#999999] mr-2">99284</span>ER level 3 eval</span>
+                <span className="font-[500]">$1,890.00</span>
+              </div>
+              <div className="bg-bg-danger rounded-[6px] p-[10px_12px] mt-2">
+                <div className="flex justify-between items-center text-[13px] text-text-danger">
+                  <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline mr-[6px] -mt-[2px]" style={{verticalAlign: -2}}>
+                      <path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.29 3.86l-8.3 14.36a1.5 1.5 0 0 0 1.29 2.28h16.44a1.5 1.5 0 0 0 1.29-2.28l-8.3-14.36a1.5 1.5 0 0 0-2.58 0z" />
+                    </svg>
+                    0750 Facility fee — duplicate
+                  </span>
+                  <span className="font-[500] line-through">$2,350.00</span>
                 </div>
-
-                {/* Line items */}
-                <div className="mt-4 space-y-3">
-                  {[
-                    { code: "0750", desc: "Facility fee — Emergency department", amount: "$2,350.00" },
-                    { code: "99284", desc: "ER level 3 evaluation and management", amount: "$1,890.00" },
-                    { code: "99244", desc: "Physician consult — inpatient", amount: "$720.00" },
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center justify-between text-sm">
-                      <div className="flex items-center gap-3">
-                        <span className="font-mono text-xs text-muted-tertiary">{item.code}</span>
-                        <span className="text-ink">{item.desc}</span>
-                      </div>
-                      <span className="text-ink font-medium">{item.amount}</span>
-                    </div>
-                  ))}
-
-                  {/* Flagged / struck-through line */}
-                  <div className="rounded-lg border border-coral/20 bg-coral/5 p-3">
-                    <div className="flex items-center justify-between text-sm">
-                      <div className="flex items-center gap-2">
-                        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-coral/15 text-xs text-coral">&#x26A0;</span>
-                        <span className="font-mono text-xs text-muted-tertiary">0750</span>
-                        <span className="line-through text-coral">Facility fee — Emergency department</span>
-                      </div>
-                      <span className="line-through text-coral font-medium">$2,350.00</span>
-                    </div>
-                    <p className="mt-1.5 pl-7 text-xs text-coral">
-                      Duplicate charge — same code billed twice on line 4
-                    </p>
-                  </div>
-                </div>
-
-                {/* Totals row */}
-                <div className="mt-4 border-t border-hairline pt-3 flex items-center justify-between">
-                  <span className="text-sm font-medium text-ink">Disputable amount found</span>
-                  <span className="text-xl font-bold text-teal">$2,350.00</span>
-                </div>
+                <p className="text-xs text-text-danger mt-[6px]">Same code billed twice on line 4 — flagged for appeal</p>
               </div>
             </div>
           </div>

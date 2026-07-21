@@ -31,6 +31,14 @@
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-source-serif);
   --font-mono: var(--font-geist-mono);
+  --color-surface-1: #f9f9f9;
+  --color-surface-2: #ffffff;
+  --color-text-success: #1a6b3c;
+  --color-text-danger: #b91c1c;
+  --color-bg-success: #d1fae5;
+  --color-bg-danger: #fee2e2;
+  --color-fill-primary: #111111;
+  --color-on-primary: #ffffff;
 }
 
 html {

@@ -39,29 +39,29 @@ export default function Home() {
   return (
     <>
       {/* ───── Hero ───── */}
-      <section className="bg-surface-1 rounded-xl px-8 py-10 mx-4 sm:mx-6 lg:mx-8 my-8 max-w-7xl lg:mx-auto">
+      <section className="bg-[#e8e4db] px-8 py-24 mx-4 sm:mx-6 lg:mx-8 my-8 max-w-7xl lg:mx-auto">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 items-start">
           {/* Left */}
           <div>
-            <span className="inline-block bg-bg-success text-text-success text-xs font-medium px-[10px] py-[4px] rounded-full mb-[14px]">
+            <span className="inline-block bg-[#d4edda] text-[#1a3a2a] text-xs font-medium px-[10px] py-[4px] rounded-[6px] mb-[14px]">
               No insurance login needed
             </span>
-            <h1 className="text-[34px] font-[500] leading-[1.25] text-[#111111] mb-3">
+            <h1 className="font-serif text-[36px] font-[600] leading-[1.25] text-[#1a3a2a] mb-3">
               Find billing errors in your medical bill — in minutes
             </h1>
-            <p className="text-base text-[#555555] leading-relaxed max-w-[520px] mb-5">
+            <p className="text-base text-[#4a4a45] leading-relaxed max-w-[520px] mb-5">
               Upload any bill or insurance denial. Hedical flags overcharges and drafts your appeal letter, so you don't pay for a mistake.
             </p>
             <div className="flex gap-[10px]">
               <Link
                 href="/dashboard/analyze"
-                className="bg-fill-primary text-on-primary border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
+                className="bg-[#1a3a2a] text-white border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
               >
                 Try it free
               </Link>
               <Link
                 href="/pricing"
-                className="bg-transparent text-[#111111] border border-[#e0e0e0] px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
+                className="bg-transparent text-[#1a3a2a] border border-[#1a3a2a] px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
               >
                 See pricing
               </Link>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { Disclaimer } from "@/components/Disclaimer";
@@ -71,6 +72,11 @@ const stats = [
 export default function PolypharmacyManagerPage() {
   return (
     <>
+      <SoftwareAppSchema
+        name="Polypharmacy Medication Manager"
+        description="Upload medication lists for yourself or loved ones. Get plain-language interaction explanations, flag concerns for your doctor, and manage multiple profiles as a caregiver."
+        url={`${siteUrl}/products/polypharmacy-manager`}
+      />
       <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -84,6 +90,10 @@ export default function PolypharmacyManagerPage() {
               Existing tools are either reminder-focused or written for clinicians. Hedical is built for
               caregivers managing multiple people&apos;s medications — explaining interactions in plain language
               and flagging what to ask the doctor.
+            </p>
+            <p className="mt-2 text-xs text-muted-tertiary">
+              Last updated:{" "}
+              <time dateTime="2026-07-21">July 21, 2026</time>
             </p>
             <div className="mt-6 max-w-lg mx-auto">
               <Disclaimer variant="banner" />

@@ -82,6 +82,16 @@ const jsonLd = {
   description:
     "AI-powered healthcare navigation tools for patients, caregivers, and providers.",
   foundingDate: "2026",
+  sameAs: [
+    "https://twitter.com/hedical",
+    "https://linkedin.com/company/hedical",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    email: "support@hedical.online",
+    url: `${siteUrl}/contact`,
+  },
 };
 
 export const dynamic = "force-dynamic";

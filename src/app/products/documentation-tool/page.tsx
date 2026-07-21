@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { Disclaimer } from "@/components/Disclaimer";
@@ -39,6 +40,11 @@ const verticals = [
 export default function DocumentationToolPage() {
   return (
     <>
+      <SoftwareAppSchema
+        name="Niche Vertical Documentation Tool"
+        description="An ambient-scribe-style AI assistant for allied health, ABA therapy, lactation, nutrition, and small dental practices. Automate SOAP notes and patient education."
+        url={`${siteUrl}/products/documentation-tool`}
+      />
       <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -52,6 +58,10 @@ export default function DocumentationToolPage() {
               Generalist ambient scribes are saturated. But purpose-built tools win in underserved verticals.
               Hedical delivers specialty-specific documentation and auto-generated patient instructions for
               allied health, ABA therapy, lactation, nutrition, and small dental practices.
+            </p>
+            <p className="mt-2 text-xs text-muted-tertiary">
+              Last updated:{" "}
+              <time dateTime="2026-07-21">July 21, 2026</time>
             </p>
             <div className="mt-6 max-w-lg mx-auto">
               <Disclaimer variant="banner" />

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
 import { Disclaimer } from "@/components/Disclaimer";
 import { CheckoutButton } from "@/components/CheckoutButton";
+import { FaqPageSchema } from "@/components/FaqPageSchema";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
@@ -85,9 +86,19 @@ const tiers = [
   },
 ];
 
+const pricingFaqs = [
+  { question: "Can I cancel anytime?", answer: "Yes. No long-term contracts. Cancel your subscription with one click." },
+  { question: "Is my data secure?", answer: "We use enterprise-grade encryption. We never sell or share your health information." },
+  { question: "Do I need to link my insurance?", answer: "No. Upload documents directly. No account linking required." },
+  { question: "What do I get for free?", answer: "Upload a bill or EOB and get a plain-English breakdown with error flags. The free tier is designed to help you understand what you're looking at." },
+  { question: "What do I get when I pay?", answer: "A professionally formatted appeal or negotiation letter, AI-drafted from your documents and flagged issues. You review and send." },
+  { question: "Is this medical or legal advice?", answer: "No. Hedical is an informational and administrative tool. AI-drafted letters are based on your documents — always review before sending." },
+];
+
 export default function PricingPage() {
   return (
     <>
+      <FaqPageSchema faqs={pricingFaqs} />
       <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -96,6 +107,10 @@ export default function PricingPage() {
             </h1>
             <p className="mt-4 text-lg text-muted">
               Start free. Pay only when you save. No hidden fees, no insurance login required.
+            </p>
+            <p className="mt-2 text-xs text-muted-tertiary">
+              Last updated:{" "}
+              <time dateTime="2026-07-21">July 21, 2026</time>
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

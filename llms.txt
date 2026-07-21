@@ -4,18 +4,18 @@
 
 ## Key pages
 
-- Homepage: https://hedical.com
-- Medical Bill & Denial Navigator: https://hedical.com/products/bill-denial-navigator
-- Niche Documentation Tool: https://hedical.com/products/documentation-tool
-- Polypharmacy Manager: https://hedical.com/products/polypharmacy-manager
-- Pricing: https://hedical.com/pricing
-- Guides: https://hedical.com/guides
-- CO-50 Denial Code Guide: https://hedical.com/guides/co-50-denial-code
-- About: https://hedical.com/about
-- Waitlist: https://hedical.com/waitlist
-- Contact: https://hedical.com/contact
-- Privacy Policy: https://hedical.com/privacy
-- Terms of Service: https://hedical.com/terms
+- Homepage: https://hedical.online
+- Medical Bill & Denial Navigator: https://hedical.online/products/bill-denial-navigator
+- Niche Documentation Tool: https://hedical.online/products/documentation-tool
+- Polypharmacy Manager: https://hedical.online/products/polypharmacy-manager
+- Pricing: https://hedical.online/pricing
+- Guides: https://hedical.online/guides
+- CO-50 Denial Code Guide: https://hedical.online/guides/co-50-denial-code
+- About: https://hedical.online/about
+- Waitlist: https://hedical.online/waitlist
+- Contact: https://hedical.online/contact
+- Privacy Policy: https://hedical.online/privacy
+- Terms of Service: https://hedical.online/terms
 
 ## Products
 

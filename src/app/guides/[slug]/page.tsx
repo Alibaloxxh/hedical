@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { StateVariationCallout } from "@/components/StateVariationCallout";
 import { SourceDisagreementCallout } from "@/components/SourceDisagreementCallout";
 import { FaqPageSchema } from "@/components/FaqPageSchema";
+import { ArticleSchema } from "@/components/ArticleSchema";
 import { Disclaimer } from "@/components/Disclaimer";
 
 const guideSlugs = [
@@ -264,6 +265,13 @@ export default async function GuidePage({
 
   return (
     <>
+      <ArticleSchema
+        title={guideMeta.title}
+        description={guideMeta.description}
+        datePublished={guideMeta.published}
+        slug={slug}
+        readingTime={guideMeta.readingTime}
+      />
       <FaqPageSchema faqs={faqs} />
 
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">

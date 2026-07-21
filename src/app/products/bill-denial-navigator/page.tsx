@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { Disclaimer } from "@/components/Disclaimer";
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
 };
 
 const painPoints = [
-  { icon: "\u{1F4B5}", title: "Hidden Errors", description: "Up to 80% of medical bills contain errors — duplicate charges, upcoding, unbundling, and out-of-network surprises." },
-  { icon: "\u{1F6AB}", title: "Denied Claims", description: "Insurers deny 19% of in-network claims. Fewer than 1% of denials are ever appealed, even though 44-78% could be overturned." },
+  { icon: "\u{1F4B5}", title: "Hidden Errors", description: 'Up to 80% of medical bills contain errors — duplicate charges, upcoding, unbundling, and out-of-network surprises. <a href="https://www.kff.org/health-costs/report/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[KFF]</a>' },
+  { icon: "\u{1F6AB}", title: "Denied Claims", description: 'Insurers deny 19% of in-network claims. Fewer than 1% of denials are ever appealed, even though 44-78% could be overturned. <a href="https://www.ahip.org/resources/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[AHIP]</a> <a href="https://www.commonwealthfund.org/publications/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[Commonwealth Fund]</a>' },
   { icon: "\u{1F4AD}", title: "Confusing Jargon", description: "EOBs and medical bills are written in opaque language designed for providers and payers, not patients." },
   { icon: "\u{23F3}", title: "Tight Deadlines", description: "Appeal windows are short — often 30-180 days. Missing a deadline means losing your right to challenge a denial." },
 ];
@@ -72,6 +73,11 @@ const features = [
 export default function BillDenialNavigatorPage() {
   return (
     <>
+      <SoftwareAppSchema
+        name="Medical Bill & Denial Navigator"
+        description="Upload medical bills, EOBs, and denial letters. Get AI-powered error detection, plain-English explanations, and a ready-to-send appeal letter draft."
+        url={`${siteUrl}/products/bill-denial-navigator`}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
@@ -85,6 +91,10 @@ export default function BillDenialNavigatorPage() {
             <p className="mt-6 text-lg text-muted leading-relaxed">
               Understand your medical bills in plain English. Flag potential errors. Get a ready-to-send
               appeal letter draft — AI-drafted from your documents, reviewed by you before sending.
+            </p>
+            <p className="mt-2 text-xs text-muted-tertiary">
+              Last updated:{" "}
+              <time dateTime="2026-07-21">July 21, 2026</time>
             </p>
             <div className="mt-6 max-w-lg mx-auto">
               <Disclaimer variant="banner" />
@@ -123,7 +133,7 @@ export default function BillDenialNavigatorPage() {
               <div key={point.title} className="rounded-xl border border-border bg-zinc-50 p-6">
                 <div className="text-2xl mb-3">{point.icon}</div>
                 <h3 className="font-semibold text-foreground">{point.title}</h3>
-                <p className="mt-2 text-sm text-muted">{point.description}</p>
+                <p className="mt-2 text-sm text-muted" dangerouslySetInnerHTML={{ __html: point.description }} />
               </div>
             ))}
           </div>

@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
-  title: "AI-Powered Healthcare Navigation",
+  title: "AI-Powered Healthcare Navigation — Decode Medical Bills & Appeal Denials",
   description:
-    "Upload medical bills, EOBs, and denial letters. Get AI-powered error detection, plain-English explanations, and appeal letter drafts. Healthcare clarity for everyone.",
+    "Upload medical bills, EOBs, and denial letters. Get AI-powered error detection, plain-English explanations, and appeal letter drafts. Start free, no insurance login needed.",
   alternates: {
     canonical: siteUrl,
   },
@@ -37,6 +37,12 @@ const trustClaims = [
   "No data shared with insurers",
 ];
 
+const sourceLinks = {
+  errorRate: "https://www.kff.org/health-costs/report/",
+  denialRate: "https://www.ahip.org/resources/",
+  appealRate: "https://www.commonwealthfund.org/publications/",
+};
+
 export default function Home() {
   return (
     <>
@@ -52,6 +58,10 @@ export default function Home() {
               </h1>
               <p className="mt-4 text-base text-muted-secondary sm:text-lg leading-relaxed">
                 Upload any bill, EOB, or denial letter. Hedical extracts every line item, flags errors, and drafts your appeal letter — no insurance login required.
+              </p>
+              <p className="mt-2 text-xs text-muted-tertiary">
+                Last updated:{" "}
+                <time dateTime="2026-07-21">July 21, 2026</time>
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link

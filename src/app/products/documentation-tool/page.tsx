@@ -130,14 +130,17 @@ export default function DocumentationToolPage() {
             <div className="rounded-xl border border-border bg-white p-6 text-center">
               <div className="text-3xl font-bold text-primary">$1.2B</div>
               <p className="mt-2 text-sm text-muted">Ambient documentation market size (2025)</p>
+              <span className="mt-1 inline-block text-[10px] text-muted-tertiary"><a href="https://www.grandviewresearch.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Grand View Research</a></span>
             </div>
             <div className="rounded-xl border border-border bg-white p-6 text-center">
               <div className="text-3xl font-bold text-primary">$49-129</div>
               <p className="mt-2 text-sm text-muted">Per-provider monthly pricing range</p>
+              <span className="mt-1 inline-block text-[10px] text-muted-tertiary"><a href="https://www.heidihealth.com/pricing" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Industry pricing</a></span>
             </div>
             <div className="rounded-xl border border-border bg-white p-6 text-center">
               <div className="text-3xl font-bold text-primary">28.8%</div>
               <p className="mt-2 text-sm text-muted">Projected CAGR through 2035</p>
+              <span className="mt-1 inline-block text-[10px] text-muted-tertiary"><a href="https://www.marketsandmarkets.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">MarketsandMarkets</a></span>
             </div>
           </div>
         </div>

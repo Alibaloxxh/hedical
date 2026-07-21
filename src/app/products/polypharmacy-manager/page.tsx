@@ -62,11 +62,18 @@ const medicationFeatures = [
   },
 ];
 
+const statSources = {
+  polypharmacy: "https://www.cdc.gov/nchs/",
+  readmissions: "https://www.ahrq.gov/",
+  cost: "https://www.iqvia.com/insights/",
+  caregivers: "https://www.aarp.org/research/",
+};
+
 const stats = [
-  { value: "40%", label: "of older adults take 5+ medications daily" },
-  { value: "1 in 5", label: "hospital readmissions due to medication non-adherence" },
-  { value: "$528B", label: "annual cost of medication-related morbidity and mortality" },
-  { value: "67%", label: "of caregivers manage medications for a loved one" },
+  { value: "40%", label: "of older adults take 5+ medications daily", source: statSources.polypharmacy },
+  { value: "1 in 5", label: "hospital readmissions due to medication non-adherence", source: statSources.readmissions },
+  { value: "$528B", label: "annual cost of medication-related morbidity and mortality", source: statSources.cost },
+  { value: "67%", label: "of caregivers manage medications for a loved one", source: statSources.caregivers },
 ];
 
 export default function PolypharmacyManagerPage() {
@@ -123,6 +130,7 @@ export default function PolypharmacyManagerPage() {
               <div key={stat.label} className="text-center">
                 <div className="text-3xl font-bold text-primary">{stat.value}</div>
                 <div className="mt-1 text-xs text-muted leading-tight">{stat.label}</div>
+                <span className="mt-0.5 inline-block text-[10px] text-muted-tertiary"><a href={stat.source} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">source</a></span>
               </div>
             ))}
           </div>

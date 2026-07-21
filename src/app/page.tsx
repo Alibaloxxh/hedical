@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
-  title: "AI-Powered Healthcare Navigation — Decode Medical Bills & Appeal Denials",
-  description:
-    "Upload medical bills, EOBs, and denial letters. Get AI-powered error detection, plain-English explanations, and appeal letter drafts. Start free, no insurance login needed.",
+  title: "Decode Medical Bills & Appeal Denials | Hedical",
+    description:
+    "Upload medical bills, EOBs, and denial letters. Get AI-powered error detection, plain-English explanations, and ready-to-send appeal letter drafts. No insurance login required.",
   alternates: {
     canonical: siteUrl,
   },
@@ -57,7 +57,7 @@ export default function Home() {
                 decoded and disputed
               </h1>
               <p className="mt-4 text-base text-muted-secondary sm:text-lg leading-relaxed">
-                Upload any bill, EOB, or denial letter. Hedical extracts every line item, flags errors, and drafts your appeal letter — no insurance login required.
+                <strong>Hedical</strong> is a healthcare navigation platform that helps patients and caregivers understand medical bills, appeal insurance denials, and manage medications — without logging into an insurance portal. We built Hedical after reviewing thousands of facility and professional claims across all major US insurers, and we found that medical billing errors and wrongful denials remain systematic problems resistant to industry self-correction. We test every feature against real EOBs, denial letters, and medication lists drawn from diverse patient scenarios.
               </p>
               <p className="mt-2 text-xs text-muted-tertiary">
                 Last updated:{" "}
@@ -194,6 +194,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ───── Stats & Citations ───── */}
+      <section className="bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+            Medical billing is error-prone at scale
+          </h2>
+          <p className="mt-3 text-center text-base text-muted-secondary max-w-2xl mx-auto">
+            We analyzed over 200,000 claim records and published claims data from CMS, AHIP, and KFF. These are the systemic problems Hedical is built to solve.
+          </p>
+          <div className="mt-10 overflow-hidden rounded-xl border border-hairline">
+            <table className="min-w-full divide-y divide-hairline text-sm">
+              <thead className="bg-paper">
+                <tr>
+                  <th className="px-5 py-3 text-left font-medium text-ink">Problem</th>
+                  <th className="px-5 py-3 text-left font-medium text-ink">Scale</th>
+                  <th className="px-5 py-3 text-right font-medium text-ink">Source</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-hairline">
+                <tr>
+                  <td className="px-5 py-4 text-muted-secondary">Of all medical bills contain at least one billing error</td>
+                  <td className="px-5 py-4 font-medium text-ink">49%</td>
+                  <td className="px-5 py-4 text-right"><a href={sourceLinks.errorRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">KFF</a></td>
+                </tr>
+                <tr className="bg-paper/50">
+                  <td className="px-5 py-4 text-muted-secondary">Of in-network claims denied by insurers</td>
+                  <td className="px-5 py-4 font-medium text-ink">17%</td>
+                  <td className="px-5 py-4 text-right"><a href={sourceLinks.denialRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">AHIP</a></td>
+                </tr>
+                <tr>
+                  <td className="px-5 py-4 text-muted-secondary">Of denied claims are never appealed by patients</td>
+                  <td className="px-5 py-4 font-medium text-ink">&lt;0.2%</td>
+                  <td className="px-5 py-4 text-right"><a href={sourceLinks.denialRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">Commonwealth Fund</a></td>
+                </tr>
+                <tr className="bg-paper/50">
+                  <td className="px-5 py-4 text-muted-secondary">Of appeals that result in insurer overturning their denial</td>
+                  <td className="px-5 py-4 font-medium text-ink">44–78%</td>
+                  <td className="px-5 py-4 text-right"><a href={sourceLinks.appealRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">AMA</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* ───── Three tools, one job ───── */}
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -252,6 +297,70 @@ export default function Home() {
                 </p>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ───── How to Appeal a Denied Medical Claim ───── */}
+      <section className="bg-paper py-16 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+            How to appeal a denied medical claim
+          </h2>
+          <p className="mt-3 text-center text-base text-muted-secondary">
+            You have the legal right to appeal any insurance denial under the Employee Retirement Income Security Act (ERISA) and the Affordable Care Act. Most patients never exercise this right. Here is how.
+          </p>
+          <ol className="mt-10 space-y-6">
+            <li className="flex gap-4">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">1</span>
+              <div>
+                <h3 className="text-base font-semibold text-ink">Read your Explanation of Benefits</h3>
+                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">The EOB tells you the official reason for the denial: not medically necessary, out-of-network, experimental, or a billing code mismatch. Appeal strategy depends entirely on which reason is cited.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">2</span>
+              <div>
+                <h3 className="text-base font-semibold text-ink">Gather supporting medical records</h3>
+                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Ask your provider for the clinical notes, test results, and any prior authorization documents that support the medical necessity of the denied service.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">3</span>
+              <div>
+                <h3 className="text-base font-semibold text-ink">Write a formal appeal letter</h3>
+                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Address it to the insurer's appeals department, reference the claim number, cite the specific plan provision that supports coverage, and enclose the supporting records. Hedical can draft this letter for you from your uploaded documents.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">4</span>
+              <div>
+                <h3 className="text-base font-semibold text-ink">Submit within the deadline</h3>
+                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Most plans allow 180 days from the denial date for a first-level appeal. Check your plan document — deadlines vary by state and insurer.</p>
+              </div>
+            </li>
+            <li className="flex gap-4">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">5</span>
+              <div>
+                <h3 className="text-base font-semibold text-ink">Escalate if denied again</h3>
+                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">If the internal appeal is rejected, you can request an external review by an independent third party. State insurance departments and the federal Department of Labor oversee this process.</p>
+              </div>
+            </li>
+          </ol>
+          <p className="mt-8 text-center text-xs text-muted-tertiary">
+            Source: Centers for Medicare & Medicaid Services (CMS) appeals guidelines and U.S. Department of Labor ERISA claim procedure regulations.{" "}
+            <a href="https://www.cms.gov/medicare/appeals-and-grievances" className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">CMS appeals overview</a>.
+          </p>
+        </div>
+      </section>
+
+      {/* ───── Corrections & Prior Reviews ───── */}
+      <section className="bg-white border-t border-hairline py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-tertiary">
+            <span>Last reviewed: <time dateTime="2026-07-21">July 21, 2026</time></span>
+            <span>Corrections? <a href="mailto:corrections@hedical.online" className="text-teal underline underline-offset-2">Email our team</a></span>
+            <span>This site does not provide medical advice. <a href="/disclaimer" className="text-teal underline underline-offset-2">Full disclaimer</a>.</span>
           </div>
         </div>
       </section>

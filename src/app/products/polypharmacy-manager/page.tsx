@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
 import { FeatureGrid } from "@/components/FeatureGrid";
@@ -86,6 +87,9 @@ export default function PolypharmacyManagerPage() {
       />
       <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <Breadcrumb items={[{ label: "Polypharmacy Manager" }]} />
+          </div>
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full bg-amber-50 px-4 py-1.5 text-sm font-medium text-amber-700 mb-4">
               Runner-Up

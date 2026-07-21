@@ -8,6 +8,7 @@ const productLinks = [
 
 const companyLinks = [
   { name: "About", href: "/about" },
+  { name: "Guides", href: "/guides" },
   { name: "Pricing", href: "/pricing" },
   { name: "Contact", href: "/contact" },
   { name: "Waitlist", href: "/waitlist" },

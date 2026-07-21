@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { RelatedGuides } from "@/components/RelatedGuides";
 import { StateVariationCallout } from "@/components/StateVariationCallout";
 import { SourceDisagreementCallout } from "@/components/SourceDisagreementCallout";
 import { FaqPageSchema } from "@/components/FaqPageSchema";
@@ -275,14 +277,10 @@ export default async function GuidePage({
       <FaqPageSchema faqs={faqs} />
 
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mb-2">
-          <Link
-            href="/guides"
-            className="text-sm text-muted hover:text-foreground"
-          >
-            &larr; Back to Guides
-          </Link>
-        </div>
+        <Breadcrumb items={[
+          { label: "Guides", href: "/guides" },
+          { label: guideMeta.title },
+        ]} />
 
         <header className="mb-8">
           <h1 className="mb-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -298,6 +296,8 @@ export default async function GuidePage({
         <div className="prose-custom">
           <Post />
         </div>
+
+        <RelatedGuides current={slug} />
 
         <hr className="my-10 border-gray-200" />
 

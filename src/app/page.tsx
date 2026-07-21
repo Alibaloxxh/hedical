@@ -365,6 +365,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ───── Popular Guides ───── */}
+      <section className="bg-paper py-16 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+            Understand your denial codes
+          </h2>
+          <p className="mt-3 text-center text-base text-muted-secondary max-w-xl mx-auto">
+            Plain-language guides to the most common insurance denial codes and your appeal rights.
+          </p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {[
+              { title: "CO-50 Denial Code: Not Medically Necessary", href: "/guides/co-50-denial-code" },
+              { title: "PR-50 vs CO-50: What the Group Code Means", href: "/guides/pr-50-vs-co-50" },
+              { title: "How to Read an EOB", href: "/guides/how-to-read-an-eob" },
+              { title: "Appeal Deadlines by State", href: "/guides/appeal-deadlines-by-state" },
+            ].map((g) => (
+              <Link key={g.href} href={g.href}
+                className="block rounded-lg border border-hairline bg-white p-5 text-sm text-ink hover:shadow-md transition-shadow"
+              >
+                {g.title} &rarr;
+              </Link>
+            ))}
+          </div>
+          <div className="mt-6 text-center">
+            <Link href="/guides" className="text-sm text-teal underline underline-offset-2 hover:brightness-110">
+              View all guides &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ───── CTA ───── */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">

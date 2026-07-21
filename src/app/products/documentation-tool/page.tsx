@@ -4,7 +4,7 @@ import { CTASection } from "@/components/CTASection";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { Disclaimer } from "@/components/Disclaimer";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
   title: "Niche Vertical Documentation Tool",

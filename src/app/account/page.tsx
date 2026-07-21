@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getStripeServer } from "@/lib/stripe";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
   title: "Account",
@@ -54,7 +54,7 @@ export default async function AccountPage() {
       const stripe = getStripeServer();
       const session = await stripe.billingPortal.sessions.create({
         customer: stripeCustomerId,
-        return_url: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/account`,
+        return_url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online"}/account`,
       });
       portalUrl = session.url;
     } catch {}

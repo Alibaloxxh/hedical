@@ -99,7 +99,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const { guideMeta } = await import(`@/guides/${slug}.mdx`);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
   return {
     title: guideMeta.title,

@@ -23,7 +23,7 @@ const sourceSerif = Source_Serif_4({
   weight: ["500"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

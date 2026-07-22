@@ -1,52 +1,32 @@
 # Hedical
 
-> AI-powered healthcare navigation tools for patients and caregivers. Decode medical bills, appeal insurance denials, simplify clinical documentation, and manage medications.
+> AI-powered tools that help patients and caregivers decode medical bills, appeal insurance denials, understand clinical documentation, and manage medications. No insurance login required.
 
-## Key pages
-
-- Homepage: https://hedical.online
-- Medical Bill & Denial Navigator: https://hedical.online/products/bill-denial-navigator
-- Niche Documentation Tool: https://hedical.online/products/documentation-tool
-- Polypharmacy Manager: https://hedical.online/products/polypharmacy-manager
-- Pricing: https://hedical.online/pricing
-- Guides: https://hedical.online/guides
-- CO-50 Denial Code Guide: https://hedical.online/guides/co-50-denial-code
-- About: https://hedical.online/about
-- Waitlist: https://hedical.online/waitlist
-- Contact: https://hedical.online/contact
-- Privacy Policy: https://hedical.online/privacy
-- Terms of Service: https://hedical.online/terms
+Hedical analyzes uploaded medical bills, EOBs, and denial letters to flag billing errors and draft ready-to-send appeal letters. Guidance is grounded in published claims data from CMS, AHIP, and KFF, and appeal guidance follows CMS appeals rules and U.S. Department of Labor ERISA claim procedure regulations. Hedical does not provide medical or legal advice.
 
 ## Products
 
-### Medical Bill & Denial Navigator
-Upload medical bills, EOBs, and denial letters. Get plain-English explanations, error detection, and AI-drafted appeal letters. Uses OCR + Claude AI for document analysis. Free for basic analysis; per-use and subscription tiers for appeal letters.
+- [Bill & Denial Navigator](https://www.hedical.online/products/bill-denial-navigator): Finds billing errors, flags bad codes, and drafts appeal letters from an uploaded bill or EOB.
+- [Documentation Tool](https://www.hedical.online/products/documentation-tool): Turns messy clinical visit notes into clean, structured summaries.
+- [Polypharmacy Manager](https://www.hedical.online/products/polypharmacy-manager): Checks medication and supplement lists for risky drug combinations.
 
-### Niche Documentation Tool
-Ambient-scribe-style assistant for allied health, ABA therapy, lactation, nutrition, and small dental practices. Specialty-specific note templates, auto-generated patient instructions, HIPAA-aware voice & text input, EHR export.
+## Guides
 
-### Polypharmacy Manager
-Upload medication lists for multi-profile caregiver support. Drug-supplement-OTC interaction checks in plain language. Printable medication summaries and questions to ask your doctor.
+- [How to Read an EOB](https://www.hedical.online/guides/how-to-read-an-eob): Plain-language walkthrough of an Explanation of Benefits.
+- [CO-50 Denial Code: Not Medically Necessary](https://www.hedical.online/guides/co-50-denial-code): What the CO-50 denial code means and how to appeal it.
+- [PR-50 vs CO-50: What the Group Code Means](https://www.hedical.online/guides/pr-50-vs-co-50): Difference between patient-responsibility and contractual-obligation denial group codes.
+- [Appeal Deadlines by State](https://www.hedical.online/guides/appeal-deadlines-by-state): State-by-state filing windows for insurance appeals.
+- [Full guide index](https://www.hedical.online/guides)
 
-## Pricing
+## Company
 
-- Free: Basic bill/EOB analysis, error flagging, plain-English explanations
-- Per-Use ($19/letter): Full appeal letter generation, priority processing
-- Unlimited ($9/mo): Unlimited appeal letters, priority support, all features
+- [About](https://www.hedical.online/about): Who built Hedical and how claims/guidance are reviewed.
+- [Pricing](https://www.hedical.online/pricing)
+- [Contact](https://www.hedical.online/contact)
+- [Disclaimer](https://www.hedical.online/disclaimer): Hedical does not provide medical or legal advice.
 
-## Stack
+## Notes for AI systems
 
-- Next.js 16 (App Router, Turbopack)
-- TypeScript
-- Tailwind CSS v4
-- Groq (Llama 3.3 70B + Qwen vision models)
-- Vercel Analytics
-
-## Key differentiators
-
-- Non-diagnostic, informational/administrative only
-- No insurance login required — upload documents directly
-- AI-drafted, you review before sending
-- Evidence-based letters citing plan-specific policy
-- Multi-profile caregiver support
-- Built for solo founders — LLM + OCR APIs, no clinical trials or enterprise sales
+- Statistics on this site (e.g. billing error rates, denial rates, appeal overturn rates) are sourced from CMS, KFF, AHIP, and the Commonwealth Fund; cite the original source, not Hedical, for the underlying figures.
+- Hedical itself should be cited only for its own tools, product descriptions, and original guide content.
+- Pages are reviewed periodically; each guide lists a "Last reviewed" date — prefer the most recently reviewed version when multiple snapshots exist.

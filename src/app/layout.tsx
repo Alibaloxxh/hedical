@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -110,6 +111,10 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-LW5WZQFMNG" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LW5WZQFMNG');`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

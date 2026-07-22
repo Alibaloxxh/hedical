@@ -3,10 +3,28 @@ import { extractBill } from "@/lib/ai/extractBill";
 import { explainBill } from "@/lib/ai/explainBill";
 import { flagIssues } from "@/lib/ai/flagIssues";
 import { createClient } from "@/lib/supabase/server";
+import type { SupabaseClient } from "@supabase/supabase-js";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 
+async function logAnalysis(supabase: SupabaseClient, fields: {
+  user_id: string | null;
+  product: string;
+  input_summary: string;
+  output_summary: string | null;
+  status: string;
+}) {
+  try {
+    await supabase.from("analyses").insert(fields);
+  } catch (e) {
+    console.error("Failed to log analysis:", e);
+  }
+}
+
 export async function POST(request: NextRequest) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
   try {
     const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) {
@@ -51,18 +69,13 @@ export async function POST(request: NextRequest) {
       flagIssues(extraction),
     ]);
 
-    // Log to analyses table if user is authenticated
-    const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
-    if (user) {
-      const { error: logError } = await supabase.from("analyses").insert({
-        user_id: user.id,
-        product: "bill_navigator",
-        input_summary: `${extraction.provider} — ${extraction.serviceDate} (${extraction.lineItems.length} line items)`,
-        output_summary: `${flags.length} flags, ${extraction.totalBilled !== null ? `total ${extraction.currency || "USD"} ${extraction.totalBilled}` : "no total"}`,
-      });
-      if (logError) console.error("Failed to log analysis:", logError);
-    }
+    logAnalysis(supabase, {
+      user_id: user?.id ?? null,
+      product: "bill_navigator",
+      input_summary: `${extraction.provider} — ${extraction.serviceDate} (${extraction.lineItems.length} line items)`,
+      output_summary: `${flags.length} flags, ${extraction.totalBilled !== null ? `total ${extraction.currency || "USD"} ${extraction.totalBilled}` : "no total"}`,
+      status: "success",
+    });
 
     return NextResponse.json({
       success: true,
@@ -70,6 +83,15 @@ export async function POST(request: NextRequest) {
     });
   } catch (err: any) {
     console.error("Bill analysis error:", err);
+
+    logAnalysis(supabase, {
+      user_id: user?.id ?? null,
+      product: "bill_navigator",
+      input_summary: "Analysis failed",
+      output_summary: null,
+      status: "error",
+    });
+
     const message = err.message || "Analysis failed. The file may be unreadable or the service is temporarily unavailable.";
     return NextResponse.json({ error: message }, { status: 500 });
   }

@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       {/* ───── Hero ───── */}
-      <section className="bg-[#e8e4db] px-8 py-24 mx-4 sm:mx-6 lg:mx-8 my-8 max-w-7xl lg:mx-auto">
+      <section className="bg-[#e8e4db] px-8 py-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 items-start">
           {/* Left */}
           <div>

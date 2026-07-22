@@ -73,11 +73,11 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2">
           <Image
-            src="/images/hedical_medical_logo.png"
-            alt="Hedical logo"
-            width={140}
-            height={40}
-            className="h-8 w-auto"
+            src="/images/hedical_icon_only.png"
+            alt="Hedical icon"
+            width={48}
+            height={48}
+            className="h-12 w-auto"
             priority
           />
         </Link>

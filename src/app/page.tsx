@@ -72,27 +72,27 @@ export default function Home() {
           <div className="animate-scale-in animate-stagger-5 bg-white border-[0.5px] border-[#e0e0e0] rounded-xl p-5 max-w-[480px]">
             <div className="flex justify-between mb-[10px]">
               <div>
-                <p className="text-[11px] uppercase text-[#999999] m-0">Statement</p>
+                <p className="text-[11px] uppercase text-[#6e6e6e] m-0">Statement</p>
                 <p className="text-sm font-[500] text-[#111111] mt-[2px] m-0">Mercy General Hospital</p>
               </div>
               <div className="text-right">
-                <p className="text-xs text-[#999999] m-0">Date: 06/15/2026</p>
-                <p className="text-xs text-[#999999] m-0">Acct: #4829-71</p>
+                <p className="text-xs text-[#6e6e6e] m-0">Date: 06/15/2026</p>
+                <p className="text-xs text-[#6e6e6e] m-0">Acct: #4829-71</p>
               </div>
             </div>
             <div className="border-t-[0.5px] border-[#e0e0e0] pt-2">
               <div className="flex justify-between py-[6px] text-[13px]">
-                <span><span className="font-mono text-[11px] text-[#999999] mr-2">0750</span>Facility fee — ER</span>
+                <span><span className="font-mono text-[11px] text-[#6e6e6e] mr-2">0750</span>Facility fee — ER</span>
                 <span className="font-[500]">$2,350.00</span>
               </div>
               <div className="flex justify-between py-[6px] text-[13px]">
-                <span><span className="font-mono text-[11px] text-[#999999] mr-2">99284</span>ER level 3 eval</span>
+                <span><span className="font-mono text-[11px] text-[#6e6e6e] mr-2">99284</span>ER level 3 eval</span>
                 <span className="font-[500]">$1,890.00</span>
               </div>
               <div className="bg-bg-danger rounded-[6px] p-[10px_12px] mt-2">
                 <div className="flex justify-between items-center text-[13px] text-text-danger">
                   <span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline mr-[6px] -mt-[2px]" style={{verticalAlign: -2}}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline mr-[6px] -mt-[2px] align-[-2px]">
                       <path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.29 3.86l-8.3 14.36a1.5 1.5 0 0 0 1.29 2.28h16.44a1.5 1.5 0 0 0 1.29-2.28l-8.3-14.36a1.5 1.5 0 0 0-2.58 0z" />
                     </svg>
                     0750 Facility fee — duplicate
@@ -109,7 +109,7 @@ export default function Home() {
       {/* ───── How It Works ───── */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-2xl text-ink sm:text-3xl mb-16" style={{ fontWeight: 500 }}>
+          <h2 className="font-serif text-center text-2xl text-ink sm:text-3xl mb-16 font-[500]">
             How it works
           </h2>
           <div className="relative flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:justify-between">
@@ -155,7 +155,7 @@ export default function Home() {
       {/* ───── Stats & Citations ───── */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-[500]">
             Medical billing is error-prone at scale
           </h2>
           <p className="mt-3 text-center text-base text-muted-secondary max-w-2xl mx-auto">
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-serif text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+            <h2 className="font-serif text-3xl text-ink sm:text-4xl font-[500]">
               Three tools, one job
             </h2>
             <p className="mt-3 text-base text-muted-secondary">
@@ -247,7 +247,7 @@ export default function Home() {
                 <p className="text-[10px] font-medium uppercase tracking-widest text-muted-tertiary mb-2">
                   {card.eyebrow}
                 </p>
-                <h3 className="font-serif text-base text-ink" style={{ fontWeight: 500 }}>
+                <h3 className="font-serif text-base text-ink font-[500]">
                   {card.title}
                 </h3>
                 <p className="mt-2 text-sm text-muted-secondary leading-relaxed">
@@ -262,7 +262,7 @@ export default function Home() {
       {/* ───── How to Appeal a Denied Medical Claim ───── */}
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-[500]">
             How to appeal a denied medical claim
           </h2>
           <p className="mt-3 text-center text-base text-muted-secondary">
@@ -326,7 +326,7 @@ export default function Home() {
       {/* ───── Popular Guides ───── */}
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl" style={{ fontWeight: 500 }}>
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-[500]">
             Understand your denial codes
           </h2>
           <p className="mt-3 text-center text-base text-muted-secondary max-w-xl mx-auto">
@@ -358,7 +358,7 @@ export default function Home() {
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="animate-fade-in rounded-2xl bg-ink p-10 sm:p-14 text-center">
-            <h2 className="font-serif text-2xl text-white sm:text-3xl" style={{ fontWeight: 500 }}>
+            <h2 className="font-serif text-2xl text-white sm:text-3xl font-[500]">
               Be among the first to try it
             </h2>
             <p className="mt-3 text-sm text-muted-tertiary leading-relaxed max-w-md mx-auto">

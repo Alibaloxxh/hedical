@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { default as nextDynamic } from "next/dynamic";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { VisitTracker } from "@/components/VisitTracker";
 import { Analytics } from "@vercel/analytics/next";
+
+const Footer = nextDynamic(() => import("@/components/Footer").then((m) => ({ default: m.Footer })));
+const VisitTracker = nextDynamic(() => import("@/components/VisitTracker").then((m) => ({ default: m.VisitTracker })));
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -122,7 +124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K2LSSNPR');`}
         </Script>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2LSSNPR"
-height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+height="0" width="0" className="hidden"></iframe></noscript>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-LW5WZQFMNG" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LW5WZQFMNG');`}

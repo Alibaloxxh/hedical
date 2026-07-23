@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { createHmac } from "node:crypto";
 
+const PADDLE_LIVE_IPS = [
+  "34.237.3.244", "34.195.105.136", "34.232.58.13",
+  "35.155.119.135", "34.212.5.7", "52.11.166.252",
+];
+
 function getServiceRoleClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -61,6 +66,7 @@ async function handleSubscriptionCreated(
       status: sub.status === "active" ? "active" : "incomplete",
       current_period_end: currentPeriodEnd,
       paddle_subscription_id: sub.id,
+      paddle_customer_id: sub.customer_id ?? null,
     },
     { onConflict: "user_id, plan" }
   );
@@ -114,8 +120,23 @@ async function handleSubscriptionCanceled(
   }
 }
 
+function getClientIp(request: NextRequest): string | null {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) {
+    const first = forwarded.split(",")[0]?.trim();
+    if (first) return first;
+  }
+  return request.headers.get("x-real-ip");
+}
+
 export async function POST(request: NextRequest) {
   try {
+    const ip = getClientIp(request);
+    if (ip && !PADDLE_LIVE_IPS.includes(ip)) {
+      console.warn(`Webhook from non-Paddle IP: ${ip}`);
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
     const rawBytes = await request.arrayBuffer();
     const rawBody = Buffer.from(rawBytes).toString("utf-8");
     const signature = request.headers.get("paddle-signature");

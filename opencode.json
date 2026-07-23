@@ -27,5 +27,22 @@
   "references": {
     "claude-seo": { "path": "C:/Users/User/claude-seo", "description": "Claude SEO skills for GEO, technical SEO, and site audits" },
     "claude-skills": { "path": "C:/Users/User/claude-skills", "description": "362 skills across 18 domains including marketing, engineering, product" }
+  },
+
+  "mcp": {
+    "paddle-sandbox": {
+      "type": "remote",
+      "url": "https://sandbox-mcp.paddle.com/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:PADDLE_SANDBOX_API_KEY}"
+      }
+    },
+    "paddle-live": {
+      "type": "remote",
+      "url": "https://mcp.paddle.com/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:PADDLE_LIVE_API_KEY}"
+      }
+    }
   }
 }

@@ -97,7 +97,7 @@ const pricingFaqs = [
 ];
 
 export default async function PricingPage() {
-  const { activePlan } = await getCurrentUserPlan();
+  const { activePlan, paddleCustomerId } = await getCurrentUserPlan();
   const isUnlimited = activePlan === "unlimited";
 
   return (
@@ -177,6 +177,7 @@ export default async function PricingPage() {
                     featured={tier.featured}
                     plan={tier.name === "Per-Use" ? "PER_USE" : "UNLIMITED"}
                     isCurrentPlan={tier.name === "Unlimited" && isUnlimited}
+                    paddleCustomerId={paddleCustomerId}
                   />
                 )}
               </div>

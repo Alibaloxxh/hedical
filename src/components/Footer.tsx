@@ -17,6 +17,7 @@ const companyLinks = [
 const legalLinks = [
   { name: "Privacy Policy", href: "/privacy" },
   { name: "Terms of Service", href: "/terms" },
+  { name: "Refund & Cancellation Policy", href: "/refund-policy" },
 ];
 
 export function Footer() {
@@ -69,9 +70,12 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-border pt-6">
+        <div className="mt-8 border-t border-border pt-6 space-y-2">
           <p className="text-center text-xs text-muted">
             &copy; {new Date().getFullYear()} Hedical. All rights reserved. Not medical or legal advice. See our Terms of Service.
+          </p>
+          <p className="text-center text-xs text-muted">
+            Contact: <a href="mailto:hedicalai@gmail.com" className="text-primary underline hover:text-primary-light transition-colors">hedicalai@gmail.com</a>
           </p>
         </div>
       </div>

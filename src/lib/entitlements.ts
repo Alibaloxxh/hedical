@@ -3,16 +3,17 @@ import { createClient } from "@/lib/supabase/server";
 export interface CurrentUserPlan {
   isLoggedIn: boolean;
   activePlan: "unlimited" | null;
+  paddleCustomerId: string | null;
 }
 
 export async function getCurrentUserPlan(): Promise<CurrentUserPlan> {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) return { isLoggedIn: false, activePlan: null };
+  if (!user) return { isLoggedIn: false, activePlan: null, paddleCustomerId: null };
 
   const { data: sub } = await supabase
     .from("subscriptions")
-    .select("plan, status, current_period_end")
+    .select("plan, status, current_period_end, paddle_customer_id")
     .eq("user_id", user.id)
     .eq("plan", "unlimited")
     .eq("status", "active")
@@ -23,7 +24,7 @@ export async function getCurrentUserPlan(): Promise<CurrentUserPlan> {
       ? ("unlimited" as const)
       : null;
 
-  return { isLoggedIn: true, activePlan };
+  return { isLoggedIn: true, activePlan, paddleCustomerId: sub?.paddle_customer_id ?? null };
 }
 
 export interface EntitlementResult {

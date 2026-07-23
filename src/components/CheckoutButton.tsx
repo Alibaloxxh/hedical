@@ -10,9 +10,10 @@ interface CheckoutButtonProps {
   featured?: boolean;
   plan: "PER_USE" | "UNLIMITED";
   isCurrentPlan?: boolean;
+  paddleCustomerId?: string | null;
 }
 
-export function CheckoutButton({ priceId, mode: _mode, label, featured, plan, isCurrentPlan }: CheckoutButtonProps) {
+export function CheckoutButton({ priceId, mode: _mode, label, featured, plan, isCurrentPlan, paddleCustomerId }: CheckoutButtonProps) {
   if (isCurrentPlan) {
     return (
       <span className="mt-8 block w-full rounded-lg border border-border px-4 py-2.5 text-center text-sm font-medium text-muted cursor-default">
@@ -32,9 +33,10 @@ export function CheckoutButton({ priceId, mode: _mode, label, featured, plan, is
       initializePaddle({
         environment: process.env.NEXT_PUBLIC_PADDLE_ENV === "production" ? "production" : "sandbox",
         token,
+        ...(paddleCustomerId ? { pwCustomer: { id: paddleCustomerId } } : {}),
       }).then(setPaddle);
     });
-  }, []);
+  }, [paddleCustomerId]);
 
   const handleCheckout = useCallback(async () => {
     if (!priceId || loading) return;

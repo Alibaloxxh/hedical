@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IconDna2, IconHeartHandshake, IconQuestionMark, IconFile, IconAlarm, IconCurrencyDollar } from "@tabler/icons-react";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
@@ -32,32 +33,32 @@ export const metadata: Metadata = {
 
 const medicationFeatures = [
   {
-    icon: "\u{1F9EC}",
+    icon: <IconDna2 className="size-6 text-primary" />,
     title: "Multi-Profile Caregiver Dashboard",
     description: "Manage medications for yourself, your parents, your children, and your spouse — all from one account.",
   },
   {
-    icon: "\u{1F91D}",
+    icon: <IconHeartHandshake className="size-6 text-primary" />,
     title: "Plain-Language Interaction Checks",
     description: "No more decoding medical jargon. Our AI explains drug-drug, drug-supplement, and drug-food interactions in simple terms.",
   },
   {
-    icon: "\u{2753}",
+    icon: <IconQuestionMark className="size-6 text-primary" />,
     title: "Smart Questions for Your Doctor",
     description: "Get a tailored list of questions to ask at your next appointment — flagged interactions, dosage concerns, and monitoring needs.",
   },
   {
-    icon: "\u{1F4C4}",
+    icon: <IconFile className="size-6 text-primary" />,
     title: "Printable Medication Summaries",
     description: "One-page summaries for each family member — perfect for appointments, hospital visits, and pharmacy runs.",
   },
   {
-    icon: "\u{23F0}",
+    icon: <IconAlarm className="size-6 text-primary" />,
     title: "Schedule & Refill Tracking",
     description: "Track medication schedules, set reminders, and get notified when refills are due.",
   },
   {
-    icon: "\u{1F4B0}",
+    icon: <IconCurrencyDollar className="size-6 text-primary" />,
     title: "Cost-Saving Alternatives",
     description: "AI suggests therapeutic alternatives and manufacturer coupons where available — helping you save on out-of-pocket costs.",
   },
@@ -112,13 +113,13 @@ export default function PolypharmacyManagerPage() {
             <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link
                 href="/waitlist"
-                className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition-colors"
+                className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition active:scale-[0.97]"
               >
                 Join the Waitlist
               </Link>
               <Link
                 href="/pricing"
-                className="rounded-lg border border-border bg-white px-6 py-3 text-base font-medium text-foreground shadow-sm hover:bg-zinc-50 transition-colors"
+                className="rounded-lg border border-border bg-white px-6 py-3 text-base font-medium text-foreground shadow-sm hover:bg-zinc-50 transition active:scale-[0.97]"
               >
                 See Pricing
               </Link>

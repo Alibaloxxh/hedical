@@ -1,10 +1,12 @@
+import type { ReactNode } from "react";
+
 interface FeatureGridProps {
   title: string;
   subtitle?: string;
   features: {
     title: string;
     description: string;
-    icon: string;
+    icon: ReactNode;
   }[];
 }
 
@@ -23,7 +25,7 @@ export function FeatureGrid({ title, subtitle, features }: FeatureGridProps) {
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
             <div key={i} className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <div className="text-2xl mb-3">{feature.icon}</div>
+              <div className="mb-3">{feature.icon}</div>
               <h3 className="text-base font-semibold text-foreground">{feature.title}</h3>
               <p className="mt-2 text-sm text-muted leading-relaxed">{feature.description}</p>
             </div>

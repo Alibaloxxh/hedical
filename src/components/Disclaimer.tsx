@@ -1,3 +1,5 @@
+import { IconAlertTriangle } from "@tabler/icons-react";
+
 interface DisclaimerProps {
   variant?: "inline" | "banner" | "notice";
 }
@@ -10,7 +12,7 @@ export function Disclaimer({ variant = "inline" }: DisclaimerProps) {
     return (
       <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800" role="note">
         <p className="flex items-start gap-2">
-          <span className="mt-0.5 shrink-0 text-base" aria-hidden="true">&#x26A0;&#xFE0F;</span>
+          <span className="mt-0.5 shrink-0" aria-hidden="true"><IconAlertTriangle className="size-4" /></span>
           <span>{text}</span>
         </p>
       </div>

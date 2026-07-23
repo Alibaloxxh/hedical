@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IconBulb, IconHeartHandshake, IconTools, IconBooks } from "@tabler/icons-react";
 import { CTASection } from "@/components/CTASection";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
@@ -30,22 +31,22 @@ const values = [
   {
     title: "Clarity over complexity",
     description: "Healthcare billing and insurance are deliberately opaque. We translate jargon into plain language so you can make informed decisions.",
-    icon: "\u{1F4A1}",
+    icon: <IconBulb className="size-7 text-primary" />,
   },
   {
     title: "Patient-first, always",
     description: "We don't sell patient data, link insurance accounts, or take kickbacks from pharma or insurers. Your interests come first.",
-    icon: "\u{1F91D}",
+    icon: <IconHeartHandshake className="size-7 text-primary" />,
   },
   {
     title: "Buildable, not hypothetical",
     description: "Every product Hedical ships is designed for a solo founder to build and monetize — no clinical trials, no enterprise sales, no billion-dollar compute.",
-    icon: "\u{1F6E0}\uFE0F",
+    icon: <IconTools className="size-7 text-primary" />,
   },
   {
     title: "Evidence-based",
     description: "Every letter, explanation, and recommendation is grounded in cited sources — your policy, peer-reviewed research, and state/federal regulations.",
-    icon: "\u{1F4DA}",
+    icon: <IconBooks className="size-7 text-primary" />,
   },
 ];
 
@@ -82,7 +83,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {values.map((value) => (
               <div key={value.title} className="rounded-xl border border-border bg-zinc-50 p-6 sm:p-8">
-                <div className="text-3xl mb-4">{value.icon}</div>
+                <div className="mb-4">{value.icon}</div>
                 <h3 className="text-lg font-semibold text-foreground">{value.title}</h3>
                 <p className="mt-2 text-sm text-muted leading-relaxed">{value.description}</p>
               </div>

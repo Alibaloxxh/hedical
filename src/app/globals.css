@@ -49,3 +49,78 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
 }
+
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in,
+  .animate-scale-in,
+  .animate-pulse-step {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  details > .faq-content {
+    transition: none;
+    max-height: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes dropdown-in {
+  from { opacity: 0; transform: scale(0.97) translateY(-4px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-dropdown {
+  animation: dropdown-in 0.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+  transform-origin: top left;
+}
+
+.animate-fade-in-up { animation: fade-in-up 0.5s var(--ease-out) both; }
+.animate-fade-in    { animation: fade-in 0.4s var(--ease-out) both; }
+.animate-scale-in   { animation: scale-in 0.35s var(--ease-out) both; }
+
+.animate-stagger-1 { animation-delay: 0.05s; }
+.animate-stagger-2 { animation-delay: 0.12s; }
+.animate-stagger-3 { animation-delay: 0.2s; }
+.animate-stagger-4 { animation-delay: 0.28s; }
+.animate-stagger-5 { animation-delay: 0.36s; }
+
+details > .faq-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-out, opacity 250ms ease-out;
+}
+details[open] > .faq-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+@keyframes pulse-step {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.animate-pulse-step {
+  animation: pulse-step 1s var(--ease-in-out) infinite;
+}

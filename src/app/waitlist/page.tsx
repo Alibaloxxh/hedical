@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, FormEvent } from "react";
+import { IconBalloon } from "@tabler/icons-react";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -79,7 +80,7 @@ export default function WaitlistPage() {
 
         {state === "success" ? (
           <div className="mt-10 rounded-xl border border-green-200 bg-green-50 p-8 text-center">
-            <div className="text-4xl mb-4">🎉</div>
+            <div className="text-4xl mb-4"><IconBalloon size={36} /></div>
             <h2 className="text-xl font-semibold text-green-800">You&apos;re on the list!</h2>
             <p className="mt-2 text-green-700">
               Thanks for joining the Hedical waitlist. We&apos;ll be in touch with early access updates.

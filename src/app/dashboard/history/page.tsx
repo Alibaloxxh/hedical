@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { IconClipboard } from "@tabler/icons-react";
 
 export default async function HistoryPage() {
   const supabase = await createClient();
@@ -33,7 +34,7 @@ export default async function HistoryPage() {
 
       {!analyses || analyses.length === 0 ? (
         <div className="rounded-xl border border-border bg-zinc-50 p-8 text-center">
-          <div className="text-3xl mb-3">&#x1F4CB;</div>
+          <div className="mb-3"><IconClipboard size={28} /></div>
           <p className="text-sm text-muted">No analyses yet</p>
           <p className="mt-1 text-xs text-muted">
             Upload your first bill to get started.

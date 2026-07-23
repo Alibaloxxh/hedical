@@ -114,10 +114,10 @@ export default function PricingPage() {
             </p>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {tiers.map((tier) => (
+            {tiers.map((tier, i) => (
               <div
                 key={tier.name}
-                className={`relative flex flex-col rounded-2xl border p-6 shadow-sm ${
+                className={`animate-fade-in-up animate-stagger-${i + 1} relative flex flex-col rounded-2xl border p-6 shadow-sm ${
                   tier.featured
                     ? "border-primary bg-primary text-white"
                     : "border-border bg-white"
@@ -157,11 +157,11 @@ export default function PricingPage() {
                 {tier.href ? (
                   <Link
                     href={tier.href}
-                    className={`mt-8 block w-full rounded-lg px-4 py-2.5 text-center text-sm font-medium ${
+                    className={`mt-8 block w-full rounded-lg px-4 py-2.5 text-center text-sm font-medium transition active:scale-[0.97] ${
                       tier.featured
                         ? "bg-white text-primary hover:bg-hedical-50"
                         : "bg-primary text-white hover:bg-primary-light"
-                    } transition-colors`}
+                    }`}
                   >
                     {tier.cta}
                   </Link>
@@ -233,7 +233,7 @@ export default function PricingPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="px-4 pb-4 text-sm text-muted">{faq.a}</div>
+                <div className="faq-content px-4 pb-4 text-sm text-muted">{faq.a}</div>
               </details>
             ))}
           </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { IconMail } from "@tabler/icons-react";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -77,7 +78,7 @@ export default function ContactPage() {
 
         {state === "success" ? (
           <div className="mt-10 rounded-xl border border-green-200 bg-green-50 p-8 text-center">
-            <div className="text-4xl mb-4">📨</div>
+            <div className="text-4xl mb-4"><IconMail size={36} /></div>
             <h2 className="text-xl font-semibold text-green-800">Message sent!</h2>
             <p className="mt-2 text-green-700">
               Thanks for reaching out. We&apos;ll get back to you as soon as possible.
@@ -163,7 +164,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={state === "submitting"}
-              className="w-full rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-primary-light disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm transition hover:bg-primary-light active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-60 disabled:active:scale-100"
             >
               {state === "submitting" ? (
                 <span className="flex items-center justify-center gap-2">

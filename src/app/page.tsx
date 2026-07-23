@@ -43,33 +43,33 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 items-start">
           {/* Left */}
           <div>
-            <span className="inline-block bg-[#d4edda] text-[#1a3a2a] text-xs font-medium px-[10px] py-[4px] rounded-[6px] mb-[14px]">
+            <span className="animate-fade-in-up animate-stagger-1 inline-block bg-[#d4edda] text-[#1a3a2a] text-xs font-medium px-[10px] py-[4px] rounded-[6px] mb-[14px]">
               No insurance login needed
             </span>
-            <h1 className="font-serif text-[36px] font-[600] leading-[1.25] text-[#1a3a2a] mb-3">
+            <h1 className="animate-fade-in-up animate-stagger-2 font-serif text-[36px] font-[600] leading-[1.25] text-[#1a3a2a] mb-3">
               Find billing errors in your medical bill — in minutes
             </h1>
-            <p className="text-base text-[#4a4a45] leading-relaxed max-w-[520px] mb-5">
-              Upload any bill or insurance denial. Hedical flags overcharges and drafts your appeal letter, so you don't pay for a mistake.
+            <p className="animate-fade-in-up animate-stagger-3 text-base text-[#4a4a45] leading-relaxed max-w-[520px] mb-5">
+              Upload any bill or denial. Hedical flags overcharges and drafts your appeal so you don't pay for a mistake.
             </p>
-            <div className="flex gap-[10px]">
+            <div className="animate-fade-in-up animate-stagger-4 flex gap-[10px]">
               <Link
                 href="/dashboard/analyze"
-                className="bg-[#1a3a2a] text-white border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
+                className="bg-[#1a3a2a] text-white border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block active:scale-[0.97] transition-transform duration-100 ease-out"
               >
-                Try it free
+                Try It Free
               </Link>
               <Link
                 href="/pricing"
-                className="bg-transparent text-[#1a3a2a] border border-[#1a3a2a] px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block"
+                className="bg-transparent text-[#1a3a2a] border border-[#1a3a2a] px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block active:scale-[0.97] transition-transform duration-100 ease-out"
               >
-                See pricing
+                See Pricing
               </Link>
             </div>
           </div>
 
           {/* Right: bill card */}
-          <div className="bg-white border-[0.5px] border-[#e0e0e0] rounded-xl p-5 max-w-[480px]">
+          <div className="animate-scale-in animate-stagger-5 bg-white border-[0.5px] border-[#e0e0e0] rounded-xl p-5 max-w-[480px]">
             <div className="flex justify-between mb-[10px]">
               <div>
                 <p className="text-[11px] uppercase text-[#999999] m-0">Statement</p>
@@ -121,7 +121,7 @@ export default function Home() {
             ].map((s, i) => {
               const isFinal = i === 2;
               return (
-                <div key={s.label} className="relative z-10 flex flex-col items-center">
+                <div key={s.label} className={`animate-fade-in-up animate-stagger-${i + 1} relative z-10 flex flex-col items-center`}>
                   <div
                     className={`flex h-12 w-12 items-center justify-center rounded-full text-white ${
                       isFinal ? "bg-teal" : "bg-ink"
@@ -231,11 +231,11 @@ export default function Home() {
                 recommended: false,
                 href: "/products/polypharmacy-manager",
               },
-            ].map((card) => (
+            ].map((card, i) => (
               <Link
                 key={card.title}
                 href={card.href}
-                className={`group relative block rounded-xl bg-white p-6 transition-shadow hover:shadow-md ${
+                className={`animate-fade-in-up animate-stagger-${i + 1} group relative block rounded-xl bg-white p-6 transition-transform duration-[250ms] var(--ease-out) hover:shadow-md hover:-translate-y-0.5 ${
                   card.recommended ? "border-2 border-teal" : "border border-hairline"
                 }`}
               >
@@ -269,35 +269,35 @@ export default function Home() {
             You have the legal right to appeal any insurance denial under the Employee Retirement Income Security Act (ERISA) and the Affordable Care Act. Most patients never exercise this right. Here is how.
           </p>
           <ol className="mt-10 space-y-6">
-            <li className="flex gap-4">
+            <li className="animate-fade-in-up animate-stagger-1 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">1</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Read your Explanation of Benefits</h3>
                 <p className="mt-1 text-sm text-muted-secondary leading-relaxed">The EOB tells you the official reason for the denial: not medically necessary, out-of-network, experimental, or a billing code mismatch. Appeal strategy depends entirely on which reason is cited.</p>
               </div>
             </li>
-            <li className="flex gap-4">
+            <li className="animate-fade-in-up animate-stagger-2 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">2</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Gather supporting medical records</h3>
                 <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Ask your provider for the clinical notes, test results, and any prior authorization documents that support the medical necessity of the denied service.</p>
               </div>
             </li>
-            <li className="flex gap-4">
+            <li className="animate-fade-in-up animate-stagger-3 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">3</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Write a formal appeal letter</h3>
                 <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Address it to the insurer's appeals department, reference the claim number, cite the specific plan provision that supports coverage, and enclose the supporting records. Hedical can draft this letter for you from your uploaded documents.</p>
               </div>
             </li>
-            <li className="flex gap-4">
+            <li className="animate-fade-in-up animate-stagger-4 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">4</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Submit within the deadline</h3>
                 <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Most plans allow 180 days from the denial date for a first-level appeal. Check your plan document — deadlines vary by state and insurer.</p>
               </div>
             </li>
-            <li className="flex gap-4">
+            <li className="animate-fade-in-up animate-stagger-5 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">5</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Escalate if denied again</h3>
@@ -338,9 +338,9 @@ export default function Home() {
               { title: "PR-50 vs CO-50: What the Group Code Means", href: "/guides/pr-50-vs-co-50" },
               { title: "How to Read an EOB", href: "/guides/how-to-read-an-eob" },
               { title: "Appeal Deadlines by State", href: "/guides/appeal-deadlines-by-state" },
-            ].map((g) => (
+            ].map((g, i) => (
               <Link key={g.href} href={g.href}
-                className="block rounded-lg border border-hairline bg-white p-5 text-sm text-ink hover:shadow-md transition-shadow"
+                className={`animate-fade-in-up animate-stagger-${i + 1} block rounded-lg border border-hairline bg-white p-5 text-sm text-ink transition-transform duration-[250ms] var(--ease-out) hover:shadow-md hover:-translate-y-0.5`}
               >
                 {g.title} &rarr;
               </Link>
@@ -357,7 +357,7 @@ export default function Home() {
       {/* ───── CTA ───── */}
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-ink p-10 sm:p-14 text-center">
+          <div className="animate-fade-in rounded-2xl bg-ink p-10 sm:p-14 text-center">
             <h2 className="font-serif text-2xl text-white sm:text-3xl" style={{ fontWeight: 500 }}>
               Be among the first to try it
             </h2>
@@ -367,7 +367,7 @@ export default function Home() {
             <div className="mt-8">
               <Link
                 href="/waitlist"
-                className="inline-flex items-center rounded-lg bg-teal px-6 py-3 text-base font-medium text-white transition-colors hover:brightness-110"
+                className="active:scale-[0.97] inline-flex items-center rounded-lg bg-teal px-6 py-3 text-base font-medium text-white transition-[transform,filter] duration-100 ease-out hover:brightness-110"
               >
                 Join the waitlist
               </Link>

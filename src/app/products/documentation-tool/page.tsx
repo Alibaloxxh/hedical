@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IconBuildingHospital, IconBrain, IconBabyBottle, IconBrandApple, IconDental, IconMicrophone, IconFile, IconBook, IconLink, IconLock, IconChartBar } from "@tabler/icons-react";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
@@ -31,11 +32,11 @@ export const metadata: Metadata = {
 };
 
 const verticals = [
-  { icon: "\u{1F3E5}", title: "Allied Health", desc: "PT, OT, speech therapy, chiropractic — note formats that match your workflow." },
-  { icon: "\u{1F9E0}", title: "ABA Therapy", desc: "Behavioral session notes, goal tracking, and insurance-ready documentation." },
-  { icon: "\u{1F476}", title: "Lactation / IBCLC", desc: "Feeding assessments, latch evaluations, and parent take-home instructions." },
-  { icon: "\u{1F34E}", title: "Nutrition & Dietetics", desc: "Dietary assessments, meal planning notes, and outcome tracking." },
-  { icon: "\u{1F9B7}", title: "Small Dental", desc: "Procedure notes, treatment plans, and patient aftercare instructions." },
+  { icon: <IconBuildingHospital className="size-6 text-primary" />, title: "Allied Health", desc: "PT, OT, speech therapy, chiropractic — note formats that match your workflow." },
+  { icon: <IconBrain className="size-6 text-primary" />, title: "ABA Therapy", desc: "Behavioral session notes, goal tracking, and insurance-ready documentation." },
+  { icon: <IconBabyBottle className="size-6 text-primary" />, title: "Lactation / IBCLC", desc: "Feeding assessments, latch evaluations, and parent take-home instructions." },
+  { icon: <IconBrandApple className="size-6 text-primary" />, title: "Nutrition & Dietetics", desc: "Dietary assessments, meal planning notes, and outcome tracking." },
+  { icon: <IconDental className="size-6 text-primary" />, title: "Small Dental", desc: "Procedure notes, treatment plans, and patient aftercare instructions." },
 ];
 
 export default function DocumentationToolPage() {
@@ -73,13 +74,13 @@ export default function DocumentationToolPage() {
             <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link
                 href="/waitlist"
-                className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition-colors"
+                className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition active:scale-[0.97]"
               >
                 Join the Waitlist
               </Link>
               <Link
                 href="/pricing"
-                className="rounded-lg border border-border bg-white px-6 py-3 text-base font-medium text-foreground shadow-sm hover:bg-zinc-50 transition-colors"
+                className="rounded-lg border border-border bg-white px-6 py-3 text-base font-medium text-foreground shadow-sm hover:bg-zinc-50 transition active:scale-[0.97]"
               >
                 See Pricing
               </Link>
@@ -101,7 +102,7 @@ export default function DocumentationToolPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {verticals.map((v) => (
               <div key={v.title} className="rounded-xl border border-border bg-zinc-50 p-6">
-                <div className="text-2xl mb-3">{v.icon}</div>
+                <div className="mb-3">{v.icon}</div>
                 <h3 className="font-semibold text-foreground">{v.title}</h3>
                 <p className="mt-2 text-sm text-muted">{v.desc}</p>
               </div>
@@ -114,12 +115,12 @@ export default function DocumentationToolPage() {
         title="Core features"
         subtitle="Everything you need to cut documentation time in half."
         features={[
-          { icon: "\u{1F399}\uFE0F", title: "Voice & Text Input", description: "Dictate notes naturally during sessions. AI structures them into your specialty's format." },
-          { icon: "\u{1F4C4}", title: "Specialty Templates", description: "SOAP, BIRP, DAP, and custom note formats pre-configured for your vertical." },
-          { icon: "\u{1F4D6}", title: "Auto Patient Instructions", description: "Generate take-home instructions, exercise plans, and educational handouts from session notes." },
-          { icon: "\u{1F517}", title: "EHR Export", description: "One-click export to your existing EHR. No painful integration needed." },
-          { icon: "\u{1F512}", title: "HIPAA Compliant", description: "Enterprise-grade security and data handling. Built for healthcare from day one." },
-          { icon: "\u{1F4CA}", title: "Outcome Tracking", description: "Track patient progress over time with AI-summarized session histories." },
+          { icon: <IconMicrophone className="size-6 text-primary" />, title: "Voice & Text Input", description: "Dictate notes naturally during sessions. AI structures them into your specialty's format." },
+          { icon: <IconFile className="size-6 text-primary" />, title: "Specialty Templates", description: "SOAP, BIRP, DAP, and custom note formats pre-configured for your vertical." },
+          { icon: <IconBook className="size-6 text-primary" />, title: "Auto Patient Instructions", description: "Generate take-home instructions, exercise plans, and educational handouts from session notes." },
+          { icon: <IconLink className="size-6 text-primary" />, title: "EHR Export", description: "One-click export to your existing EHR. No painful integration needed." },
+          { icon: <IconLock className="size-6 text-primary" />, title: "HIPAA Compliant", description: "Enterprise-grade security and data handling. Built for healthcare from day one." },
+          { icon: <IconChartBar className="size-6 text-primary" />, title: "Outcome Tracking", description: "Track patient progress over time with AI-summarized session histories." },
         ]}
       />
 

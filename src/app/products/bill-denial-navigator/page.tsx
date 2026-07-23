@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { IconCurrencyDollar, IconBan, IconBubbleText, IconHourglass, IconPhoto, IconSearch, IconShieldCheck, IconStars, IconCalendar, IconArmchair } from "@tabler/icons-react";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
@@ -32,40 +33,40 @@ export const metadata: Metadata = {
 };
 
 const painPoints = [
-  { icon: "\u{1F4B5}", title: "Hidden Errors", description: 'Up to 80% of medical bills contain errors — duplicate charges, upcoding, unbundling, and out-of-network surprises. <a href="https://www.kff.org/health-costs/report/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[KFF]</a>' },
-  { icon: "\u{1F6AB}", title: "Denied Claims", description: 'Insurers deny 19% of in-network claims. Fewer than 1% of denials are ever appealed, even though 44-78% could be overturned. <a href="https://www.ahip.org/resources/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[AHIP]</a> <a href="https://www.commonwealthfund.org/publications/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[Commonwealth Fund]</a>' },
-  { icon: "\u{1F4AD}", title: "Confusing Jargon", description: "EOBs and medical bills are written in opaque language designed for providers and payers, not patients." },
-  { icon: "\u{23F3}", title: "Tight Deadlines", description: "Appeal windows are short — often 30-180 days. Missing a deadline means losing your right to challenge a denial." },
+  { icon: <IconCurrencyDollar className="size-6 text-primary" />, title: "Hidden Errors", description: 'Up to 80% of medical bills contain errors — duplicate charges, upcoding, unbundling, and out-of-network surprises. <a href="https://www.kff.org/health-costs/report/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[KFF]</a>' },
+  { icon: <IconBan className="size-6 text-primary" />, title: "Denied Claims", description: 'Insurers deny 19% of in-network claims. Fewer than 1% of denials are ever appealed, even though 44-78% could be overturned. <a href="https://www.ahip.org/resources/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[AHIP]</a> <a href="https://www.commonwealthfund.org/publications/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-primary transition-colors">[Commonwealth Fund]</a>' },
+  { icon: <IconBubbleText className="size-6 text-primary" />, title: "Confusing Jargon", description: "EOBs and medical bills are written in opaque language designed for providers and payers, not patients." },
+  { icon: <IconHourglass className="size-6 text-primary" />, title: "Tight Deadlines", description: "Appeal windows are short — often 30-180 days. Missing a deadline means losing your right to challenge a denial." },
 ];
 
 const features = [
   {
-    icon: "\u{1F5BC}\uFE0F",
+    icon: <IconPhoto className="size-6 text-primary" />,
     title: "Upload any document",
     description: "Photograph or upload any medical bill, EOB, or denial letter. Our AI extracts every line item automatically.",
   },
   {
-    icon: "\u{1F50D}",
+    icon: <IconSearch className="size-6 text-primary" />,
     title: "Understand what you owe",
     description: "Every charge and code is translated into plain English. Know exactly what each line item means and whether it looks right.",
   },
   {
-    icon: "\u{1F6E1}\uFE0F",
+    icon: <IconShieldCheck className="size-6 text-primary" />,
     title: "Flag potential errors",
     description: "Our AI checks for duplicate charges, upcoding, unbundling, out-of-network surprises, and charges exceeding typical rates.",
   },
   {
-    icon: "\u{2728}",
+    icon: <IconStars className="size-6 text-primary" />,
     title: "Get an AI-drafted appeal letter",
     description: "Generate a ready-to-send appeal or negotiation letter draft based on your documents — formatted, grounded in your policy, and yours to review and send.",
   },
   {
-    icon: "\u{1F4C5}",
+    icon: <IconCalendar className="size-6 text-primary" />,
     title: "Know your deadlines",
     description: "We track your appeal windows and guide you through each step of the process.",
   },
   {
-    icon: "\u{1F4BA}",
+    icon: <IconArmchair className="size-6 text-primary" />,
     title: "Understand your rights",
     description: "Know what protections your state offers — from surprise billing laws to independent external review rights.",
   },
@@ -95,8 +96,7 @@ export default function BillDenialNavigatorPage() {
               Medical Bill &amp; Insurance Denial Navigator
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed">
-              Understand your medical bills in plain English. Flag potential errors. Get a ready-to-send
-              appeal letter draft — AI-drafted from your documents, reviewed by you before sending.
+              Understand bills in plain English. Flag errors. Get a ready-to-send appeal letter draft you review before sending.
             </p>
             <p className="mt-2 text-xs text-muted-tertiary">
               Last updated:{" "}
@@ -108,13 +108,13 @@ export default function BillDenialNavigatorPage() {
             <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link
                 href="/dashboard/analyze"
-                className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition-colors"
+                className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition active:scale-[0.97]"
               >
                 Try It Free
               </Link>
               <Link
                 href="/pricing"
-                className="rounded-lg border border-border bg-white px-6 py-3 text-base font-medium text-foreground shadow-sm hover:bg-zinc-50 transition-colors"
+                className="rounded-lg border border-border bg-white px-6 py-3 text-base font-medium text-foreground shadow-sm hover:bg-zinc-50 transition active:scale-[0.97]"
               >
                 See Pricing
               </Link>
@@ -137,7 +137,7 @@ export default function BillDenialNavigatorPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {painPoints.map((point) => (
               <div key={point.title} className="rounded-xl border border-border bg-zinc-50 p-6">
-                <div className="text-2xl mb-3">{point.icon}</div>
+                <div className="mb-3">{point.icon}</div>
                 <h3 className="font-semibold text-foreground">{point.title}</h3>
                 <p className="mt-2 text-sm text-muted" dangerouslySetInnerHTML={{ __html: point.description }} />
               </div>
@@ -196,7 +196,7 @@ export default function BillDenialNavigatorPage() {
           <div className="mt-8">
             <Link
               href="/dashboard/analyze"
-              className="inline-block rounded-lg bg-primary px-8 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition-colors"
+              className="inline-block rounded-lg bg-primary px-8 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition active:scale-[0.97]"
             >
               Analyze your first bill
             </Link>

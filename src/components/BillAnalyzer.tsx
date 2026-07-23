@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, type FormEvent } from "react";
 import Link from "next/link";
+import { IconFile, IconPaperclip, IconAlertTriangle, IconInfoCircle, IconQuestionMark } from "@tabler/icons-react";
 import { Disclaimer } from "./Disclaimer";
 import { currencySymbol } from "@/lib/ai/currency";
 import { checkConsistency, selfPayDetected, isNonUSDoc, type AnalysisData } from "@/lib/ai/consistency";
@@ -212,7 +213,7 @@ export function BillAnalyzer() {
             onDragLeave={() => setDragOver(false)}
             onDrop={(e) => { e.preventDefault(); setDragOver(false); const f = e.dataTransfer.files[0]; if (f) handleFileDrop(f); }}
           >
-            <div className="text-4xl mb-4">&#x1F4C4;</div>
+            <div className="mb-4"><IconFile size={36} /></div>
             <h3 className="text-lg font-semibold text-foreground">Upload your bill or EOB</h3>
             <p className="mt-2 text-sm text-muted max-w-sm">
               Drag and drop a file here, or click to browse. We accept PDFs, JPEGs, PNGs, and WebP images up to 10 MB.
@@ -232,7 +233,7 @@ export function BillAnalyzer() {
             </button>
             {file && (
               <div className="mt-4 flex items-center gap-2 rounded-lg border border-border bg-white px-4 py-2 text-sm text-muted">
-                <span>&#x1F4CE;</span>
+<span><IconPaperclip className="size-4" /></span>
                 <span className="truncate max-w-[200px]">{file.name}</span>
                 <span className="text-xs">({(file.size / 1024 / 1024).toFixed(1)} MB)</span>
                 <button onClick={() => setFile(null)} className="ml-2 text-foreground hover:text-red-600">&times;</button>
@@ -267,7 +268,7 @@ export function BillAnalyzer() {
           <h3 className="text-lg font-semibold text-foreground text-center mb-6">Analyzing your document...</h3>
           <div className="mx-auto max-w-sm space-y-4">
             {progress.map((p, i) => (
-              <div key={i} className="flex items-center gap-3">
+              <div key={i} className={`flex items-center gap-3 ${p.status === "active" ? "animate-pulse-step" : ""}`}>
                 {p.status === "done" && (
                   <svg className="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -434,8 +435,12 @@ export function BillAnalyzer() {
                         <div className="flex items-start gap-2">
                           <span className="shrink-0 mt-0.5">
                             {hasRef
-                              ? (flag.severity === "error" ? "\u{26A0}\u{FE0F}" : flag.severity === "warning" ? "\u{26A0}" : "\u{2139}\u{FE0F}")
-                              : "\u{2753}"}
+                              ? (flag.severity === "error"
+                                ? <IconAlertTriangle className="size-4 text-red-600" />
+                                : flag.severity === "warning"
+                                ? <IconAlertTriangle className="size-4 text-amber-600" />
+                                : <IconInfoCircle className="size-4 text-blue-600" />)
+                              : <IconQuestionMark className="size-4 text-muted" />}
                           </span>
                           <div className="min-w-0">
                             <div className="flex items-center gap-2 flex-wrap">

@@ -102,7 +102,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
             {productsOpen && (
               <div
                 ref={dropdownRef}
-                className="absolute left-0 top-full mt-2 w-64 rounded-lg border border-border bg-white p-2 shadow-lg"
+                className="absolute left-0 top-full mt-2 w-64 rounded-lg border border-border bg-white p-2 shadow-lg animate-dropdown"
                 onMouseEnter={() => setProductsOpen(true)}
                 onMouseLeave={() => setProductsOpen(false)}
                 role="menu"
@@ -148,7 +148,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
               {userMenuOpen && (
                 <div
                   ref={userMenuRef}
-                  className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-border bg-white p-1.5 shadow-lg"
+                  className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-border bg-white p-1.5 shadow-lg animate-dropdown"
                   role="menu"
                 >
                   <Link
@@ -181,7 +181,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
           ) : (
             <Link
               href="/waitlist"
-              className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-light"
+              className="active:scale-[0.97] rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-[transform,background-color] duration-100 ease-out hover:bg-primary-light"
             >
               Get Early Access
             </Link>
@@ -207,7 +207,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
 
       {/* Mobile nav panel */}
       {mobileOpen && (
-        <div className="border-t border-border bg-white px-4 py-4 md:hidden" role="dialog" aria-label="Mobile navigation">
+        <div className="animate-fade-in border-t border-border bg-white px-4 py-4 md:hidden" role="dialog" aria-label="Mobile navigation">
           <nav className="flex flex-col gap-3" aria-label="Mobile navigation">
             <div className="font-medium text-sm text-muted mb-1">Products</div>
             {navLinks[0].children!.map((child) => (

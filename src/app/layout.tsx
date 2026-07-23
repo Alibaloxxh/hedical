@@ -6,7 +6,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { VisitTracker } from "@/components/VisitTracker";
 import { Analytics } from "@vercel/analytics/next";
-import { createClient } from "@/lib/supabase/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -103,14 +102,11 @@ const jsonLd = {
 
 export const dynamic = "force-dynamic";
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-
   return (
     <html
       lang="en"
@@ -138,7 +134,7 @@ height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <Header initialUser={user ? { email: user.email ?? "" } : null} />
+        <Header initialUser={null} />
         <VisitTracker />
         <main className="flex-1">{children}</main>
         <Footer />

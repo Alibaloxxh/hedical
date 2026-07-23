@@ -82,7 +82,7 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-semibold text-foreground">7. Contact</h2>
           <p>
             If you have questions about this Privacy Policy, please contact us at{" "}
-            <a href="mailto:hedicalai@gmail.com" className="text-primary underline">hedicalai@gmail.com</a>.
+            <a href="/contact" className="text-primary underline">contact us</a>.
           </p>
         </div>
       </div>

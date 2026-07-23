@@ -2,8 +2,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 const navLinks = [
@@ -19,7 +17,6 @@ const navLinks = [
 ];
 
 export function Header({ initialUser }: { initialUser?: { email: string } | null }) {
-  const router = useRouter();
   const [user, setUser] = useState<{ email: string } | null>(initialUser ?? null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
@@ -63,7 +60,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
     await supabase.auth.signOut();
     setUser(null);
     setUserMenuOpen(false);
-    router.push("/");
+    window.location.href = "/";
   }
 
   const initial = user?.email?.charAt(0).toUpperCase() ?? "?";
@@ -72,13 +69,12 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
     <header className="sticky top-0 z-50 w-full border-b border-border bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2">
-          <Image
+          <img
             src="/images/hedical_icon_only.png"
             alt="Hedical icon"
             width={48}
             height={48}
             className="h-12 w-auto"
-            priority
           />
         </Link>
 

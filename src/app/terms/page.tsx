@@ -91,7 +91,7 @@ export default function TermsPage() {
           <h2 className="text-xl font-semibold text-foreground">9. Contact</h2>
           <p>
             For questions about these Terms, contact us at{" "}
-            <a href="mailto:hedicalai@gmail.com" className="text-primary underline">hedicalai@gmail.com</a>.
+            <a href="/contact" className="text-primary underline">contact us</a>.
           </p>
         </div>
       </div>

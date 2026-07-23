@@ -156,7 +156,7 @@ export default function ContactPage() {
                 {errorMessage}
                 <p className="mt-2">
                   You can also email us directly at{" "}
-                  <a href="mailto:hedicalai@gmail.com" className="underline">hedicalai@gmail.com</a>.
+                  <a href={"mailto:" + "hedicalai" + "@" + "gmail.com"} className="underline">{"hedicalai" + "@" + "gmail.com"}</a>.
                 </p>
               </div>
             )}

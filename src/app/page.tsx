@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 
 const sourceLinks = {
-  errorRate: "https://www.kff.org/health-costs/report/",
+  errorRate: "https://www.kff.org/health-costs/",
   denialRate: "https://www.ahip.org/resources/",
   appealRate: "https://www.commonwealthfund.org/publications/",
 };
@@ -307,7 +307,7 @@ export default function Home() {
           </ol>
           <p className="mt-8 text-center text-xs text-muted-tertiary">
             Source: Centers for Medicare & Medicaid Services (CMS) appeals guidelines and U.S. Department of Labor ERISA claim procedure regulations.{" "}
-            <a href="https://www.cms.gov/medicare/appeals-and-grievances" className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">CMS appeals overview</a>.
+            <a href="https://www.cms.gov/medicare/appeals-grievances/managed-care" className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">CMS appeals overview</a>.
           </p>
         </div>
       </section>
@@ -317,7 +317,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-tertiary">
             <span>Last reviewed: <time dateTime="2026-07-21">July 21, 2026</time></span>
-            <span>Corrections? <a href="mailto:hedicalai@gmail.com" className="text-teal underline underline-offset-2">Email our team</a></span>
+            <span>Corrections? <a href="/contact" className="text-teal underline underline-offset-2">Contact us</a></span>
             <span>This site does not provide medical advice. <a href="/disclaimer" className="text-teal underline underline-offset-2">Full disclaimer</a>.</span>
           </div>
         </div>

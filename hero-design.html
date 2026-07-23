@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero — Hedical</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    :root {
+      --surface-1: #f9f9f9;
+      --surface-2: #ffffff;
+      --border: #e0e0e0;
+      --radius: 6px;
+      --text-primary: #111111;
+      --text-secondary: #555555;
+      --text-muted: #999999;
+      --text-success: #1a6b3c;
+      --text-danger: #b91c1c;
+      --bg-success: #d1fae5;
+      --bg-danger: #fee2e2;
+      --fill-primary: #111111;
+      --on-primary: #ffffff;
+      --font-mono: 'Courier New', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .hero {
+      background: var(--surface-1);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      max-width: 1000px;
+      width: 100%;
+      align-items: center;
+    }
+
+    /* ── Left column ── */
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--bg-success);
+      color: var(--text-success);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: var(--radius);
+      margin-bottom: 2px;
+      width: fit-content;
+    }
+
+    h1 {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.25;
+      color: var(--text-primary);
+    }
+
+    .subtext {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .btn-primary {
+      background: var(--fill-primary);
+      color: var(--on-primary);
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: var(--radius);
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: var(--radius);
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: #eee;
+    }
+
+    /* ── Right column (bill card) ── */
+    .bill-card {
+      background: var(--surface-2);
+      border: 0.5px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      max-width: 480px;
+    }
+
+    .bill-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .bill-header-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bill-header-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .bill-header-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .bill-header-right {
+      text-align: right;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .bill-divider {
+      border-top: 0.5px solid var(--border);
+      padding-top: 8px;
+    }
+
+    .bill-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 13px;
+      color: var(--text-primary);
+    }
+
+    .bill-line-code {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-right: 8px;
+    }
+
+    .bill-line-label {
+      flex: 1;
+    }
+
+    .bill-line-amount {
+      font-weight: 500;
+    }
+
+    .bill-flagged {
+      background: var(--bg-danger);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+      margin-top: 8px;
+    }
+
+    .bill-flagged-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text-danger);
+    }
+
+    .bill-flagged-code {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      margin-right: 6px;
+    }
+
+    .bill-flagged-icon {
+      margin-right: 4px;
+    }
+
+    .bill-flagged-amount {
+      text-decoration: line-through;
+      font-weight: 500;
+    }
+
+    .bill-flagged-note {
+      font-size: 12px;
+      color: var(--text-danger);
+      margin-top: 3px;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 700px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <!-- Left column -->
+    <div class="hero-content">
+      <span class="badge">No insurance login needed</span>
+      <h1>Find billing errors in your medical bill — in minutes</h1>
+      <p class="subtext">
+        Upload any bill or insurance denial. Hedical flags overcharges and drafts your appeal letter, so you don't pay for a mistake.
+      </p>
+      <div class="buttons">
+        <button class="btn-primary">Try it free</button>
+        <button class="btn-secondary">See pricing</button>
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="bill-card">
+      <div class="bill-header">
+        <div class="bill-header-left">
+          <span class="bill-header-label">Statement</span>
+          <span class="bill-header-name">Mercy General Hospital</span>
+        </div>
+        <div class="bill-header-right">
+          <div>Date: 06/15/2026</div>
+          <div>Acct: #4829-71</div>
+        </div>
+      </div>
+
+      <div class="bill-divider"></div>
+
+      <div class="bill-line">
+        <span><span class="bill-line-code">0750</span><span class="bill-line-label">Facility fee — ER</span></span>
+        <span class="bill-line-amount">$2,350.00</span>
+      </div>
+
+      <div class="bill-line">
+        <span><span class="bill-line-code">99284</span><span class="bill-line-label">ER level 3 eval</span></span>
+        <span class="bill-line-amount">$1,890.00</span>
+      </div>
+
+      <div class="bill-flagged">
+        <div class="bill-flagged-top">
+          <span>
+            <i class="ti ti-alert-triangle bill-flagged-icon" style="font-size:14px;vertical-align:-2px"></i>
+            <span class="bill-flagged-code">0750</span>
+            Facility fee — duplicate
+          </span>
+          <span class="bill-flagged-amount">$2,350.00</span>
+        </div>
+        <div class="bill-flagged-note">
+          Same code billed twice on line 4 — flagged for appeal
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

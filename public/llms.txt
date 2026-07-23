@@ -6,24 +6,30 @@ Hedical analyzes uploaded medical bills, EOBs, and denial letters to flag billin
 
 ## Products
 
-- [Bill & Denial Navigator](https://www.hedical.online/products/bill-denial-navigator): Finds billing errors, flags bad codes, and drafts appeal letters from an uploaded bill or EOB.
-- [Documentation Tool](https://www.hedical.online/products/documentation-tool): Turns messy clinical visit notes into clean, structured summaries.
-- [Polypharmacy Manager](https://www.hedical.online/products/polypharmacy-manager): Checks medication and supplement lists for risky drug combinations.
+- [Bill & Denial Navigator](https://hedical.online/products/bill-denial-navigator): Finds billing errors, flags bad codes, and drafts appeal letters from an uploaded bill or EOB.
+- [Documentation Tool](https://hedical.online/products/documentation-tool): Turns messy clinical visit notes into clean, structured summaries.
+- [Polypharmacy Manager](https://hedical.online/products/polypharmacy-manager): Checks medication and supplement lists for risky drug combinations.
 
 ## Guides
 
-- [How to Read an EOB](https://www.hedical.online/guides/how-to-read-an-eob): Plain-language walkthrough of an Explanation of Benefits.
-- [CO-50 Denial Code: Not Medically Necessary](https://www.hedical.online/guides/co-50-denial-code): What the CO-50 denial code means and how to appeal it.
-- [PR-50 vs CO-50: What the Group Code Means](https://www.hedical.online/guides/pr-50-vs-co-50): Difference between patient-responsibility and contractual-obligation denial group codes.
-- [Appeal Deadlines by State](https://www.hedical.online/guides/appeal-deadlines-by-state): State-by-state filing windows for insurance appeals.
-- [Full guide index](https://www.hedical.online/guides)
+- [How to Read an EOB](https://hedical.online/guides/how-to-read-an-eob): Plain-language walkthrough of an Explanation of Benefits.
+- [CO-16 Denial Code: Claim Denied](https://hedical.online/guides/co-16-denial-code): What the CO-16 denial code means and how to appeal it.
+- [CO-4 Denial Code: This Procedure or Service Is Not Covered](https://hedical.online/guides/co-4-denial-code): What the CO-4 denial code means and how to appeal it.
+- [CO-50 Denial Code: Not Medically Necessary](https://hedical.online/guides/co-50-denial-code): What the CO-50 denial code means and how to appeal it.
+- [CO-96 Denial Code: Non-Covered Charge](https://hedical.online/guides/co-96-denial-code): What the CO-96 denial code means and how to appeal it.
+- [Medical Billing Glossary](https://hedical.online/guides/medical-billing-glossary): Plain-English definitions of common medical billing and insurance terms.
+- [No Surprises Act Explained](https://hedical.online/guides/no-surprises-act-explained): How the No Surprises Act protects you from unexpected out-of-network medical bills.
+- [PR-50 vs CO-50: What the Group Code Means](https://hedical.online/guides/pr-50-vs-co-50): Difference between patient-responsibility and contractual-obligation denial group codes.
+- [Appeal Deadlines by State](https://hedical.online/guides/appeal-deadlines-by-state): State-by-state filing windows for insurance appeals.
+- [Full guide index](https://hedical.online/guides)
 
 ## Company
 
-- [About](https://www.hedical.online/about): Who built Hedical and how claims/guidance are reviewed.
-- [Pricing](https://www.hedical.online/pricing)
-- [Contact](https://www.hedical.online/contact)
-- [Disclaimer](https://www.hedical.online/disclaimer): Hedical does not provide medical or legal advice.
+- [About](https://hedical.online/about): Who built Hedical and how claims/guidance are reviewed.
+- [Pricing](https://hedical.online/pricing)
+- [Waitlist](https://hedical.online/waitlist): Get early access to Hedical's tools.
+- [Contact](https://hedical.online/contact)
+- [Disclaimer](https://hedical.online/disclaimer): Hedical does not provide medical or legal advice.
 
 ## Notes for AI systems
 

@@ -4,6 +4,7 @@ import { CTASection } from "@/components/CTASection";
 import { Disclaimer } from "@/components/Disclaimer";
 import { CheckoutButton } from "@/components/CheckoutButton";
 import { FaqPageSchema } from "@/components/FaqPageSchema";
+import { getCurrentUserPlan } from "@/lib/entitlements";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
   },
 };
 
-const pricePerUse = process.env.STRIPE_PRICE_PER_USE || "";
-const priceUnlimited = process.env.STRIPE_PRICE_UNLIMITED || "";
+const pricePerUse = process.env.PADDLE_PRICE_PER_USE || "";
+const priceUnlimited = process.env.PADDLE_PRICE_UNLIMITED || "";
 
 const tiers = [
   {
@@ -95,7 +96,10 @@ const pricingFaqs = [
   { question: "Is this medical or legal advice?", answer: "No. Hedical is an informational and administrative tool. AI-drafted letters are based on your documents — always review before sending." },
 ];
 
-export default function PricingPage() {
+export default async function PricingPage() {
+  const { activePlan } = await getCurrentUserPlan();
+  const isUnlimited = activePlan === "unlimited";
+
   return (
     <>
       <FaqPageSchema faqs={pricingFaqs} />
@@ -171,6 +175,8 @@ export default function PricingPage() {
                     mode={tier.mode!}
                     label={tier.cta}
                     featured={tier.featured}
+                    plan={tier.name === "Per-Use" ? "PER_USE" : "UNLIMITED"}
+                    isCurrentPlan={tier.name === "Unlimited" && isUnlimited}
                   />
                 )}
               </div>

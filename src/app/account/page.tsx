@@ -2,7 +2,6 @@ import { createClient } from "@/lib/supabase/server";
 import { logout } from "@/actions/auth";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getStripeServer } from "@/lib/stripe";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
@@ -26,7 +25,7 @@ export default async function AccountPage() {
     return null;
   }
 
-  const [subResult, creditsResult, profileResult] = await Promise.all([
+  const [subResult, creditsResult] = await Promise.all([
     supabase
       .from("subscriptions")
       .select("plan, status, current_period_end, created_at")
@@ -37,28 +36,10 @@ export default async function AccountPage() {
       .select("product, remaining_count")
       .eq("user_id", user.user.id)
       .order("product"),
-    supabase
-      .from("users")
-      .select("stripe_customer_id")
-      .eq("id", user.user.id)
-      .single(),
   ]);
 
   const sub = subResult.data;
   const credits = creditsResult.data || [];
-  const stripeCustomerId = profileResult.data?.stripe_customer_id;
-
-  let portalUrl: string | null = null;
-  if (stripeCustomerId) {
-    try {
-      const stripe = getStripeServer();
-      const session = await stripe.billingPortal.sessions.create({
-        customer: stripeCustomerId,
-        return_url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online"}/account`,
-      });
-      portalUrl = session.url;
-    } catch {}
-  }
 
   function getCreditFor(product: string) {
     return credits.find((c) => c.product === product)?.remaining_count ?? 0;
@@ -108,13 +89,13 @@ export default async function AccountPage() {
           )}
         </div>
 
-        {portalUrl && (
-          <a
-            href={portalUrl}
-            className="mt-4 inline-block text-sm text-primary underline underline-offset-2 hover:text-primary-light"
-          >
-            Manage billing &rarr;
-          </a>
+        {sub?.plan === "unlimited" && sub?.status === "active" && (
+          <p className="mt-4 text-sm text-muted">
+            Manage your subscription —{" "}
+            <a href="mailto:hedicalai@gmail.com" className="text-primary underline underline-offset-2">
+              hedicalai@gmail.com
+            </a>
+          </p>
         )}
       </section>
 

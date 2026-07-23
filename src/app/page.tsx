@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getCurrentUserPlan } from "@/lib/entitlements";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
@@ -35,7 +36,12 @@ const sourceLinks = {
   appealRate: "https://www.commonwealthfund.org/publications/",
 };
 
-export default function Home() {
+export default async function Home() {
+  const { isLoggedIn, activePlan } = await getCurrentUserPlan();
+  const isActive = isLoggedIn && activePlan === "unlimited";
+  const ctaText = isActive ? "Go to Dashboard" : "Try It Free";
+  const ctaHref = isActive ? "/dashboard" : "/dashboard/analyze";
+
   return (
     <>
       {/* ───── Hero ───── */}
@@ -54,10 +60,10 @@ export default function Home() {
             </p>
             <div className="animate-fade-in-up animate-stagger-4 flex gap-[10px]">
               <Link
-                href="/dashboard/analyze"
+                href={ctaHref}
                 className="bg-[#1a3a2a] text-white border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block active:scale-[0.97] transition-transform duration-100 ease-out"
               >
-                Try It Free
+                {ctaText}
               </Link>
               <Link
                 href="/pricing"

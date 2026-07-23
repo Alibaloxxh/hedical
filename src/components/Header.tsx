@@ -18,6 +18,7 @@ const navLinks = [
 
 export function Header({ initialUser }: { initialUser?: { email: string } | null }) {
   const [user, setUser] = useState<{ email: string } | null>(initialUser ?? null);
+  const [plan, setPlan] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
@@ -30,11 +31,21 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
     const supabase = createClient();
 
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ? { email: session.user.email ?? "" } : null);
+      const loggedIn = session?.user != null;
+      setUser(loggedIn ? { email: session.user.email ?? "" } : null);
+      if (!loggedIn) setPlan(null);
     });
 
     return () => listener?.subscription.unsubscribe();
   }, []);
+
+  useEffect(() => {
+    if (!user) { setPlan(null); return; }
+    fetch("/api/me/entitlement")
+      .then((r) => r.json())
+      .then((data) => setPlan(data.plan))
+      .catch(() => setPlan(null));
+  }, [user]);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -147,6 +158,15 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
                   className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-border bg-white p-1.5 shadow-lg animate-dropdown"
                   role="menu"
                 >
+                  {plan && (
+                    <div className="px-3 py-1.5 text-xs text-muted border-b border-border mb-1">
+                      {plan === "unlimited" ? (
+                        <span className="text-green-700 font-medium">Unlimited Plan</span>
+                      ) : (
+                        <span>Free Plan</span>
+                      )}
+                    </div>
+                  )}
                   <Link
                     href="/dashboard"
                     className="block rounded-md px-3 py-2 text-sm text-muted hover:bg-hedical-50 hover:text-hedical-700"

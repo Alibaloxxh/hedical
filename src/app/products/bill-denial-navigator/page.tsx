@@ -7,6 +7,7 @@ import { SoftwareAppSchema } from "@/components/SoftwareAppSchema";
 import { CTASection } from "@/components/CTASection";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { Disclaimer } from "@/components/Disclaimer";
+import { getCurrentUserPlan } from "@/lib/entitlements";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
@@ -72,7 +73,13 @@ const features = [
   },
 ];
 
-export default function BillDenialNavigatorPage() {
+export default async function BillDenialNavigatorPage() {
+  const { isLoggedIn, activePlan } = await getCurrentUserPlan();
+  const isActive = isLoggedIn && activePlan === "unlimited";
+  const ctaText = isActive ? "Go to Dashboard" : "Try It Free";
+  const ctaHref = isActive ? "/dashboard" : "/dashboard/analyze";
+  const cta2Text = isActive ? "Go to Dashboard" : "Analyze your first bill";
+
   return (
     <>
       <SoftwareAppSchema
@@ -107,10 +114,10 @@ export default function BillDenialNavigatorPage() {
             </div>
             <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link
-                href="/dashboard/analyze"
+                href={ctaHref}
                 className="rounded-lg bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition active:scale-[0.97]"
               >
-                Try It Free
+                {ctaText}
               </Link>
               <Link
                 href="/pricing"
@@ -195,10 +202,10 @@ export default function BillDenialNavigatorPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/dashboard/analyze"
+              href={ctaHref}
               className="inline-block rounded-lg bg-primary px-8 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition active:scale-[0.97]"
             >
-              Analyze your first bill
+              {cta2Text}
             </Link>
           </div>
         </div>
@@ -206,9 +213,9 @@ export default function BillDenialNavigatorPage() {
 
       <CTASection
         title="Understand your bills. Take control."
-        description="Free tier available. No credit card required."
-        buttonText="Try It Free"
-        buttonHref="/dashboard/analyze"
+        description={isActive ? "You have an Unlimited plan — start analyzing." : "Free tier available. No credit card required."}
+        buttonText={ctaText}
+        buttonHref={ctaHref}
       />
     </>
   );

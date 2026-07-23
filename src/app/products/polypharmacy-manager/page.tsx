@@ -93,7 +93,7 @@ export default function PolypharmacyManagerPage() {
           </div>
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full bg-amber-50 px-4 py-1.5 text-sm font-medium text-amber-700 mb-4">
-              Runner-Up
+              Coming Soon
             </span>
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
               Polypharmacy Medication &amp; Supplement Manager

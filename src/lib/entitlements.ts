@@ -1,5 +1,31 @@
 import { createClient } from "@/lib/supabase/server";
 
+export interface CurrentUserPlan {
+  isLoggedIn: boolean;
+  activePlan: "unlimited" | null;
+}
+
+export async function getCurrentUserPlan(): Promise<CurrentUserPlan> {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { isLoggedIn: false, activePlan: null };
+
+  const { data: sub } = await supabase
+    .from("subscriptions")
+    .select("plan, status, current_period_end")
+    .eq("user_id", user.id)
+    .eq("plan", "unlimited")
+    .eq("status", "active")
+    .maybeSingle();
+
+  const activePlan =
+    sub && (!sub.current_period_end || new Date(sub.current_period_end) > new Date())
+      ? ("unlimited" as const)
+      : null;
+
+  return { isLoggedIn: true, activePlan };
+}
+
 export interface EntitlementResult {
   allowed: boolean;
   reason: "ok" | "no_subscription" | "no_credits" | "not_authenticated";

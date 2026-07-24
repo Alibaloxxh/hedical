@@ -25,7 +25,7 @@ export default function TermsPage() {
   return (
     <section className="py-16 sm:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Terms of Service</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">Terms of Service</h1>
         <p className="mt-2 text-sm text-muted">Last updated: July 2026</p>
 
         {/*
@@ -36,27 +36,27 @@ export default function TermsPage() {
         */}
 
         <div className="mt-8 prose prose-sm text-muted space-y-6">
-          <h2 className="text-xl font-semibold text-foreground">1. Acceptance of Terms</h2>
+          <h2 className="text-xl font-semibold text-ink">1. Acceptance of Terms</h2>
           <p>
             By accessing or using Hedical (&quot;the Service&quot;), you agree to be bound by these Terms of
             Service. If you do not agree, do not use the Service.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">2. Description of Service</h2>
+          <h2 className="text-xl font-semibold text-ink">2. Description of Service</h2>
           <p>
             Hedical provides informational resources about medical billing, insurance navigation,
             clinical documentation, and medication management. The Service is informational and
             administrative only — it does not provide medical or legal advice.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">3. Not Medical or Legal Advice</h2>
+          <h2 className="text-xl font-semibold text-ink">3. Not Medical or Legal Advice</h2>
           <p>
             Hedical is not a substitute for professional medical advice, diagnosis, or treatment, nor
             is it a substitute for legal representation. Always consult a qualified healthcare provider
             for medical questions and a licensed attorney for legal matters.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">4. User Responsibilities</h2>
+          <h2 className="text-xl font-semibold text-ink">4. User Responsibilities</h2>
           <p>You agree to:</p>
           <ul className="list-disc pl-6 space-y-1 text-sm">
             <li>Provide accurate information</li>
@@ -65,33 +65,33 @@ export default function TermsPage() {
             <li>Maintain the confidentiality of your account</li>
           </ul>
 
-          <h2 className="text-xl font-semibold text-foreground">5. Intellectual Property</h2>
+          <h2 className="text-xl font-semibold text-ink">5. Intellectual Property</h2>
           <p>
             The Service, including its software and content, is owned by Hedical and
             protected by intellectual property laws.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">6. Limitation of Liability</h2>
+          <h2 className="text-xl font-semibold text-ink">6. Limitation of Liability</h2>
           <p>
             Hedical provides the Service &quot;as is&quot; without warranties of any kind. We are not liable for
             any damages arising from your use of the Service.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">7. Termination</h2>
+          <h2 className="text-xl font-semibold text-ink">7. Termination</h2>
           <p>
             We reserve the right to suspend or terminate accounts for violations of these terms.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">8. Changes to Terms</h2>
+          <h2 className="text-xl font-semibold text-ink">8. Changes to Terms</h2>
           <p>
             We may update these terms at any time. Continued use of the Service after changes
             constitutes acceptance of the new terms.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">9. Contact</h2>
+          <h2 className="text-xl font-semibold text-ink">9. Contact</h2>
           <p>
             For questions about these Terms, contact us at{" "}
-            <a href="/contact" className="text-primary underline">contact us</a>.
+            <a href="/contact" className="text-teal underline">contact us</a>.
           </p>
         </div>
       </div>

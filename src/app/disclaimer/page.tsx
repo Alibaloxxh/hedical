@@ -25,18 +25,18 @@ export default function DisclaimerPage() {
   return (
     <section className="py-16 sm:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Disclaimer</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">Disclaimer</h1>
         <p className="mt-2 text-sm text-muted">Last updated: July 2026</p>
 
         <div className="mt-8 prose prose-sm text-muted space-y-6">
-          <h2 className="text-xl font-semibold text-foreground">1. Not Medical Advice</h2>
+          <h2 className="text-xl font-semibold text-ink">1. Not Medical Advice</h2>
           <p>
             Hedical provides AI-generated analysis, explanations, and document drafts for informational
             purposes only. It does not constitute medical advice, diagnosis, or treatment. Always consult
             a qualified healthcare provider regarding any medical condition or treatment decisions.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">2. Not Legal Advice</h2>
+          <h2 className="text-xl font-semibold text-ink">2. Not Legal Advice</h2>
           <p>
             Hedical does not provide legal advice. AI-generated appeal letters, explanations of policy
             terms, and regulatory references are informational tools, not legal opinions. If you need
@@ -44,7 +44,7 @@ export default function DisclaimerPage() {
             Medicare appeals, or potential litigation.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">3. No Guarantee of Appeal Outcomes</h2>
+          <h2 className="text-xl font-semibold text-ink">3. No Guarantee of Appeal Outcomes</h2>
           <p>
             Insurance appeal outcomes depend on your specific policy terms, state regulations, medical
             necessity documentation, and the insurer's internal review process. Hedical does not
@@ -52,7 +52,7 @@ export default function DisclaimerPage() {
             using our tools.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">4. AI-Generated Content</h2>
+          <h2 className="text-xl font-semibold text-ink">4. AI-Generated Content</h2>
           <p>
             Hedical uses large language models to analyze documents and generate draft text. AI outputs
             may contain errors, omissions, or inaccuracies — including hallucinated codes, citations,
@@ -60,44 +60,44 @@ export default function DisclaimerPage() {
             relying on it. You are solely responsible for verifying accuracy and appropriateness.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">5. No Financial Advice</h2>
+          <h2 className="text-xl font-semibold text-ink">5. No Financial Advice</h2>
           <p>
             Cost estimates, savings suggestions, and pricing comparisons are approximate and based on
             available data. Hedical does not provide financial or insurance advice. Verify all
             financial figures with your provider, insurer, or a qualified financial advisor.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">6. Limitation of Liability</h2>
+          <h2 className="text-xl font-semibold text-ink">6. Limitation of Liability</h2>
           <p>
             Hedical (including its founders, contributors, and affiliates) is not liable for any
             direct, indirect, incidental, or consequential damages arising from the use of or
             inability to use our tools or content. You use Hedical at your own risk.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">7. No Doctor-Patient Relationship</h2>
+          <h2 className="text-xl font-semibold text-ink">7. No Doctor-Patient Relationship</h2>
           <p>
             Use of Hedical does not create a doctor-patient, attorney-client, or any other
             professional relationship. The platform is a self-service informational tool, not a
             licensed medical or legal service.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">8. Third-Party References</h2>
+          <h2 className="text-xl font-semibold text-ink">8. Third-Party References</h2>
           <p>
             Hedical may reference third-party sources, studies, or statistics (including CMS, KFF,
             AHIP, and the Commonwealth Fund). These references are provided for context and do not
             imply endorsement by those organizations.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">9. Changes</h2>
+          <h2 className="text-xl font-semibold text-ink">9. Changes</h2>
           <p>
             This disclaimer may be updated at any time. Continued use of Hedical after changes
             constitutes acceptance of the updated disclaimer. Check this page periodically.
           </p>
 
-          <h2 className="text-xl font-semibold text-foreground">Contact</h2>
+          <h2 className="text-xl font-semibold text-ink">Contact</h2>
           <p>
             Questions about this disclaimer?{" "}
-            <a href="/contact" className="text-primary underline">Contact us</a>.
+            <a href="/contact" className="text-teal underline">Contact us</a>.
           </p>
         </div>
       </div>

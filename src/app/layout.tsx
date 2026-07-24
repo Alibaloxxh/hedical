@@ -4,6 +4,7 @@ import { default as nextDynamic } from "next/dynamic";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
 import { Analytics } from "@vercel/analytics/next";
 
 const Footer = nextDynamic(() => import("@/components/Footer").then((m) => ({ default: m.Footer })));
@@ -136,10 +137,12 @@ height="0" width="0" className="hidden"></iframe></noscript>
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
-        <Header initialUser={null} />
-        <VisitTracker />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SmoothScrollProvider>
+          <Header initialUser={null} />
+          <VisitTracker />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </SmoothScrollProvider>
         <Analytics />
       </body>
     </html>

@@ -21,7 +21,7 @@ export function Disclaimer({ variant = "inline" }: DisclaimerProps) {
 
   if (variant === "notice") {
     return (
-      <div className="rounded border border-border bg-zinc-50 px-3 py-2 text-xs text-muted" role="note">
+      <div className="rounded border border-hairline bg-paper-light px-3 py-2 text-xs text-muted" role="note">
         {text}
       </div>
     );

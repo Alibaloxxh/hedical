@@ -57,29 +57,29 @@ export default async function HistoryPage({
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">Analysis History</h1>
+          <h1 className="text-2xl font-bold text-ink">Analysis History</h1>
           <p className="mt-1 text-sm text-muted">
             {totalCount.toLocaleString()} total analyses
           </p>
         </div>
         <Link
           href="/admin/analyze-analytics"
-          className="text-sm text-primary hover:text-primary-light transition-colors"
+          className="text-sm text-teal hover:text-teal-light transition-colors"
         >
           &larr; Back to analytics
         </Link>
       </div>
 
       {!rows || rows.length === 0 ? (
-        <div className="rounded-xl border border-border bg-zinc-50 p-8 text-center">
+        <div className="rounded-xl border border-hairline bg-paper-light p-8 text-center">
           <p className="text-sm text-muted">No analyses yet.</p>
         </div>
       ) : (
         <>
-          <div className="overflow-x-auto rounded-xl border border-border">
+          <div className="overflow-x-auto rounded-xl border border-hairline">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-border bg-zinc-50 text-left text-muted">
+                <tr className="border-b border-hairline bg-paper-light text-left text-muted">
                   <th className="px-4 py-3 font-medium">Date</th>
                   <th className="px-4 py-3 font-medium">User</th>
                   <th className="px-4 py-3 font-medium">Status</th>
@@ -88,8 +88,8 @@ export default async function HistoryPage({
               </thead>
               <tbody>
                 {rows.map((r) => (
-                  <tr key={r.id} className="border-b border-border">
-                    <td className="px-4 py-3 text-foreground whitespace-nowrap">
+                  <tr key={r.id} className="border-b border-hairline">
+                    <td className="px-4 py-3 text-ink whitespace-nowrap">
                       {new Date(r.created_at).toLocaleDateString("en-US", {
                         month: "short",
                         day: "numeric",

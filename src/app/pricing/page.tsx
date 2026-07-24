@@ -103,16 +103,16 @@ export default async function PricingPage() {
   return (
     <>
       <FaqPageSchema faqs={pricingFaqs} />
-      <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100 py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-paper via-white to-paper-dark py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-ink sm:text-5xl">
               Simple, transparent pricing
             </h1>
-            <p className="mt-4 text-lg text-muted">
+            <p className="mt-4 text-lg text-body">
               Start free. Pay only when you save. No hidden fees, no insurance login required.
             </p>
-            <p className="mt-2 text-xs text-muted-tertiary">
+            <p className="mt-2 text-xs text-muted">
               Last updated:{" "}
               <time dateTime="2026-07-21">July 21, 2026</time>
             </p>
@@ -123,38 +123,38 @@ export default async function PricingPage() {
                 key={tier.name}
                 className={`animate-fade-in-up animate-stagger-${i + 1} relative flex flex-col rounded-2xl border p-6 shadow-sm ${
                   tier.featured
-                    ? "border-primary bg-primary text-white"
-                    : "border-border bg-white"
+                    ? "border-teal bg-ink text-white"
+                    : "border-hairline bg-white"
                 }`}
               >
                 {tier.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-white">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-teal px-3 py-1 text-xs font-semibold text-white">
                     Most Popular
                   </div>
                 )}
-                <h3 className={`text-lg font-semibold ${tier.featured ? "text-white" : "text-foreground"}`}>
+                <h3 className={`text-lg font-semibold ${tier.featured ? "text-white" : "text-ink"}`}>
                   {tier.name}
                 </h3>
                 <div className="mt-4">
-                  <span className={`text-4xl font-bold ${tier.featured ? "text-white" : "text-foreground"}`}>
+                  <span className={`text-4xl font-bold ${tier.featured ? "text-white" : "text-ink"}`}>
                     {tier.price}
                   </span>
                   {tier.period && (
-                    <span className={`text-sm ${tier.featured ? "text-hedical-100" : "text-muted"}`}>
+                    <span className={`text-sm ${tier.featured ? "text-white/80" : "text-muted"}`}>
                       {tier.period}
                     </span>
                   )}
                 </div>
-                <p className={`mt-2 text-sm ${tier.featured ? "text-hedical-100" : "text-muted"}`}>
+                <p className={`mt-2 text-sm ${tier.featured ? "text-white/80" : "text-muted"}`}>
                   {tier.description}
                 </p>
                 <ul className="mt-6 flex-1 space-y-3">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2 text-sm">
-                      <svg className={`mt-0.5 h-4 w-4 shrink-0 ${tier.featured ? "text-accent-light" : "text-hedical-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className={`mt-0.5 h-4 w-4 shrink-0 ${tier.featured ? "text-teal-light" : "text-teal"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className={tier.featured ? "text-white" : "text-muted"}>{feature}</span>
+                      <span className={tier.featured ? "text-white" : "text-body"}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -163,8 +163,8 @@ export default async function PricingPage() {
                     href={tier.href}
                     className={`mt-8 block w-full rounded-lg px-4 py-2.5 text-center text-sm font-medium transition active:scale-[0.97] ${
                       tier.featured
-                        ? "bg-white text-primary hover:bg-hedical-50"
-                        : "bg-primary text-white hover:bg-primary-light"
+                        ? "bg-white text-teal hover:bg-paper-light"
+                        : "bg-teal text-white hover:bg-teal-light"
                     }`}
                   >
                     {tier.cta}
@@ -188,7 +188,7 @@ export default async function PricingPage() {
             <Disclaimer variant="banner" />
           </div>
 
-          <p className="mt-4 text-center text-xs text-muted">
+          <p className="mt-4 text-center text-xs text-body">
             All prices in USD. No long-term contracts. Cancel anytime. Not medical or legal advice.
           </p>
         </div>
@@ -197,10 +197,10 @@ export default async function PricingPage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
               Coming soon: Add-ons
             </h2>
-            <p className="mt-4 text-lg text-muted">
+            <p className="mt-4 text-lg text-body">
               Optional services to enhance your experience.
             </p>
           </div>
@@ -209,21 +209,21 @@ export default async function PricingPage() {
               { name: "Certified Mail Dispatch", price: "$5/letter", desc: "We print, mail, and track your appeal letter via certified mail." },
               { name: "Fax Delivery", price: "$3/letter", desc: "We fax your letter directly to the insurer or provider." },
             ].map((addon) => (
-              <div key={addon.name} className="flex items-center justify-between rounded-lg border border-border p-4">
+              <div key={addon.name} className="flex items-center justify-between rounded-lg border border-hairline p-4">
                 <div>
-                  <h3 className="font-medium text-foreground">{addon.name}</h3>
-                  <p className="text-sm text-muted">{addon.desc}</p>
+                  <h3 className="font-medium text-ink">{addon.name}</h3>
+                  <p className="text-sm text-body">{addon.desc}</p>
                 </div>
-                <span className="text-sm font-semibold text-primary">{addon.price}</span>
+                <span className="text-sm font-semibold text-teal">{addon.price}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-zinc-50">
+      <section className="py-16 bg-paper-light">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-foreground">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold text-ink">Frequently asked questions</h2>
           <div className="mt-8 space-y-4 text-left">
             {[
               { q: "Can I cancel anytime?", a: "Yes. No long-term contracts. Cancel your subscription with one click." },
@@ -233,14 +233,14 @@ export default async function PricingPage() {
               { q: "What do I get when I pay?", a: "A professionally formatted appeal or negotiation letter, AI-drafted from your documents and flagged issues. You review and send." },
               { q: "Is this medical or legal advice?", a: "No. Hedical is an informational and administrative tool. AI-drafted letters are based on your documents — always review before sending." },
             ].map((faq) => (
-              <details key={faq.q} className="group rounded-lg border border-border bg-white">
-                <summary className="flex cursor-pointer items-center justify-between p-4 font-medium text-foreground">
+              <details key={faq.q} className="group rounded-lg border border-hairline bg-white">
+                <summary className="flex cursor-pointer items-center justify-between p-4 font-medium text-ink">
                   {faq.q}
                   <svg className="h-5 w-5 text-muted transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div className="faq-content px-4 pb-4 text-sm text-muted">{faq.a}</div>
+                <div className="faq-content px-4 pb-4 text-sm text-body">{faq.a}</div>
               </details>
             ))}
           </div>

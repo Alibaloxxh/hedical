@@ -169,10 +169,10 @@ export default async function AnalyzeAnalyticsPage({
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-2xl font-bold text-foreground">Bill Analyze Analytics</h1>
+        <h1 className="text-2xl font-bold text-ink">Bill Analyze Analytics</h1>
         <Link
           href="/admin/analyze-analytics/history"
-          className="text-sm text-primary hover:text-primary-light transition-colors"
+          className="text-sm text-teal hover:text-teal-light transition-colors"
         >
           View history &rarr;
         </Link>
@@ -189,7 +189,7 @@ export default async function AnalyzeAnalyticsPage({
               href={href}
               className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
                 activeRange === r
-                  ? "bg-primary text-white"
+                  ? "bg-teal text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
             >
@@ -213,7 +213,7 @@ export default async function AnalyzeAnalyticsPage({
 
       {/* Trend chart */}
       <section className="mb-8">
-        <h2 className="text-lg font-semibold text-foreground mb-3">
+        <h2 className="text-lg font-semibold text-ink mb-3">
           Requests per day ({activeRange === "today" ? "today" : activeRange === "7d" ? "7 days" : activeRange === "30d" ? "30 days" : "all time"})
         </h2>
         {dailyCounts.every((c) => c === 0) ? (
@@ -227,7 +227,7 @@ export default async function AnalyzeAnalyticsPage({
                 <div key={i} className="flex flex-col items-center flex-1">
                   <span className="text-xs text-muted mb-1">{count}</span>
                   <div
-                    className="w-full bg-primary rounded-t"
+                    className="w-full bg-teal rounded-t"
                     style={{ height: `${Math.max(height, 1)}%` }}
                   />
                   <span className="text-xs text-muted mt-1">
@@ -242,7 +242,7 @@ export default async function AnalyzeAnalyticsPage({
 
       {/* Status breakdown */}
       <section>
-        <h2 className="text-lg font-semibold text-foreground mb-3">Request status</h2>
+        <h2 className="text-lg font-semibold text-ink mb-3">Request status</h2>
         <p className="text-sm text-muted">
           {successCount > 0 || errorCount > 0
             ? `${successCount.toLocaleString()} success · ${errorCount.toLocaleString()} errors`
@@ -255,9 +255,9 @@ export default async function AnalyzeAnalyticsPage({
 
 function MetricCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-xl border border-border bg-white p-6">
+    <div className="rounded-xl border border-hairline bg-white p-6">
       <p className="text-sm text-muted">{label}</p>
-      <p className="text-3xl font-bold text-foreground mt-1">{value}</p>
+      <p className="text-3xl font-bold text-ink mt-1">{value}</p>
     </div>
   );
 }

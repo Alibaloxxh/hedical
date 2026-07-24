@@ -54,19 +54,19 @@ export default async function AccountPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-2xl font-bold text-foreground">Account</h1>
+        <h1 className="text-2xl font-bold text-ink">Account</h1>
         <form action={logout}>
           <button
             type="submit"
-            className="text-sm text-muted underline underline-offset-2 hover:text-foreground"
+            className="text-sm text-muted underline underline-offset-2 hover:text-ink"
           >
             Sign out
           </button>
         </form>
       </div>
 
-      <section className="mb-8 rounded-lg border border-border bg-white p-6">
-        <h2 className="mb-1 text-lg font-semibold text-foreground">Plan</h2>
+      <section className="mb-8 rounded-lg border border-hairline bg-white p-6">
+        <h2 className="mb-1 text-lg font-semibold text-ink">Plan</h2>
         <p className="text-sm text-muted mb-4">{user.user.email}</p>
 
         <div className="flex items-center gap-3">
@@ -92,15 +92,15 @@ export default async function AccountPage() {
         {sub?.plan === "unlimited" && sub?.status === "active" && (
           <p className="mt-4 text-sm text-muted">
             Manage your subscription —{" "}
-            <a href="mailto:hedicalai@gmail.com" className="text-primary underline underline-offset-2">
+            <a href="mailto:hedicalai@gmail.com" className="text-teal underline underline-offset-2">
               hedicalai@gmail.com
             </a>
           </p>
         )}
       </section>
 
-      <section className="rounded-lg border border-border bg-white p-6">
-        <h2 className="mb-4 text-lg font-semibold text-foreground">Credits</h2>
+      <section className="rounded-lg border border-hairline bg-white p-6">
+        <h2 className="mb-4 text-lg font-semibold text-ink">Credits</h2>
 
         {sub?.plan === "unlimited" && sub?.status === "active" ? (
           <p className="text-sm text-muted">
@@ -113,7 +113,7 @@ export default async function AccountPage() {
                 key={key}
                 className="flex items-center justify-between rounded-md bg-gray-50 px-4 py-3"
               >
-                <span className="text-sm font-medium text-foreground">{name}</span>
+                <span className="text-sm font-medium text-ink">{name}</span>
                 <span className="text-sm text-muted">
                   {getCreditFor(key)} credit{getCreditFor(key) !== 1 ? "s" : ""} remaining
                 </span>
@@ -122,7 +122,7 @@ export default async function AccountPage() {
             <p className="mt-4 text-xs text-muted">
               Credits are used when you generate appeal letters or other paid features.
               <br />
-              <Link href="/pricing" className="text-primary underline underline-offset-2">
+              <Link href="/pricing" className="text-teal underline underline-offset-2">
                 Buy credits or upgrade to Unlimited
               </Link>
             </p>
@@ -133,7 +133,7 @@ export default async function AccountPage() {
       <section className="mt-8 text-center">
         <Link
           href="/"
-          className="text-sm text-muted underline underline-offset-2 hover:text-foreground"
+          className="text-sm text-muted underline underline-offset-2 hover:text-ink"
         >
           &larr; Back to home
         </Link>

@@ -4,9 +4,10 @@ interface ArticleSchemaProps {
   datePublished: string;
   slug: string;
   readingTime?: string;
+  dateModified?: string;
 }
 
-export function ArticleSchema({ title, description, datePublished, slug }: ArticleSchemaProps) {
+export function ArticleSchema({ title, description, datePublished, slug, dateModified }: ArticleSchemaProps) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
   const schema = {
     "@context": "https://schema.org",
@@ -15,7 +16,7 @@ export function ArticleSchema({ title, description, datePublished, slug }: Artic
     description,
     url: `${siteUrl}/guides/${slug}`,
     datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
       name: "Hedical",

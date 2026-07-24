@@ -104,7 +104,7 @@ export default function GuidesIndex() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
       <Breadcrumb items={[{ label: "Guides" }]} />
-      <h1 className="mb-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h1 className="mb-2 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
         Guides
       </h1>
       <p className="mb-10 text-lg text-muted">
@@ -115,14 +115,14 @@ export default function GuidesIndex() {
           <Link
             key={guide.slug}
             href={`/guides/${guide.slug}`}
-            className="block rounded-lg border border-border bg-white p-6 transition-shadow hover:shadow-md"
+            className="block rounded-lg border border-hairline bg-white p-6 transition-shadow hover:shadow-md"
           >
             <div className="flex items-center gap-3 text-sm text-muted mb-2">
               <time dateTime={guide.date}>{guide.date}</time>
               <span aria-hidden="true">&middot;</span>
               <span>{guide.readingTime}</span>
             </div>
-            <h2 className="text-xl font-semibold text-foreground mb-2">
+            <h2 className="text-xl font-semibold text-ink mb-2">
               {guide.title}
             </h2>
             <p className="text-sm text-muted">{guide.description}</p>

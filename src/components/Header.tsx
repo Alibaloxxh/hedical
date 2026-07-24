@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 const navLinks = [
@@ -26,6 +27,8 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
   const buttonRef = useRef<HTMLButtonElement>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
   const userButtonRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
+  const isProductActive = navLinks[0].children!.some((c) => pathname === c.href);
 
   useEffect(() => {
     const supabase = createClient();
@@ -77,24 +80,25 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
   const initial = user?.email?.charAt(0).toUpperCase() ?? "?";
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-white/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2">
+    <header className="sticky top-0 z-50 w-full border-b border-hairline bg-white/95 backdrop-blur-sm">
+      <div className="mx-auto flex max-w-7xl items-center px-4 py-3 sm:px-6 lg:px-8">
+        <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-3 shrink-0">
           <img
             src="/images/hedical_icon_only.png"
             alt="Hedical icon"
-            width={48}
-            height={48}
-            className="h-12 w-auto"
+            width={56}
+            height={56}
+            className="h-14 w-auto"
           />
+          <span className="text-xl font-serif text-ink font-semibold tracking-tight">Hedical</span>
         </Link>
 
-        <nav className="hidden md:flex md:items-center md:gap-8" aria-label="Main navigation">
+        <nav className="hidden md:flex md:items-center md:gap-8 ml-8 lg:ml-12" aria-label="Main navigation">
           {/* Products dropdown */}
           <div className="relative">
             <button
               ref={buttonRef}
-              className="flex items-center gap-1 text-sm font-medium text-muted transition-colors hover:text-foreground"
+              className={`flex items-center gap-1 text-sm transition-colors ${isProductActive ? "text-ink font-medium" : "text-body hover:text-teal"}`}
               onMouseEnter={() => setProductsOpen(true)}
               onMouseLeave={() => setProductsOpen(false)}
               onClick={() => setProductsOpen(!productsOpen)}
@@ -109,7 +113,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
             {productsOpen && (
               <div
                 ref={dropdownRef}
-                className="absolute left-0 top-full mt-2 w-64 rounded-lg border border-border bg-white p-2 shadow-lg animate-dropdown"
+                className="absolute left-0 top-full mt-2 w-64 rounded-lg border border-hairline bg-white p-2 shadow-lg animate-dropdown"
                 onMouseEnter={() => setProductsOpen(true)}
                 onMouseLeave={() => setProductsOpen(false)}
                 role="menu"
@@ -118,7 +122,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
                   <Link
                     key={child.href}
                     href={child.href}
-                    className="block rounded-md px-3 py-2 text-sm text-muted transition-colors hover:bg-hedical-50 hover:text-hedical-700"
+                    className="block rounded-md px-3 py-2 text-sm text-body transition-colors hover:bg-paper-light hover:text-teal"
                     role="menuitem"
                     onClick={() => setProductsOpen(false)}
                   >
@@ -129,25 +133,28 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
             )}
           </div>
 
-          {navLinks.slice(1).map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-muted transition-colors hover:text-foreground"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navLinks.slice(1).map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`text-sm transition-colors ${isActive ? "text-ink font-medium" : "text-body hover:text-teal"}`}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right side: CTA or user menu */}
-        <div className="hidden md:flex md:items-center md:gap-4">
+        <div className="hidden md:flex md:items-center md:gap-4 ml-auto">
           {user ? (
             <div className="relative">
               <button
                 ref={userButtonRef}
                 onClick={() => setUserMenuOpen(!userMenuOpen)}
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white hover:brightness-110 transition-all"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-sm font-semibold text-white hover:brightness-110 transition-all"
                 aria-label="User menu"
               >
                 {initial}
@@ -155,11 +162,11 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
               {userMenuOpen && (
                 <div
                   ref={userMenuRef}
-                  className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-border bg-white p-1.5 shadow-lg animate-dropdown"
+                  className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-hairline bg-white p-1.5 shadow-lg animate-dropdown"
                   role="menu"
                 >
                   {plan && (
-                    <div className="px-3 py-1.5 text-xs text-muted border-b border-border mb-1">
+                    <div className="px-3 py-1.5 text-xs text-muted border-b border-hairline mb-1">
                       {plan === "unlimited" ? (
                         <span className="text-green-700 font-medium">Unlimited Plan</span>
                       ) : (
@@ -169,7 +176,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
                   )}
                   <Link
                     href="/dashboard"
-                    className="block rounded-md px-3 py-2 text-sm text-muted hover:bg-hedical-50 hover:text-hedical-700"
+                    className="block rounded-md px-3 py-2 text-sm text-muted hover:bg-paper-light hover:text-ink"
                     role="menuitem"
                     onClick={() => setUserMenuOpen(false)}
                   >
@@ -177,16 +184,16 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
                   </Link>
                   <Link
                     href="/account"
-                    className="block rounded-md px-3 py-2 text-sm text-muted hover:bg-hedical-50 hover:text-hedical-700"
+                    className="block rounded-md px-3 py-2 text-sm text-muted hover:bg-paper-light hover:text-ink"
                     role="menuitem"
                     onClick={() => setUserMenuOpen(false)}
                   >
                     Account & billing
                   </Link>
-                  <hr className="my-1 border-border" />
+                  <hr className="my-1 border-hairline" />
                   <button
                     onClick={handleSignOut}
-                    className="block w-full rounded-md px-3 py-2 text-left text-sm text-muted hover:bg-hedical-50 hover:text-hedical-700"
+                    className="block w-full rounded-md px-3 py-2 text-left text-sm text-muted hover:bg-paper-light hover:text-ink"
                     role="menuitem"
                   >
                     Sign out
@@ -197,7 +204,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
           ) : (
             <Link
               href="/waitlist"
-              className="active:scale-[0.97] rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-[transform,background-color] duration-100 ease-out hover:bg-primary-light"
+              className="rounded-lg bg-ink px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-teal"
             >
               Get Early Access
             </Link>
@@ -206,7 +213,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden"
+          className="md:hidden ml-auto"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
@@ -223,50 +230,56 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
 
       {/* Mobile nav panel */}
       {mobileOpen && (
-        <div className="animate-fade-in border-t border-border bg-white px-4 py-4 md:hidden" role="dialog" aria-label="Mobile navigation">
+        <div className="animate-fade-in border-t border-hairline bg-white px-4 py-4 md:hidden" role="dialog" aria-label="Mobile navigation">
           <nav className="flex flex-col gap-3" aria-label="Mobile navigation">
-            <div className="font-medium text-sm text-muted mb-1">Products</div>
-            {navLinks[0].children!.map((child) => (
-              <Link
-                key={child.href}
-                href={child.href}
-                className="pl-4 text-sm text-muted hover:text-foreground"
-                onClick={() => setMobileOpen(false)}
-              >
-                {child.name}
-              </Link>
-            ))}
-            <hr className="my-2 border-border" />
-            {navLinks.slice(1).map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm font-medium text-muted hover:text-foreground"
-                onClick={() => setMobileOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <hr className="my-2 border-border" />
+            <div className="text-sm text-body mb-1">Products</div>
+            {navLinks[0].children!.map((child) => {
+              const isActive = pathname === child.href;
+              return (
+                <Link
+                  key={child.href}
+                  href={child.href}
+                  className={`pl-4 text-sm transition-colors ${isActive ? "text-ink font-medium" : "text-body hover:text-teal"}`}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {child.name}
+                </Link>
+              );
+            })}
+            <hr className="my-2 border-hairline" />
+            {navLinks.slice(1).map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`text-sm transition-colors ${isActive ? "text-ink font-medium" : "text-body hover:text-teal"}`}
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
+            <hr className="my-2 border-hairline" />
             {user ? (
               <>
                 <Link
                   href="/dashboard"
-                  className="text-sm font-medium text-primary hover:text-primary-light"
+                  className="text-sm font-medium text-teal hover:text-teal-light"
                   onClick={() => setMobileOpen(false)}
                 >
                   Dashboard
                 </Link>
                 <Link
                   href="/account"
-                  className="text-sm font-medium text-muted hover:text-foreground"
+                  className="text-sm font-medium text-muted hover:text-ink"
                   onClick={() => setMobileOpen(false)}
                 >
                   Account & billing
                 </Link>
                 <button
                   onClick={() => { handleSignOut(); setMobileOpen(false); }}
-                  className="text-left text-sm font-medium text-muted hover:text-foreground"
+                  className="text-left text-sm font-medium text-muted hover:text-ink"
                 >
                   Sign out
                 </button>
@@ -274,7 +287,7 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
             ) : (
               <Link
                 href="/waitlist"
-                className="mt-2 rounded-lg bg-primary px-4 py-2 text-center text-sm font-medium text-white"
+                className="mt-2 rounded-lg bg-ink px-5 py-2.5 text-center text-sm font-medium text-white transition-colors hover:bg-teal"
                 onClick={() => setMobileOpen(false)}
               >
                 Get Early Access

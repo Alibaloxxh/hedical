@@ -1,44 +1,47 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-hedical-50: #eff9ff;
-  --color-hedical-100: #daf1fd;
-  --color-hedical-200: #bde5fc;
-  --color-hedical-300: #8ed5f9;
-  --color-hedical-400: #53bcf4;
-  --color-hedical-500: #2c9ee9;
-  --color-hedical-600: #1c82cf;
-  --color-hedical-700: #1869a8;
-  --color-hedical-800: #1a598b;
-  --color-hedical-900: #1b4a73;
-  --color-hedical-950: #122f4c;
-  --color-primary: #0a5c6a;
-  --color-primary-light: #0d7a8c;
-  --color-accent: #0891b2;
-  --color-accent-light: #22d3ee;
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
-  --color-muted: #64748b;
-  --color-border: #e2e8f0;
-  --color-ink: #173404;
+  /* ── Base background & surface ── */
   --color-paper: #f1efe8;
+  --color-paper-dark: #e8e4db;
+  --color-paper-light: #f9f7f2;
+  --color-surface-1: #f9f9f9;
+  --color-surface-2: #ffffff;
+  --color-white: #ffffff;
+
+  /* ── Text colors (warm ink scale) ── */
+  --color-ink: #1a3a2a;
+  --color-body: #4a4a45;
+  --color-muted: #6e6e6e;
+  --color-muted-light: #9a9a96;
+  --color-title: #111111;
+  --color-on-primary: #ffffff;
+
+  /* ── Accent / interactive (warm teal) ── */
   --color-teal: #0f6e56;
+  --color-teal-light: #1a8a6e;
+  --color-teal-dark: #0a5342;
   --color-coral: #d85a30;
-  --color-muted-secondary: #5f5e5a;
-  --color-muted-tertiary: #6e6e6e;
+
+  /* ── Borders & dividers ── */
   --color-hairline: #d3d1c7;
+  --color-hairline-light: #e0e0e0;
   --color-tag-bg: #e1f5ee;
+
+  /* ── Semantic status colors (softened warm variants) ── */
+  --color-success-bg: #dff0e4;
+  --color-success-text: #2a6e4c;
+  --color-danger-bg: #fce8e6;
+  --color-danger-text: #b13e3e;
+  --color-warning-bg: #fef3e0;
+  --color-warning-text: #9c6b1e;
+  --color-info-bg: #e6edf4;
+  --color-info-text: #2d5a8a;
+
+  /* ── Font families ── */
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-source-serif);
   --font-mono: var(--font-geist-mono);
-  --color-surface-1: #f9f9f9;
-  --color-surface-2: #ffffff;
-  --color-text-success: #1a6b3c;
-  --color-text-danger: #b91c1c;
-  --color-bg-success: #d1fae5;
-  --color-bg-danger: #fee2e2;
-  --color-fill-primary: #111111;
-  --color-on-primary: #ffffff;
 }
 
 html {
@@ -46,11 +49,35 @@ html {
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: var(--color-paper-light);
+  color: var(--color-body);
 }
 
 :root {
+  /* ── Spacing scale ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* ── Border radius scale ── */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  /* ── Shadow/elevation scale ── */
+  --shadow-sm: 0 1px 2px 0 rgb(26 58 42 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(26 58 42 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(26 58 42 / 0.1);
+
+  /* ── Easing ── */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 }

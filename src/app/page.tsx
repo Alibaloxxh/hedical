@@ -1,11 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { WebSiteSchema } from "@/components/WebSiteSchema";
 import { getCurrentUserPlan } from "@/lib/entitlements";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
 
 export const metadata: Metadata = {
-  title: "Decode Medical Bills & Appeal Denials | Hedical",
+  title: "Decode Medical Bills & Appeal Denials",
     description:
     "Upload medical bills, EOBs, and denial letters. Get AI-powered error detection, plain-English explanations, and ready-to-send appeal letter drafts. No insurance login required.",
   alternates: {
@@ -44,6 +45,7 @@ export default async function Home() {
 
   return (
     <>
+      <WebSiteSchema name="Hedical" url={siteUrl} />
       {/* ───── Hero ───── */}
       <section className="bg-[#e8e4db] px-8 py-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 items-start">
@@ -148,7 +150,7 @@ export default async function Home() {
                     )}
                   </div>
                   <p className="mt-3 text-sm font-semibold text-ink">{s.label}</p>
-                  <p className="mt-0.5 max-w-32 text-center text-xs text-muted-tertiary leading-relaxed">
+                  <p className="mt-0.5 max-w-32 text-center text-xs text-muted leading-relaxed">
                     {s.desc}
                   </p>
                 </div>
@@ -250,7 +252,7 @@ export default async function Home() {
                     Recommended
                   </span>
                 )}
-                <p className="text-[10px] font-medium uppercase tracking-widest text-muted-tertiary mb-2">
+                <p className="text-[10px] font-medium uppercase tracking-widest text-muted mb-2">
                   {card.eyebrow}
                 </p>
                 <h3 className="font-serif text-base text-ink font-[500]">
@@ -311,7 +313,7 @@ export default async function Home() {
               </div>
             </li>
           </ol>
-          <p className="mt-8 text-center text-xs text-muted-tertiary">
+          <p className="mt-8 text-center text-xs text-muted">
             Source: Centers for Medicare & Medicaid Services (CMS) appeals guidelines and U.S. Department of Labor ERISA claim procedure regulations.{" "}
             <a href="https://www.cms.gov/medicare/appeals-grievances/managed-care" className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">CMS appeals overview</a>.
           </p>
@@ -321,7 +323,7 @@ export default async function Home() {
       {/* ───── Corrections & Prior Reviews ───── */}
       <section className="bg-white border-t border-hairline py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-tertiary">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted">
             <span>Last reviewed: <time dateTime="2026-07-21">July 21, 2026</time></span>
             <span>Corrections? <a href="/contact" className="text-teal underline underline-offset-2">Contact us</a></span>
             <span>This site does not provide medical advice. <a href="/disclaimer" className="text-teal underline underline-offset-2">Full disclaimer</a>.</span>
@@ -367,7 +369,7 @@ export default async function Home() {
             <h2 className="font-serif text-2xl text-white sm:text-3xl font-[500]">
               Be among the first to try it
             </h2>
-            <p className="mt-3 text-sm text-muted-tertiary leading-relaxed max-w-md mx-auto">
+            <p className="mt-3 text-sm text-muted leading-relaxed max-w-md mx-auto">
               We&apos;re onboarding early users in small batches so every letter gets reviewed properly before it ships.
             </p>
             <div className="mt-8">

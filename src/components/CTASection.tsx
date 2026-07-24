@@ -12,12 +12,12 @@ export function CTASection({ title, description, buttonText, buttonHref, variant
   const isPrimary = variant === "primary";
 
   return (
-    <section className={`py-16 sm:py-24 ${isPrimary ? "bg-primary" : "bg-zinc-50"}`}>
+    <section className={`py-16 sm:py-24 ${isPrimary ? "bg-teal" : "bg-paper-light"}`}>
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className={`text-3xl font-bold tracking-tight sm:text-4xl ${isPrimary ? "text-white" : "text-foreground"}`}>
+        <h2 className={`text-3xl font-bold tracking-tight sm:text-4xl ${isPrimary ? "text-white" : "text-ink"}`}>
           {title}
         </h2>
-        <p className={`mt-4 text-lg ${isPrimary ? "text-hedical-100" : "text-muted"}`}>
+        <p className={`mt-4 text-lg ${isPrimary ? "text-white/80" : "text-muted"}`}>
           {description}
         </p>
         <div className="mt-8">
@@ -25,8 +25,8 @@ export function CTASection({ title, description, buttonText, buttonHref, variant
             href={buttonHref}
             className={`inline-flex items-center rounded-lg px-6 py-3 text-base font-medium shadow-sm transition-all ${
               isPrimary
-                ? "bg-white text-primary hover:bg-hedical-50"
-                : "bg-primary text-white hover:bg-primary-light"
+                ? "bg-white text-teal hover:bg-paper-dark"
+                : "bg-teal text-white hover:bg-teal-light"
             }`}
           >
             {buttonText}

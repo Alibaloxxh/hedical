@@ -16,7 +16,7 @@ interface CheckoutButtonProps {
 export function CheckoutButton({ priceId, mode: _mode, label, featured, plan, isCurrentPlan, paddleCustomerId }: CheckoutButtonProps) {
   if (isCurrentPlan) {
     return (
-      <span className="mt-8 block w-full rounded-lg border border-border px-4 py-2.5 text-center text-sm font-medium text-muted cursor-default">
+      <span className="mt-8 block w-full rounded-lg border border-hairline px-4 py-2.5 text-center text-sm font-medium text-muted cursor-default">
         Current Plan
       </span>
     );
@@ -92,8 +92,8 @@ export function CheckoutButton({ priceId, mode: _mode, label, featured, plan, is
           loading
             ? "bg-gray-200 text-gray-500 cursor-wait"
             : featured
-              ? "bg-white text-primary hover:bg-hedical-50"
-              : "bg-primary text-white hover:bg-primary-light"
+              ? "bg-white text-teal hover:bg-paper-light"
+              : "bg-teal text-white hover:bg-teal-light"
         } disabled:cursor-not-allowed disabled:opacity-50`}
       >
         {loading ? "Opening checkout..." : label}

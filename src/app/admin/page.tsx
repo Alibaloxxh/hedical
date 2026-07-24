@@ -71,7 +71,7 @@ export default async function AdminPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
-      <h1 className="text-2xl font-bold text-foreground mb-8">Admin — site analytics</h1>
+      <h1 className="text-2xl font-bold text-ink mb-8">Admin — site analytics</h1>
 
       <div className="grid gap-6 sm:grid-cols-2 mb-8">
         <MetricCard label="Total visits (30d)" value={totalVisits.toLocaleString()} />
@@ -79,21 +79,21 @@ export default async function AdminPage() {
       </div>
 
       <section className="mb-8">
-        <h2 className="text-lg font-semibold text-foreground mb-3">Top pages (30d)</h2>
+        <h2 className="text-lg font-semibold text-ink mb-3">Top pages (30d)</h2>
         {topPages.length === 0 ? (
           <p className="text-sm text-muted">No data yet.</p>
         ) : (
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-border text-left text-muted">
+              <tr className="border-b border-hairline text-left text-muted">
                 <th className="pb-2 font-medium">Page</th>
                 <th className="pb-2 font-medium">Visits</th>
               </tr>
             </thead>
             <tbody>
               {topPages.map((p) => (
-                <tr key={p.path} className="border-b border-border">
-                  <td className="py-2 text-foreground">{p.path}</td>
+                <tr key={p.path} className="border-b border-hairline">
+                  <td className="py-2 text-ink">{p.path}</td>
                   <td className="py-2 text-muted">{(p as any).count ?? 0}</td>
                 </tr>
               ))}
@@ -103,7 +103,7 @@ export default async function AdminPage() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-foreground mb-3">Visits per day (7d)</h2>
+        <h2 className="text-lg font-semibold text-ink mb-3">Visits per day (7d)</h2>
         {dailyCounts.every((c) => c === 0) ? (
           <p className="text-sm text-muted">No data yet.</p>
         ) : (
@@ -115,7 +115,7 @@ export default async function AdminPage() {
                 <div key={i} className="flex flex-col items-center flex-1">
                   <span className="text-xs text-muted mb-1">{count}</span>
                   <div
-                    className="w-full bg-primary rounded-t"
+                    className="w-full bg-teal rounded-t"
                     style={{ height: `${Math.max(height, 1)}%` }}
                   />
                   <span className="text-xs text-muted mt-1">
@@ -128,12 +128,12 @@ export default async function AdminPage() {
         )}
       </section>
 
-      <section className="mt-8 rounded-xl border border-border bg-white p-6">
-        <h2 className="text-lg font-semibold text-foreground mb-2">Bill Analyze</h2>
+      <section className="mt-8 rounded-xl border border-hairline bg-white p-6">
+        <h2 className="text-lg font-semibold text-ink mb-2">Bill Analyze</h2>
         <p className="text-sm text-muted mb-4">Request volume, success rates, and per-analysis history.</p>
         <Link
           href="/admin/analyze-analytics"
-          className="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+          className="inline-flex items-center rounded-lg bg-teal px-4 py-2 text-sm font-medium text-white hover:bg-teal-light transition-colors"
         >
           Bill Analyze Analytics &rarr;
         </Link>
@@ -144,9 +144,9 @@ export default async function AdminPage() {
 
 function MetricCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-xl border border-border bg-white p-6">
+    <div className="rounded-xl border border-hairline bg-white p-6">
       <p className="text-sm text-muted">{label}</p>
-      <p className="text-3xl font-bold text-foreground mt-1">{value}</p>
+      <p className="text-3xl font-bold text-ink mt-1">{value}</p>
     </div>
   );
 }

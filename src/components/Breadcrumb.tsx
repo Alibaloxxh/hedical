@@ -20,15 +20,15 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
       <nav aria-label="Breadcrumb" className="mb-4 text-sm text-muted">
         <ol className="flex flex-wrap items-center gap-1.5">
           <li>
-            <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
+            <Link href="/" className="hover:text-ink transition-colors">Home</Link>
           </li>
           {items.map((item, i) => (
             <li key={i} className="flex items-center gap-1.5">
-              <span aria-hidden="true" className="text-muted-tertiary select-none">/</span>
+              <span aria-hidden="true" className="text-muted select-none">/</span>
               {item.href ? (
-                <Link href={item.href} className="hover:text-foreground transition-colors">{item.label}</Link>
+                <Link href={item.href} className="hover:text-ink transition-colors">{item.label}</Link>
               ) : (
-                <span className="text-foreground font-medium" aria-current="page">{item.label}</span>
+                <span className="text-ink font-medium" aria-current="page">{item.label}</span>
               )}
             </li>
           ))}

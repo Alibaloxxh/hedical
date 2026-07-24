@@ -17,7 +17,7 @@ export function StateDeadlinesTable() {
         <tbody>
           {states.map((s) => (
             <tr key={s.state} className="border-b border-gray-100">
-              <td className="py-2 font-medium text-foreground">{s.name}</td>
+              <td className="py-2 font-medium text-ink">{s.name}</td>
               <td className="py-2 text-muted">{s.appealDeadlineDays} days</td>
               <td className="py-2 text-muted">{s.surpriseBilling}</td>
               <td className="py-2 text-muted">{s.balanceBilling}</td>

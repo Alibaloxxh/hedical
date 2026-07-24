@@ -31,32 +31,32 @@ const values = [
   {
     title: "Clarity over complexity",
     description: "Healthcare billing and insurance are deliberately opaque. We translate jargon into plain language so you can make informed decisions.",
-    icon: <IconBulb className="size-7 text-primary" />,
+    icon: <IconBulb className="size-7 text-teal" />,
   },
   {
     title: "Patient-first, always",
     description: "We don't sell patient data, link insurance accounts, or take kickbacks from pharma or insurers. Your interests come first.",
-    icon: <IconHeartHandshake className="size-7 text-primary" />,
+    icon: <IconHeartHandshake className="size-7 text-teal" />,
   },
   {
     title: "Buildable, not hypothetical",
     description: "Every product Hedical ships is designed for a solo founder to build and monetize — no clinical trials, no enterprise sales, no billion-dollar compute.",
-    icon: <IconTools className="size-7 text-primary" />,
+    icon: <IconTools className="size-7 text-teal" />,
   },
   {
     title: "Evidence-based",
     description: "Every letter, explanation, and recommendation is grounded in cited sources — your policy, peer-reviewed research, and state/federal regulations.",
-    icon: <IconBooks className="size-7 text-primary" />,
+    icon: <IconBooks className="size-7 text-teal" />,
   },
 ];
 
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-hedical-50 via-white to-hedical-100 py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-paper via-white to-paper-dark py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-ink sm:text-5xl">
               About Hedical
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed">
@@ -76,15 +76,15 @@ export default function AboutPage() {
       <section className="py-16 sm:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
               Our values
             </h2>
           </div>
           <div className="mt-12 grid gap-8 sm:grid-cols-2">
             {values.map((value) => (
-              <div key={value.title} className="rounded-xl border border-border bg-zinc-50 p-6 sm:p-8">
+              <div key={value.title} className="rounded-xl border border-hairline bg-paper-light p-6 sm:p-8">
                 <div className="mb-4">{value.icon}</div>
-                <h3 className="text-lg font-semibold text-foreground">{value.title}</h3>
+                <h3 className="text-lg font-semibold text-ink">{value.title}</h3>
                 <p className="mt-2 text-sm text-muted leading-relaxed">{value.description}</p>
               </div>
             ))}
@@ -92,10 +92,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24 bg-zinc-50">
+      <section className="py-16 sm:py-24 bg-paper-light">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl text-center">
               The research behind the products
             </h2>
             <div className="mt-12 space-y-6">
@@ -107,8 +107,8 @@ export default function AboutPage() {
                 { stat: "40%", detail: "of older adults take 5+ medications daily, creating serious polypharmacy risks." },
                 { stat: "92%", detail: "of physicians say prior authorization negatively affects clinical outcomes (AMA 2025)." },
               ].map((item) => (
-                <div key={item.stat} className="flex items-start gap-4 rounded-lg border border-border bg-white p-4">
-                  <div className="shrink-0 text-2xl font-bold text-primary">{item.stat}</div>
+                <div key={item.stat} className="flex items-start gap-4 rounded-lg border border-hairline bg-white p-4">
+                  <div className="shrink-0 text-2xl font-bold text-teal">{item.stat}</div>
                   <p className="text-sm text-muted pt-1">{item.detail}</p>
                 </div>
               ))}
@@ -119,7 +119,7 @@ export default function AboutPage() {
 
       <section className="py-16 sm:py-20 bg-white">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             Why &ldquo;Hedical&rdquo;?
           </h2>
           <p className="mt-4 text-lg text-muted leading-relaxed">

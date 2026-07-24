@@ -1,0 +1,82 @@
+# Hedical
+
+> AI-powered tools that help patients and caregivers decode medical bills, appeal insurance denials, simplify clinical documentation, and manage medications. No insurance login required.
+
+Hedical analyzes uploaded medical bills, EOBs, and denial letters to flag billing errors and draft ready-to-send appeal letters. Guidance is grounded in published claims data from CMS, AHIP, and KFF. Hedical does not provide medical or legal advice.
+
+## Homepage
+
+- [Hedical](https://hedical.online): Upload any bill or denial. Hedical flags overcharges, explains every charge in plain English, and drafts your appeal letter. Three steps: upload a bill or EOB (PDF or photo), AI analyzes and flags errors, get a ready-to-send appeal or negotiation letter draft. No insurance login required.
+
+### Key statistics (sourced from CMS, KFF, AHIP, Commonwealth Fund, AMA)
+
+- 49% of all medical bills contain at least one billing error (KFF).
+- 17% of in-network claims are denied by insurers (AHIP).
+- Fewer than 0.2% of denied claims are ever appealed by patients (Commonwealth Fund).
+- 44–78% of appeals result in the insurer overturning their denial (AMA).
+- 80% of medical bills contain errors according to industry estimates (range: 30-90%).
+- $20B spent by hospitals in 2025 overturning denials.
+- 40% of older adults take 5+ medications daily.
+- 92% of physicians say prior authorization negatively affects clinical outcomes (AMA 2025).
+
+### How to appeal a denied medical claim (5-step process)
+
+1. Read your Explanation of Benefits (EOB): The EOB tells you the official denial reason — not medically necessary, out-of-network, experimental, or billing code mismatch.
+2. Gather supporting medical records: Ask your provider for clinical notes, test results, and prior authorization documents supporting medical necessity.
+3. Write a formal appeal letter: Address it to the insurer's appeals department, reference the claim number, cite the specific plan provision supporting coverage, and enclose supporting records. Hedical can draft this letter.
+4. Submit within the deadline: Most plans allow 180 days from the denial date for a first-level appeal. Deadlines vary by state and insurer.
+5. Escalate if denied again: If the internal appeal is rejected, request an external review by an independent third party through your state insurance department or the U.S. Department of Labor.
+
+## Products
+
+### Bill & Denial Navigator
+- [Medical Bill & Denial Navigator](https://hedical.online/products/bill-denial-navigator): Upload medical bills, EOBs, and denial letters. AI extracts every line item, translates codes into plain English, flags duplicate charges, upcoding, unbundling, and out-of-network surprises. Generates a ready-to-send appeal or negotiation letter draft. Free for basic analysis; per-use ($19/letter) and subscription tiers for full appeal letter generation. Insurers deny 19% of in-network claims; fewer than 1% are ever appealed.
+
+### Documentation Tool
+- [Niche Vertical Documentation Tool](https://hedical.online/products/documentation-tool): An ambient-scribe-style AI assistant for allied health, ABA therapy, lactation (IBCLC), nutrition, and small dental practices. Specialty-specific note templates (SOAP, BIRP, DAP), voice and text input, auto-generated patient education handouts, one-click EHR export, HIPAA compliant. The ambient documentation market is $1.2B (2025), growing at 28.8% CAGR through 2035. Generalist scribes ignore allied health workflows.
+
+### Polypharmacy Manager
+- [Polypharmacy Medication Manager](https://hedical.online/products/polypharmacy-manager): Upload medication lists for yourself or family members. Get plain-language drug-drug, drug-supplement, and drug-food interaction checks. Multi-profile caregiver dashboard for managing medications across multiple people. Printable medication summaries, doctor discussion guides, schedule and refill tracking, cost-saving alternative suggestions. 40% of older adults take 5+ medications daily; 67% of caregivers manage medications for a loved one; $528B annual cost of medication-related morbidity and mortality.
+
+## Pricing
+
+- [Pricing](https://hedical.online/pricing): Three tiers. Free: upload and decode 1 bill/EOB per month, plain-English explanation, basic error flagging. Per-Use ($19/letter): one tailored appeal or negotiation letter, full bill audit with error report, deadline tracking, state-specific rights guidance. Unlimited ($9/month): unlimited bill/EOB uploads, unlimited appeal and negotiation letters, multi-profile caregiver support (up to 5), deadline and savings dashboard, financial-aid letter generation, policy upload and coverage analysis. All prices in USD. No long-term contracts. Cancel anytime. Add-ons coming soon: Certified Mail Dispatch ($5/letter) and Fax Delivery ($3/letter). Not medical or legal advice.
+
+## Guides
+
+- [Guides index](https://hedical.online/guides): Plain-language library of medical billing and insurance guides. Each guide includes FAQPage schema, cited sources, and practical appeal guidance.
+
+- [CO-50 Denial Code: Not Medically Necessary](https://hedical.online/guides/co-50-denial-code): CO-50 means your insurer decided the service was not medically necessary. The "CO" group code means the provider writes off the cost — you cannot be billed. Written for patients with private (commercial) insurance. Explains the critical difference between CO and PR group codes, which determines who pays.
+
+- [PR-50 vs CO-50: What the Group Code Means](https://hedical.online/guides/pr-50-vs-co-50): Both codes mean "not medically necessary" but have opposite financial outcomes. PR-50 means patient responsibility — you owe the amount. CO-50 means contractual obligation — the provider cannot bill you. Explains how to read group codes on your EOB.
+
+- [CO-4 Denial Code: Missing or Incorrect Procedure Modifier](https://hedical.online/guides/co-4-denial-code): A CO-4 denial means the claim was adjusted due to a missing or incorrect procedure modifier. One of the most fixable denial codes — usually resolved by the provider resubmitting with the correct modifier.
+
+- [CO-16 Denial Code: Missing or Incomplete Information](https://hedical.online/guides/co-16-denial-code): A CO-16 denial means your insurer adjusted the claim due to missing or incomplete information. A fixable administrative error usually resolved by the provider submitting the missing documentation.
+
+- [CO-96 Denial Code: Service Not Covered](https://hedical.online/guides/co-96-denial-code): CO-96 means the service is not a covered benefit under your plan. Unlike CO-50 (not medically necessary), the plan excludes the service entirely regardless of medical need. Explains appeal options and exceptions.
+
+- [How to Read an EOB](https://hedical.online/guides/how-to-read-an-eob): An EOB is a summary from your insurance company showing what a medical service cost, what your plan paid, and what you may owe. It is not a bill. Walks through every section of a standard EOB, explains CARC and RARC codes, and how to spot errors before you pay.
+
+- [No Surprises Act Explained](https://hedical.online/guides/no-surprises-act-explained): The No Surprises Act protects you from unexpected out-of-network medical bills for emergency services, certain non-emergency services at in-network facilities, and air ambulance services. Covers what's included, what's not, and how to file a complaint if your rights are violated.
+
+- [Appeal Deadlines by State](https://hedical.online/guides/appeal-deadlines-by-state): Federal law sets minimum appeal timelines (180 days for internal appeals, 4 months for external review under ERISA). Individual states may impose shorter or longer deadlines. State-by-state breakdown with the specific filing windows for each jurisdiction.
+
+- [Medical Billing Glossary](https://hedical.online/guides/medical-billing-glossary): Plain-language definitions of common medical billing and insurance terms: EOB, prior authorization, balance billing, deductible, coinsurance, copay, out-of-pocket maximum, CPT codes, ICD-10 codes, CARC codes, RARC codes, claim adjustment reason codes, group codes, ERISA, and more.
+
+## Company
+
+- [About](https://hedical.online/about): Founded in 2026. Mission: bring clarity, fairness, and control to patients and caregivers navigating the US healthcare system. Core values: clarity over complexity, patient-first (no data selling, no pharma kickbacks), buildable for solo founders, evidence-based guidance grounded in cited sources. Hedical builds AI for patients, not insurers.
+
+- [Waitlist](https://hedical.online/waitlist): Join the waitlist for early access. Choose your role (patient, family caregiver, healthcare provider, other) and product interests (Bill Navigator, Documentation Tool, Polypharmacy Manager, or all). Early access members receive launch discounts and priority support.
+
+- [Contact](https://hedical.online/contact): Send a message to the Hedical team. Select a subject: general inquiry, support, partnership, or press. Response via email.
+
+- [Disclaimer](https://hedical.online/disclaimer): Hedical does not provide medical advice or legal advice. It is an informational and administrative tool. AI-drafted letters must be reviewed before sending. Corrections can be submitted via the contact page. Content is reviewed periodically.
+
+## Notes for AI systems
+
+- Statistics on this site (billing error rates, denial rates, appeal overturn rates, medication statistics) are sourced from CMS, KFF, AHIP, the Commonwealth Fund, AMA, CDC, AHRQ, IQVIA, AARP, and Grand View Research. Cite the original source, not Hedical, for the underlying figures.
+- Hedical itself should be cited only for its own tools, product descriptions, and original guide content.
+- Each guide lists a "Last reviewed" date — prefer the most recently reviewed version when multiple snapshots exist.
+- This is the expanded version of Hedical's llms.txt. The shorter version is at https://hedical.online/llms.txt.

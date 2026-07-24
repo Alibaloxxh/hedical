@@ -2,19 +2,19 @@ import type { MDXComponents } from "mdx/types";
 import type { ReactNode } from "react";
 
 function H1({ children, ...props }: { children?: ReactNode; className?: string }) {
-  return <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl" {...props}>{children}</h1>;
+  return <h1 className="mb-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl" {...props}>{children}</h1>;
 }
 
 function H2({ children, ...props }: { children?: ReactNode; className?: string }) {
-  return <h2 className="mb-3 mt-10 text-2xl font-semibold text-foreground" {...props}>{children}</h2>;
+  return <h2 className="mb-3 mt-10 text-2xl font-semibold text-ink" {...props}>{children}</h2>;
 }
 
 function H3({ children, ...props }: { children?: ReactNode; className?: string }) {
-  return <h3 className="mb-2 mt-8 text-xl font-semibold text-foreground" {...props}>{children}</h3>;
+  return <h3 className="mb-2 mt-8 text-xl font-semibold text-ink" {...props}>{children}</h3>;
 }
 
 function H4({ children, ...props }: { children?: ReactNode; className?: string }) {
-  return <h4 className="mb-2 mt-6 text-lg font-semibold text-foreground" {...props}>{children}</h4>;
+  return <h4 className="mb-2 mt-6 text-lg font-semibold text-ink" {...props}>{children}</h4>;
 }
 
 function P({ children, ...props }: { children?: ReactNode; className?: string }) {
@@ -36,7 +36,7 @@ function Li({ children, ...props }: { children?: ReactNode; className?: string }
 function A({ children, href, ...props }: { children?: ReactNode; href?: string; className?: string }) {
   return (
     <a
-      className="text-primary underline underline-offset-2 hover:text-primary-light"
+      className="text-teal underline underline-offset-2 hover:text-teal-light"
       href={href}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}

@@ -271,6 +271,7 @@ export default async function GuidePage({
         title={guideMeta.title}
         description={guideMeta.description}
         datePublished={guideMeta.published}
+        dateModified={guideMeta.updated}
         slug={slug}
         readingTime={guideMeta.readingTime}
       />
@@ -283,7 +284,7 @@ export default async function GuidePage({
         ]} />
 
         <header className="mb-8">
-          <h1 className="mb-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h1 className="mb-3 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
             {guideMeta.title}
           </h1>
           <div className="flex items-center gap-3 text-sm text-muted">

@@ -30,7 +30,7 @@ export function RelatedGuides({ current }: { current: string }) {
 
   return (
     <section className="mt-12 border-t border-gray-200 pt-8">
-      <h2 className="text-lg font-semibold text-foreground mb-4">Related Guides</h2>
+      <h2 className="text-lg font-semibold text-ink mb-4">Related Guides</h2>
       <div className="flex flex-wrap gap-2">
         {related.map((slug) => {
           const guide = allGuides[slug as keyof typeof allGuides];
@@ -39,7 +39,7 @@ export function RelatedGuides({ current }: { current: string }) {
             <Link
               key={slug}
               href={`/guides/${slug}`}
-              className="inline-flex items-center rounded-full border border-border bg-white px-3 py-1.5 text-sm text-muted hover:text-foreground hover:border-foreground/30 transition-colors"
+              className="inline-flex items-center rounded-full border border-hairline bg-white px-3 py-1.5 text-sm text-muted hover:text-ink hover:border-ink/30 transition-colors"
             >
               {guide.title}
             </Link>

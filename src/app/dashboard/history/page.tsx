@@ -21,19 +21,19 @@ export default async function HistoryPage() {
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">Analysis history</h1>
+          <h1 className="text-2xl font-bold text-ink">Analysis history</h1>
           <p className="mt-1 text-sm text-muted">All your past uploads and results</p>
         </div>
         <Link
           href="/dashboard/analyze"
-          className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+          className="rounded-lg bg-teal px-4 py-2 text-sm font-medium text-white hover:bg-teal-light transition-colors"
         >
           New analysis
         </Link>
       </div>
 
       {!analyses || analyses.length === 0 ? (
-        <div className="rounded-xl border border-border bg-zinc-50 p-8 text-center">
+        <div className="rounded-xl border border-hairline bg-paper-light p-8 text-center">
           <div className="mb-3"><IconClipboard size={28} /></div>
           <p className="text-sm text-muted">No analyses yet</p>
           <p className="mt-1 text-xs text-muted">
@@ -41,7 +41,7 @@ export default async function HistoryPage() {
           </p>
           <Link
             href="/dashboard/analyze"
-            className="mt-4 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+            className="mt-4 inline-block rounded-lg bg-teal px-4 py-2 text-sm font-medium text-white hover:bg-teal-light transition-colors"
           >
             Analyze a bill
           </Link>
@@ -51,11 +51,11 @@ export default async function HistoryPage() {
           {analyses.map((a) => (
             <div
               key={a.id}
-              className="rounded-xl border border-border bg-white p-5 transition-colors hover:bg-zinc-50"
+              className="rounded-xl border border-hairline bg-white p-5 transition-colors hover:bg-paper-light"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="min-w-0">
-                  <p className="text-sm font-medium text-foreground truncate">
+                  <p className="text-sm font-medium text-ink truncate">
                     {a.input_summary || "Untitled analysis"}
                   </p>
                   <p className="mt-0.5 text-xs text-muted">

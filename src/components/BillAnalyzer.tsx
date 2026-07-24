@@ -201,20 +201,20 @@ export function BillAnalyzer() {
   };
 
   return (
-    <div className="rounded-2xl border border-border bg-white shadow-sm">
+    <div className="rounded-2xl border border-hairline bg-white shadow-sm">
       {/* Upload step */}
       {step === "upload" && (
         <div className="p-6 sm:p-8">
           <div
             className={`flex flex-col items-center justify-center rounded-2xl border-2 border-dashed p-8 text-center transition-colors ${
-              dragOver ? "border-primary bg-hedical-50" : "border-border bg-zinc-50"
+              dragOver ? "border-teal bg-teal/5" : "border-hairline bg-paper-light"
             }`}
             onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
             onDragLeave={() => setDragOver(false)}
             onDrop={(e) => { e.preventDefault(); setDragOver(false); const f = e.dataTransfer.files[0]; if (f) handleFileDrop(f); }}
           >
             <div className="mb-4"><IconFile size={36} /></div>
-            <h3 className="text-lg font-semibold text-foreground">Upload your bill or EOB</h3>
+            <h3 className="text-lg font-semibold text-ink">Upload your bill or EOB</h3>
             <p className="mt-2 text-sm text-muted max-w-sm">
               Drag and drop a file here, or click to browse. We accept PDFs, JPEGs, PNGs, and WebP images up to 10 MB.
             </p>
@@ -227,16 +227,16 @@ export function BillAnalyzer() {
             />
             <button
               onClick={() => fileInputRef.current?.click()}
-              className="mt-6 rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+              className="mt-6 rounded-lg bg-teal px-6 py-2.5 text-sm font-medium text-white hover:bg-teal-light transition-colors"
             >
               Browse files
             </button>
             {file && (
-              <div className="mt-4 flex items-center gap-2 rounded-lg border border-border bg-white px-4 py-2 text-sm text-muted">
+              <div className="mt-4 flex items-center gap-2 rounded-lg border border-hairline bg-white px-4 py-2 text-sm text-muted">
 <span><IconPaperclip className="size-4" /></span>
                 <span className="truncate max-w-[200px]">{file.name}</span>
                 <span className="text-xs">({(file.size / 1024 / 1024).toFixed(1)} MB)</span>
-                <button onClick={() => setFile(null)} className="ml-2 text-foreground hover:text-red-600">&times;</button>
+                <button onClick={() => setFile(null)} className="ml-2 text-ink hover:text-red-600">&times;</button>
               </div>
             )}
           </div>
@@ -251,7 +251,7 @@ export function BillAnalyzer() {
             <button
               onClick={handleAnalyze}
               disabled={!file}
-              className="rounded-lg bg-primary px-8 py-3 text-base font-medium text-white shadow-sm hover:bg-primary-light transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-lg bg-teal px-8 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-light transition-colors disabled:cursor-not-allowed disabled:opacity-50"
             >
               Analyze my bill
             </button>
@@ -265,7 +265,7 @@ export function BillAnalyzer() {
       {/* Processing steps */}
       {(step === "extracting" || step === "explaining" || step === "flagging") && (
         <div className="p-6 sm:p-8">
-          <h3 className="text-lg font-semibold text-foreground text-center mb-6">Analyzing your document...</h3>
+          <h3 className="text-lg font-semibold text-ink text-center mb-6">Analyzing your document...</h3>
           <div className="mx-auto max-w-sm space-y-4">
             {progress.map((p, i) => (
               <div key={i} className={`flex items-center gap-3 ${p.status === "active" ? "animate-pulse-step" : ""}`}>
@@ -275,7 +275,7 @@ export function BillAnalyzer() {
                   </svg>
                 )}
                 {p.status === "active" && (
-                  <svg className="h-5 w-5 shrink-0 animate-spin text-primary" viewBox="0 0 24 24" fill="none">
+                  <svg className="h-5 w-5 shrink-0 animate-spin text-teal" viewBox="0 0 24 24" fill="none">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                   </svg>
@@ -286,9 +286,9 @@ export function BillAnalyzer() {
                   </svg>
                 )}
                 {p.status === "pending" && (
-                  <div className="h-5 w-5 shrink-0 rounded-full border-2 border-border" />
+                  <div className="h-5 w-5 shrink-0 rounded-full border-2 border-hairline" />
                 )}
-                <span className={`text-sm ${p.status === "done" ? "text-green-700" : p.status === "active" ? "text-foreground font-medium" : p.status === "error" ? "text-red-700" : "text-muted"}`}>
+                <span className={`text-sm ${p.status === "done" ? "text-green-700" : p.status === "active" ? "text-ink font-medium" : p.status === "error" ? "text-red-700" : "text-muted"}`}>
                   {p.label}
                 </span>
               </div>
@@ -308,8 +308,8 @@ export function BillAnalyzer() {
         return (
           <div className="p-6 sm:p-8 space-y-6">
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-foreground">Analysis results</h3>
-              <button onClick={reset} className="text-sm text-primary hover:underline">
+              <h3 className="text-lg font-semibold text-ink">Analysis results</h3>
+              <button onClick={reset} className="text-sm text-teal hover:underline">
                 Analyze another bill
               </button>
             </div>
@@ -329,37 +329,37 @@ export function BillAnalyzer() {
             )}
 
             {/* Summary card (always shown, even on inconsistency) */}
-            <div className="rounded-xl border border-border bg-zinc-50 p-4 space-y-2">
+            <div className="rounded-xl border border-hairline bg-paper-light p-4 space-y-2">
               {e.currency && (
                 <div className="flex justify-between text-sm">
                   <span className="text-muted">Currency</span>
-                  <span className="font-medium text-foreground">{e.currency}</span>
+                  <span className="font-medium text-ink">{e.currency}</span>
                 </div>
               )}
               {e.region && (
                 <div className="flex justify-between text-sm">
                   <span className="text-muted">Region</span>
-                  <span className="font-medium text-foreground">{e.region}</span>
+                  <span className="font-medium text-ink">{e.region}</span>
                 </div>
               )}
               <div className="flex justify-between text-sm">
                 <span className="text-muted">Provider</span>
-                <span className="font-medium text-foreground">{e.provider}</span>
+                <span className="font-medium text-ink">{e.provider}</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-muted">Date of service</span>
-                <span className="font-medium text-foreground">{e.serviceDate}</span>
+                <span className="font-medium text-ink">{e.serviceDate}</span>
               </div>
               {e.totalBilled !== null && (
                 <div className="flex justify-between text-sm">
                   <span className="text-muted">Total billed</span>
-                  <span className="font-medium text-foreground">{sym}{e.totalBilled.toFixed(2)}</span>
+                  <span className="font-medium text-ink">{sym}{e.totalBilled.toFixed(2)}</span>
                 </div>
               )}
               {e.totalPatientResponsibility !== null && (
                 <div className="flex justify-between text-sm">
                   <span className="text-muted">{selfPay ? "Amount due" : "Your estimated responsibility"}</span>
-                  <span className="font-semibold text-primary">{sym}{e.totalPatientResponsibility.toFixed(2)}</span>
+                  <span className="font-semibold text-teal">{sym}{e.totalPatientResponsibility.toFixed(2)}</span>
                 </div>
               )}
               {e.denialReasonText && (
@@ -371,7 +371,7 @@ export function BillAnalyzer() {
               {e.deadlineDate && (
                 <div className="flex justify-between text-sm">
                   <span className="text-muted">Deadline</span>
-                  <span className="font-medium text-foreground">{e.deadlineDate}</span>
+                  <span className="font-medium text-ink">{e.deadlineDate}</span>
                 </div>
               )}
             </div>
@@ -385,19 +385,19 @@ export function BillAnalyzer() {
 
             {/* Line items (always shown) */}
             <div>
-              <h4 className="text-sm font-semibold text-foreground mb-3">Line items ({e.lineItems.length})</h4>
+              <h4 className="text-sm font-semibold text-ink mb-3">Line items ({e.lineItems.length})</h4>
               <div className="space-y-2">
                 {e.lineItems.map((item, i) => (
-                  <div key={i} className="rounded-lg border border-border p-3 text-sm">
+                  <div key={i} className="rounded-lg border border-hairline p-3 text-sm">
                     <div className="flex items-start justify-between">
                       <div>
                         <span className="font-mono text-xs text-muted">{item.code}</span>
-                        <p className="text-foreground mt-0.5">{item.description}</p>
+                        <p className="text-ink mt-0.5">{item.description}</p>
                       </div>
                       <div className="text-right shrink-0 ml-4">
                         {item.billedAmount !== null && <div className="text-muted">{sym}{item.billedAmount.toFixed(2)}</div>}
                         {item.paidAmount !== null && <div className="text-muted">Paid: {sym}{item.paidAmount.toFixed(2)}</div>}
-                        {item.patientOwes !== null && <div className="font-semibold text-primary">{sym}{item.patientOwes.toFixed(2)}</div>}
+                        {item.patientOwes !== null && <div className="font-semibold text-teal">{sym}{item.patientOwes.toFixed(2)}</div>}
                       </div>
                     </div>
                     {analysis.flags.filter((f) => f.lineItemIndex === i).map((flag, fi) => {
@@ -415,8 +415,8 @@ export function BillAnalyzer() {
 
             {/* Plain English explanation (always shown) */}
             <div>
-              <h4 className="text-sm font-semibold text-foreground mb-3">Plain-English explanation</h4>
-              <div className="rounded-xl border border-border bg-zinc-50 p-4 text-sm text-muted whitespace-pre-line leading-relaxed">
+              <h4 className="text-sm font-semibold text-ink mb-3">Plain-English explanation</h4>
+              <div className="rounded-xl border border-hairline bg-paper-light p-4 text-sm text-muted whitespace-pre-line leading-relaxed">
                 {analysis.explanation}
               </div>
             </div>
@@ -424,7 +424,7 @@ export function BillAnalyzer() {
             {/* Flagged issues — blocked on inconsistency */}
             {analysis.flags.length > 0 && consistency.ok && (
               <div>
-                <h4 className="text-sm font-semibold text-foreground mb-3">
+                <h4 className="text-sm font-semibold text-ink mb-3">
                   Potential issues found ({analysis.flags.length})
                 </h4>
                 <div className="space-y-2">
@@ -483,7 +483,7 @@ export function BillAnalyzer() {
                         {isUnlimited ? "Unlimited Plan" : `${navCredits} credit${navCredits !== 1 ? "s" : ""} remaining`}
                       </span>
                     </div>
-                    <h4 className="text-base font-semibold text-foreground">Ready to appeal?</h4>
+                    <h4 className="text-base font-semibold text-ink">Ready to appeal?</h4>
                     <p className="mt-2 text-sm text-muted">
                       {isUnlimited
                         ? "Generate an appeal letter — included in your plan."
@@ -496,12 +496,12 @@ export function BillAnalyzer() {
                         onChange={(e) => setPatientName(e.target.value)}
                         placeholder="Your full name (for the letter)"
                         required
-                        className="block w-full rounded-lg border border-border px-4 py-2.5 text-sm text-foreground placeholder-muted focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                        className="block w-full rounded-lg border border-hairline px-4 py-2.5 text-sm text-ink placeholder-muted focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                       />
                       <button
                         type="submit"
                         disabled={!patientName.trim() || isGenerating}
-                        className="w-full rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-white hover:bg-primary-light transition-colors disabled:opacity-50"
+                        className="w-full rounded-lg bg-teal px-6 py-2.5 text-sm font-medium text-white hover:bg-teal-light transition-colors disabled:opacity-50"
                       >
                         {isGenerating ? "Generating..." : "Generate appeal letter draft"}
                       </button>
@@ -515,15 +515,15 @@ export function BillAnalyzer() {
 
               if (!isLoggedIn) {
                 return (
-                  <div className="rounded-xl border border-hedical-200 bg-hedical-50 p-6 text-center">
-                    <h4 className="text-base font-semibold text-foreground">Ready to appeal?</h4>
+                  <div className="rounded-xl border border-teal/10 bg-teal/5 p-6 text-center">
+                    <h4 className="text-base font-semibold text-ink">Ready to appeal?</h4>
                     <p className="mt-2 text-sm text-muted">
                       Sign in to generate an AI-drafted appeal letter based on your documents and flagged issues.
                     </p>
                     <div className="mt-4">
                       <Link
                         href={`/login?redirect=${encodeURIComponent("/dashboard/analyze")}`}
-                        className="inline-block rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+                        className="inline-block rounded-lg bg-teal px-6 py-2.5 text-sm font-medium text-white hover:bg-teal-light transition-colors"
                       >
                         Sign in to continue
                       </Link>
@@ -536,15 +536,15 @@ export function BillAnalyzer() {
               }
 
               return (
-                <div className="rounded-xl border border-hedical-200 bg-hedical-50 p-6 text-center">
-                  <h4 className="text-base font-semibold text-foreground">Ready to appeal?</h4>
+                <div className="rounded-xl border border-teal/10 bg-teal/5 p-6 text-center">
+                  <h4 className="text-base font-semibold text-ink">Ready to appeal?</h4>
                   <p className="mt-2 text-sm text-muted">
                     You need credits or an Unlimited plan to generate an appeal letter.
                   </p>
                   <div className="mt-4">
                     <Link
                       href="/pricing"
-                      className="inline-block rounded-lg bg-primary px-6 py-2.5 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+                      className="inline-block rounded-lg bg-teal px-6 py-2.5 text-sm font-medium text-white hover:bg-teal-light transition-colors"
                     >
                       View pricing
                     </Link>
@@ -563,28 +563,28 @@ export function BillAnalyzer() {
       {step === "letter" && letterText && (
         <div className="p-6 sm:p-8 space-y-6" ref={letterRef}>
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-foreground">Appeal letter draft</h3>
-            <button onClick={reset} className="text-sm text-primary hover:underline">
+            <h3 className="text-lg font-semibold text-ink">Appeal letter draft</h3>
+            <button onClick={reset} className="text-sm text-teal hover:underline">
               Analyze another bill
             </button>
           </div>
 
           <Disclaimer variant="banner" />
 
-          <div className="rounded-xl border border-border bg-white p-6 text-sm font-mono whitespace-pre-line leading-relaxed">
+          <div className="rounded-xl border border-hairline bg-white p-6 text-sm font-mono whitespace-pre-line leading-relaxed">
             {letterText}
           </div>
 
           <div className="flex flex-wrap gap-3">
             <button
               onClick={copyLetter}
-              className="rounded-lg border border-border bg-white px-5 py-2.5 text-sm font-medium text-foreground hover:bg-zinc-50 transition-colors"
+              className="rounded-lg border border-hairline bg-white px-5 py-2.5 text-sm font-medium text-ink hover:bg-paper-light transition-colors"
             >
               Copy to clipboard
             </button>
             <button
               onClick={downloadLetter}
-              className="rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-light transition-colors"
+              className="rounded-lg bg-teal px-5 py-2.5 text-sm font-medium text-white hover:bg-teal-light transition-colors"
             >
               Download as text file
             </button>

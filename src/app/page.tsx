@@ -47,67 +47,65 @@ export default async function Home() {
     <>
       <WebSiteSchema name="Hedical" url={siteUrl} />
       {/* ───── Hero ───── */}
-      <section className="bg-[#e8e4db] px-8 py-24">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 items-start">
-          {/* Left */}
+      <section className="bg-paper-dark px-6 sm:px-8 py-24">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 gap-8 lg:grid-cols-2 items-start">
           <div>
-            <span className="animate-fade-in-up animate-stagger-1 inline-block bg-[#d4edda] text-[#1a3a2a] text-xs font-medium px-[10px] py-[4px] rounded-[6px] mb-[14px]">
+            <span className="animate-fade-in-up animate-stagger-1 inline-block bg-teal/10 text-teal-dark text-xs font-medium px-3 py-1 rounded-md mb-3.5">
               No insurance login needed
             </span>
-            <h1 className="animate-fade-in-up animate-stagger-2 font-serif text-[36px] font-[600] leading-[1.25] text-[#1a3a2a] mb-3">
+            <h1 className="animate-fade-in-up animate-stagger-2 font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-ink mb-3">
               Find billing errors in your medical bill — in minutes
             </h1>
-            <p className="animate-fade-in-up animate-stagger-3 text-base text-[#4a4a45] leading-relaxed max-w-[520px] mb-5">
-              Upload any bill or denial. Hedical flags overcharges and drafts your appeal so you don't pay for a mistake.
+            <p className="animate-fade-in-up animate-stagger-3 text-base sm:text-lg text-body leading-relaxed max-w-lg mb-5">
+              Upload any bill or denial. Hedical flags overcharges and drafts your appeal so you don&apos;t pay for a mistake.
             </p>
-            <div className="animate-fade-in-up animate-stagger-4 flex gap-[10px]">
+            <div className="animate-fade-in-up animate-stagger-4 flex gap-2.5">
               <Link
                 href={ctaHref}
-                className="bg-[#1a3a2a] text-white border-none px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block active:scale-[0.97] transition-transform duration-100 ease-out"
+                className="inline-flex items-center rounded-lg bg-ink px-5 py-2.5 text-sm font-medium text-white active:scale-[0.97] transition-[transform,filter] duration-100 ease-out hover:brightness-110"
               >
                 {ctaText}
               </Link>
               <Link
                 href="/pricing"
-                className="bg-transparent text-[#1a3a2a] border border-[#1a3a2a] px-[18px] py-[10px] text-sm font-medium rounded-[6px] cursor-pointer inline-block active:scale-[0.97] transition-transform duration-100 ease-out"
+                className="inline-flex items-center rounded-lg border border-ink bg-transparent px-5 py-2.5 text-sm font-medium text-ink active:scale-[0.97] transition-[transform,filter] duration-100 ease-out hover:bg-ink/5"
               >
                 See Pricing
               </Link>
             </div>
           </div>
 
-          {/* Right: bill card */}
-          <div className="animate-scale-in animate-stagger-5 bg-white border-[0.5px] border-[#e0e0e0] rounded-xl p-5 max-w-[480px]">
-            <div className="flex justify-between mb-[10px]">
+          <div className="animate-scale-in animate-stagger-5 rounded-xl border border-hairline bg-elevation-1 p-5 shadow-sm max-w-[480px]">
+            <div className="flex justify-between mb-2.5">
               <div>
-                <p className="text-[11px] uppercase text-[#6e6e6e] m-0">Statement</p>
-                <p className="text-sm font-[500] text-[#111111] mt-[2px] m-0">Mercy General Hospital</p>
+                <p className="text-[11px] uppercase tracking-wider text-muted">Statement</p>
+                <p className="text-sm font-medium text-ink mt-0.5">Mercy General Hospital</p>
               </div>
               <div className="text-right">
-                <p className="text-xs text-[#6e6e6e] m-0">Date: 06/15/2026</p>
-                <p className="text-xs text-[#6e6e6e] m-0">Acct: #4829-71</p>
+                <p className="text-xs text-muted">Date: 06/15/2026</p>
+                <p className="text-xs text-muted">Acct: #4829-71</p>
               </div>
             </div>
-            <div className="border-t-[0.5px] border-[#e0e0e0] pt-2">
-              <div className="flex justify-between py-[6px] text-[13px]">
-                <span><span className="font-mono text-[11px] text-[#6e6e6e] mr-2">0750</span>Facility fee — ER</span>
-                <span className="font-[500]">$2,350.00</span>
+            <div className="border-t border-hairline-light pt-2 space-y-1">
+              <div className="flex justify-between py-1.5 text-sm">
+                <span><span className="font-mono text-[11px] text-muted mr-2">0750</span>Facility fee — ER</span>
+                <span className="font-medium">$2,350.00</span>
               </div>
-              <div className="flex justify-between py-[6px] text-[13px]">
-                <span><span className="font-mono text-[11px] text-[#6e6e6e] mr-2">99284</span>ER level 3 eval</span>
-                <span className="font-[500]">$1,890.00</span>
+              <div className="flex justify-between py-1.5 text-sm">
+                <span><span className="font-mono text-[11px] text-muted mr-2">99284</span>ER level 3 eval</span>
+                <span className="font-medium">$1,890.00</span>
               </div>
-              <div className="bg-bg-danger rounded-[6px] p-[10px_12px] mt-2">
-                <div className="flex justify-between items-center text-[13px] text-text-danger">
-                  <span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline mr-[6px] -mt-[2px] align-[-2px]">
+              <div className="bg-danger-bg rounded-lg p-2.5 mt-2">
+                <div className="flex justify-between items-center text-sm text-danger-text">
+                  <span className="flex items-center gap-1.5">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
                       <path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.29 3.86l-8.3 14.36a1.5 1.5 0 0 0 1.29 2.28h16.44a1.5 1.5 0 0 0 1.29-2.28l-8.3-14.36a1.5 1.5 0 0 0-2.58 0z" />
                     </svg>
                     0750 Facility fee — duplicate
                   </span>
-                  <span className="font-[500] line-through">$2,350.00</span>
+                  <span className="font-medium line-through">$2,350.00</span>
                 </div>
-                <p className="text-xs text-text-danger mt-[6px]">Same code billed twice on line 4 — flagged for appeal</p>
+                <p className="text-xs text-danger-text mt-1.5">Same code billed twice on line 4 — flagged for appeal</p>
               </div>
             </div>
           </div>
@@ -115,13 +113,13 @@ export default async function Home() {
       </section>
 
       {/* ───── How It Works ───── */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-elevation-1 py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-2xl text-ink sm:text-3xl mb-16 font-[500]">
+          <h2 className="font-serif text-center text-2xl text-ink sm:text-3xl mb-16 font-medium">
             How it works
           </h2>
           <div className="relative flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:justify-between">
-            <div className="absolute left-[3.25rem] right-[3.25rem] top-6 hidden h-px bg-hairline sm:block" />
+            <div className="absolute inset-x-14 top-6 hidden h-px bg-hairline sm:block" />
             {[
               { icon: "upload", label: "Upload", desc: "Any bill or EOB" },
               { icon: "search", label: "Analyze", desc: "Errors get flagged" },
@@ -131,7 +129,7 @@ export default async function Home() {
               return (
                 <div key={s.label} className={`animate-fade-in-up animate-stagger-${i + 1} relative z-10 flex flex-col items-center`}>
                   <div
-                    className={`flex h-12 w-12 items-center justify-center rounded-full text-white ${
+                    className={`flex size-12 items-center justify-center rounded-full text-white ${
                       isFinal ? "bg-teal" : "bg-ink"
                     }`}
                   >
@@ -161,12 +159,12 @@ export default async function Home() {
       </section>
 
       {/* ───── Stats & Citations ───── */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-paper-light py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-[500]">
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-medium">
             Medical billing is error-prone at scale
           </h2>
-          <p className="mt-3 text-center text-base text-muted-secondary max-w-2xl mx-auto">
+          <p className="mt-3 text-center text-base text-body max-w-2xl mx-auto">
             We analyzed over 200,000 claim records and published claims data from CMS, AHIP, and KFF. These are the systemic problems Hedical is built to solve.
           </p>
           <div className="mt-10 overflow-hidden rounded-xl border border-hairline">
@@ -180,22 +178,22 @@ export default async function Home() {
               </thead>
               <tbody className="divide-y divide-hairline">
                 <tr>
-                  <td className="px-5 py-4 text-muted-secondary">Of all medical bills contain at least one billing error</td>
+                  <td className="px-5 py-4 text-body">Of all medical bills contain at least one billing error</td>
                   <td className="px-5 py-4 font-medium text-ink">49%</td>
                   <td className="px-5 py-4 text-right"><a href={sourceLinks.errorRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">KFF</a></td>
                 </tr>
                 <tr className="bg-paper/50">
-                  <td className="px-5 py-4 text-muted-secondary">Of in-network claims denied by insurers</td>
+                  <td className="px-5 py-4 text-body">Of in-network claims denied by insurers</td>
                   <td className="px-5 py-4 font-medium text-ink">17%</td>
                   <td className="px-5 py-4 text-right"><a href={sourceLinks.denialRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">AHIP</a></td>
                 </tr>
                 <tr>
-                  <td className="px-5 py-4 text-muted-secondary">Of denied claims are never appealed by patients</td>
+                  <td className="px-5 py-4 text-body">Of denied claims are never appealed by patients</td>
                   <td className="px-5 py-4 font-medium text-ink">&lt;0.2%</td>
                   <td className="px-5 py-4 text-right"><a href={sourceLinks.denialRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">Commonwealth Fund</a></td>
                 </tr>
                 <tr className="bg-paper/50">
-                  <td className="px-5 py-4 text-muted-secondary">Of appeals that result in insurer overturning their denial</td>
+                  <td className="px-5 py-4 text-body">Of appeals that result in insurer overturning their denial</td>
                   <td className="px-5 py-4 font-medium text-ink">44–78%</td>
                   <td className="px-5 py-4 text-right"><a href={sourceLinks.appealRate} className="text-teal underline underline-offset-2" target="_blank" rel="noopener noreferrer">AMA</a></td>
                 </tr>
@@ -209,10 +207,10 @@ export default async function Home() {
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-serif text-3xl text-ink sm:text-4xl font-[500]">
+            <h2 className="font-serif text-3xl text-ink sm:text-4xl font-medium">
               Three tools, one job
             </h2>
-            <p className="mt-3 text-base text-muted-secondary">
+            <p className="mt-3 text-base text-body">
               Each one reads a different document and tells you what&apos;s wrong with it.
             </p>
           </div>
@@ -243,22 +241,22 @@ export default async function Home() {
               <Link
                 key={card.title}
                 href={card.href}
-                className={`animate-fade-in-up animate-stagger-${i + 1} group relative block rounded-xl bg-white p-6 transition-transform duration-[250ms] var(--ease-out) hover:shadow-md hover:-translate-y-0.5 ${
+                className={`animate-fade-in-up animate-stagger-${i + 1} group relative block rounded-xl bg-elevation-1 p-6 shadow-xs transition-all duration-300 ease-out hover:shadow-md hover:-translate-y-1 ${
                   card.recommended ? "border-2 border-teal" : "border border-hairline"
                 }`}
               >
                 {card.recommended && (
-                  <span className="absolute -top-2.5 left-4 inline-flex items-center rounded-full bg-teal px-2.5 py-0.5 text-xs font-medium text-white">
+                  <span className="absolute -top-2.5 left-4 inline-flex items-center rounded-full bg-teal px-2.5 py-0.5 text-xs font-medium text-white shadow-sm">
                     Recommended
                   </span>
                 )}
                 <p className="text-[10px] font-medium uppercase tracking-widest text-muted mb-2">
                   {card.eyebrow}
                 </p>
-                <h3 className="font-serif text-base text-ink font-[500]">
+                <h3 className="font-serif text-base text-ink font-medium">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-sm text-muted-secondary leading-relaxed">
+                <p className="mt-2 text-sm text-body leading-relaxed">
                   {card.desc}
                 </p>
               </Link>
@@ -270,10 +268,10 @@ export default async function Home() {
       {/* ───── How to Appeal a Denied Medical Claim ───── */}
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-[500]">
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-medium">
             How to appeal a denied medical claim
           </h2>
-          <p className="mt-3 text-center text-base text-muted-secondary">
+          <p className="mt-3 text-center text-base text-body">
             You have the legal right to appeal any insurance denial under the Employee Retirement Income Security Act (ERISA) and the Affordable Care Act. Most patients never exercise this right. Here is how.
           </p>
           <ol className="mt-10 space-y-6">
@@ -281,35 +279,35 @@ export default async function Home() {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">1</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Read your Explanation of Benefits</h3>
-                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">The EOB tells you the official reason for the denial: not medically necessary, out-of-network, experimental, or a billing code mismatch. Appeal strategy depends entirely on which reason is cited.</p>
+                <p className="mt-1 text-sm text-body leading-relaxed">The EOB tells you the official reason for the denial: not medically necessary, out-of-network, experimental, or a billing code mismatch. Appeal strategy depends entirely on which reason is cited.</p>
               </div>
             </li>
             <li className="animate-fade-in-up animate-stagger-2 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">2</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Gather supporting medical records</h3>
-                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Ask your provider for the clinical notes, test results, and any prior authorization documents that support the medical necessity of the denied service.</p>
+                <p className="mt-1 text-sm text-body leading-relaxed">Ask your provider for the clinical notes, test results, and any prior authorization documents that support the medical necessity of the denied service.</p>
               </div>
             </li>
             <li className="animate-fade-in-up animate-stagger-3 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">3</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Write a formal appeal letter</h3>
-                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Address it to the insurer's appeals department, reference the claim number, cite the specific plan provision that supports coverage, and enclose the supporting records. Hedical can draft this letter for you from your uploaded documents.</p>
+                <p className="mt-1 text-sm text-body leading-relaxed">Address it to the insurer's appeals department, reference the claim number, cite the specific plan provision that supports coverage, and enclose the supporting records. Hedical can draft this letter for you from your uploaded documents.</p>
               </div>
             </li>
             <li className="animate-fade-in-up animate-stagger-4 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">4</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Submit within the deadline</h3>
-                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">Most plans allow 180 days from the denial date for a first-level appeal. Check your plan document — deadlines vary by state and insurer.</p>
+                <p className="mt-1 text-sm text-body leading-relaxed">Most plans allow 180 days from the denial date for a first-level appeal. Check your plan document — deadlines vary by state and insurer.</p>
               </div>
             </li>
             <li className="animate-fade-in-up animate-stagger-5 flex gap-4">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-sm font-bold text-white">5</span>
               <div>
                 <h3 className="text-base font-semibold text-ink">Escalate if denied again</h3>
-                <p className="mt-1 text-sm text-muted-secondary leading-relaxed">If the internal appeal is rejected, you can request an external review by an independent third party. State insurance departments and the federal Department of Labor oversee this process.</p>
+                <p className="mt-1 text-sm text-body leading-relaxed">If the internal appeal is rejected, you can request an external review by an independent third party. State insurance departments and the federal Department of Labor oversee this process.</p>
               </div>
             </li>
           </ol>
@@ -334,10 +332,10 @@ export default async function Home() {
       {/* ───── Popular Guides ───── */}
       <section className="bg-paper py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-[500]">
+          <h2 className="font-serif text-center text-3xl text-ink sm:text-4xl font-medium">
             Understand your denial codes
           </h2>
-          <p className="mt-3 text-center text-base text-muted-secondary max-w-xl mx-auto">
+          <p className="mt-3 text-center text-base text-body max-w-xl mx-auto">
             Plain-language guides to the most common insurance denial codes and your appeal rights.
           </p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -348,7 +346,7 @@ export default async function Home() {
               { title: "Appeal Deadlines by State", href: "/guides/appeal-deadlines-by-state" },
             ].map((g, i) => (
               <Link key={g.href} href={g.href}
-                className={`animate-fade-in-up animate-stagger-${i + 1} block rounded-lg border border-hairline bg-white p-5 text-sm text-ink transition-transform duration-[250ms] var(--ease-out) hover:shadow-md hover:-translate-y-0.5`}
+                className={`animate-fade-in-up animate-stagger-${i + 1} block rounded-lg border border-hairline bg-elevation-1 p-5 text-sm text-ink shadow-xs transition-all duration-300 ease-out hover:shadow-md hover:-translate-y-1`}
               >
                 {g.title} &rarr;
               </Link>
@@ -363,19 +361,19 @@ export default async function Home() {
       </section>
 
       {/* ───── CTA ───── */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-paper-light py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <div className="animate-fade-in rounded-2xl bg-ink p-10 sm:p-14 text-center">
-            <h2 className="font-serif text-2xl text-white sm:text-3xl font-[500]">
+          <div className="animate-fade-in rounded-2xl bg-ink p-10 sm:p-14 text-center shadow-lg">
+            <h2 className="font-serif text-2xl text-white sm:text-3xl font-medium">
               Be among the first to try it
             </h2>
-            <p className="mt-3 text-sm text-muted leading-relaxed max-w-md mx-auto">
+            <p className="mt-3 text-sm text-white/70 leading-relaxed max-w-md mx-auto">
               We&apos;re onboarding early users in small batches so every letter gets reviewed properly before it ships.
             </p>
             <div className="mt-8">
               <Link
                 href="/waitlist"
-                className="active:scale-[0.97] inline-flex items-center rounded-lg bg-teal px-6 py-3 text-base font-medium text-white transition-[transform,filter] duration-100 ease-out hover:brightness-110"
+                className="active:scale-[0.97] inline-flex items-center rounded-lg bg-teal px-6 py-3 text-base font-medium text-white shadow-sm transition-[transform,filter] duration-100 ease-out hover:brightness-110"
               >
                 Join the waitlist
               </Link>

@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { default as nextDynamic } from "next/dynamic";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { VisitTracker } from "@/components/VisitTracker";
 import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
 import { Analytics } from "@vercel/analytics/next";
-
-const Footer = nextDynamic(() => import("@/components/Footer").then((m) => ({ default: m.Footer })));
-const VisitTracker = nextDynamic(() => import("@/components/VisitTracker").then((m) => ({ default: m.VisitTracker })));
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +21,7 @@ const geistMono = Geist_Mono({
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: ["500"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hedical.online";
@@ -137,10 +135,13 @@ height="0" width="0" className="hidden"></iframe></noscript>
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
+        <a href="#main-content" className="fixed -top-full left-4 z-[100] rounded-b-lg bg-teal px-4 py-2 text-sm font-medium text-white shadow-md focus:top-0 focus:outline-none transition-all">
+          Skip to content
+        </a>
         <SmoothScrollProvider>
           <Header initialUser={null} />
           <VisitTracker />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1 outline-none" tabIndex={-1}>{children}</main>
           <Footer />
         </SmoothScrollProvider>
         <Analytics />

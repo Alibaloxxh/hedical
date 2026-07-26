@@ -65,8 +65,19 @@ export function Header({ initialUser }: { initialUser?: { email: string } | null
         setUserMenuOpen(false);
       }
     }
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        setProductsOpen(false);
+        setUserMenuOpen(false);
+      }
+    }
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   async function handleSignOut() {

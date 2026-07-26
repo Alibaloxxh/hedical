@@ -1,0 +1,21 @@
+{
+  "provider": "Maricruz991 Considine820",
+  "serviceDate": "2017/01/25",
+  "lineItems": [
+    {
+      "code": "312961",
+      "description": "Simvastatin 20 MG Oral Tablet",
+      "billedAmount": 66.59,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 66.59,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

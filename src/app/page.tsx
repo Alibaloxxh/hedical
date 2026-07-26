@@ -57,7 +57,7 @@ export default async function Home() {
               Find billing errors in your medical bill — in minutes
             </h1>
             <p className="animate-fade-in-up animate-stagger-3 text-base sm:text-lg text-body leading-relaxed max-w-lg mb-5">
-              Upload any bill or denial. Hedical flags overcharges and drafts your appeal so you don&apos;t pay for a mistake.
+              We check your bill against 9,184 real Medicare prices and flag overcharges automatically, so you don&apos;t pay for a mistake.
             </p>
             <div className="animate-fade-in-up animate-stagger-4 flex gap-2.5">
               <Link
@@ -94,6 +94,16 @@ export default async function Home() {
               <div className="flex justify-between py-1.5 text-sm">
                 <span><span className="font-mono text-[11px] text-muted mr-2">99284</span>ER level 3 eval</span>
                 <span className="font-medium">$1,890.00</span>
+              </div>
+              <div className="flex items-center gap-1.5 px-0.5 pb-1">
+                <span className="inline-flex items-center gap-1 rounded bg-amber/10 px-1.5 py-0.5 text-[11px] font-medium text-amber">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 3 21 3 21 9" /><polyline points="9 21 3 21 3 15" />
+                    <line x1="21" y1="3" x2="14" y2="10" /><line x1="3" y1="21" x2="10" y2="14" />
+                  </svg>
+                  4.0x Medicare
+                </span>
+                <span className="text-[11px] text-muted">Medicare pays $473 for 99284</span>
               </div>
               <div className="bg-danger-bg rounded-lg p-2.5 mt-2">
                 <div className="flex justify-between items-center text-sm text-danger-text">
@@ -361,22 +371,24 @@ export default async function Home() {
       </section>
 
       {/* ───── CTA ───── */}
-      <section className="bg-paper-light py-16 sm:py-24">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+      <section className="bg-paper-light px-4 sm:px-6 lg:px-8">
+        <div className="w-full">
           <div className="animate-fade-in rounded-2xl bg-ink p-10 sm:p-14 text-center shadow-lg">
-            <h2 className="font-serif text-2xl text-white sm:text-3xl font-medium">
-              Be among the first to try it
-            </h2>
-            <p className="mt-3 text-sm text-white/70 leading-relaxed max-w-md mx-auto">
-              We&apos;re onboarding early users in small batches so every letter gets reviewed properly before it ships.
-            </p>
-            <div className="mt-8">
-              <Link
-                href="/waitlist"
-                className="active:scale-[0.97] inline-flex items-center rounded-lg bg-teal px-6 py-3 text-base font-medium text-white shadow-sm transition-[transform,filter] duration-100 ease-out hover:brightness-110"
-              >
-                Join the waitlist
-              </Link>
+            <div className="mx-auto max-w-2xl">
+              <h2 className="font-serif text-2xl text-white sm:text-3xl font-medium">
+                Be among the first to try it
+              </h2>
+              <p className="mt-3 text-sm text-white/70 leading-relaxed">
+                We&apos;re onboarding early users in small batches so every letter gets reviewed properly before it ships.
+              </p>
+              <div className="mt-8">
+                <Link
+                  href="/waitlist"
+                  className="active:scale-[0.97] inline-flex items-center rounded-lg bg-teal px-6 py-3 text-base font-medium text-white shadow-sm transition-[transform,filter] duration-100 ease-out hover:brightness-110"
+                >
+                  Join the waitlist
+                </Link>
+              </div>
             </div>
           </div>
         </div>

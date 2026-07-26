@@ -2,23 +2,11 @@ import { callGroq, TEXT_MODEL, MAX_TOKENS } from "./client";
 import type { BillExtraction, FlaggedIssue } from "./types";
 import { billingPatterns } from "./patterns";
 import { getStateProtection } from "./stateProtections";
+import { getPricingBenchmarks } from "./pricingBenchmark";
 
 const US_ONLY_PATTERN_IDS = new Set(["oon-001", "pa-001", "non-001"]);
 
-// Known authoritative pricing references — used to validate model claims in referenceBasis.
-// The model may fabricate a reference (e.g. "CMS fee schedule rate $450") even when it has no
-// real data. This list lets us reject claims that don't name a known source.
-// TODO: Replace this static list with live API calls to the actual data sources.
-const KNOWN_PRICING_SOURCES = [
-  "nadac", "national average drug acquisition cost",
-  "cms physician fee schedule", "medicare physician fee schedule",
-  "fair health", "fairhealth",
-  "medicare fee schedule",
-  "usual customary and reasonable", "ucr rate",
-  "regional benchmark",
-  "all-payer claims database", "apcd",
-  "state", "geographic area", "locality",
-];
+const OVERCHARGE_THRESHOLD_MULTIPLIER = 2.0;
 
 function normalize(str: string): string {
   return str.toLowerCase().replace(/[^a-z0-9]/g, "").trim();
@@ -104,20 +92,60 @@ export function mergeFlags(deterministic: FlaggedIssue[], llmFlags: FlaggedIssue
   return [...deterministic, ...filtered];
 }
 
-export function validateReferenceBasis(flag: FlaggedIssue): void {
-  if (flag.type !== "excessive_charge") return;
-  if (!flag.referenceBasis) return;
+function buildBenchmarkContext(
+  benchmarks: Map<string, { cptCode: string; description: string | null; amount: number; state: string | null; source: string; year: number }>,
+  items: { code?: string; description?: string; billedAmount?: number | null }[],
+): string {
+  if (benchmarks.size === 0) return "";
 
-  const lower = flag.referenceBasis.toLowerCase();
-  const recognized = KNOWN_PRICING_SOURCES.some((src) => lower.includes(src));
-
-  if (!recognized) {
-    flag.referenceBasis = null;
+  const lines: string[] = [];
+  for (const item of items) {
+    if (!item.code) continue;
+    const b = benchmarks.get(item.code.toUpperCase());
+    if (!b) continue;
+    const charged = item.billedAmount != null ? `$${item.billedAmount.toFixed(2)}` : "unknown";
+    const ratio = item.billedAmount != null && item.billedAmount > 0
+      ? ` (${(item.billedAmount / b.amount).toFixed(1)}x benchmark)`
+      : "";
+    lines.push(
+      `  - ${b.cptCode} "${b.description || item.description || ""}": Medicare allowed = $${b.amount.toFixed(2)}${b.state ? ` (${b.state})` : " (national)"}, charged = ${charged}${ratio}`,
+    );
   }
+  return lines.length > 0 ? `\nPRICING BENCHMARKS (${benchmarks.values().next().value?.source || "CMS"}, ${benchmarks.values().next().value?.year || ""}):\n${lines.join("\n")}\n` : "";
+}
+
+export function computeBenchmarkFlags(
+  items: BillExtraction["lineItems"],
+  benchmarks: Map<string, { cptCode: string; description: string | null; amount: number; state: string | null; source: string; year: number }>,
+): FlaggedIssue[] {
+  const flags: FlaggedIssue[] = [];
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (!item.code || item.billedAmount == null) continue;
+    const b = benchmarks.get(item.code.toUpperCase());
+    if (!b) continue;
+    if (item.billedAmount > b.amount * OVERCHARGE_THRESHOLD_MULTIPLIER) {
+      const ratio = (item.billedAmount / b.amount).toFixed(1);
+      flags.push({
+        type: "excessive_charge",
+        severity: "warning",
+        description: `Line ${i + 1}: ${item.code} ("${item.description}") billed $${item.billedAmount.toFixed(2)}, which is ${ratio}x the ${b.state ? `${b.state} ` : ""}Medicare allowed amount of $${b.amount.toFixed(2)}.`,
+        lineItemIndex: i,
+        citation: "CMS Medicare Physician & Other Practitioners benchmark",
+        referenceBasis: `${b.source} (${b.year})${b.state ? ` ${b.state}` : " national"}: $${b.amount.toFixed(2)}`,
+      });
+    }
+  }
+  return flags;
 }
 
 export async function flagIssues(extraction: BillExtraction): Promise<FlaggedIssue[]> {
   const deterministic = detectDuplicates(extraction);
+
+  const cptCodes = extraction.lineItems.map(i => i.code).filter(Boolean) as string[];
+  const benchmarks = await getPricingBenchmarks(cptCodes, extraction.usState);
+
+  const benchmarkFlags = computeBenchmarkFlags(extraction.lineItems, benchmarks);
 
   const isNonUS = extraction.region && extraction.region !== "US" && extraction.region !== "USA";
 
@@ -138,13 +166,15 @@ export async function flagIssues(extraction: BillExtraction): Promise<FlaggedIss
     return `\nSTATE-SPECIFIC PROTECTIONS (${prot.name}): Surprise billing: ${prot.surpriseBilling}. External review: ${prot.externalReview}. Balance billing: ${prot.balanceBilling}. Appeal deadline: ${prot.appealDeadlineDays} days. Reference these when relevant to the data above.`;
   })();
 
+  const benchmarkCtx = buildBenchmarkContext(benchmarks, extraction.lineItems);
+
   const prompt = `You are a medical billing auditor. Analyze the following bill/EOB data against the known error patterns provided below.
 
 PATIENT BILL DATA:
 ${JSON.stringify(extraction, null, 2)}
 
 DETECTED CURRENCY: ${extraction.currency || "Not detected"}
-DETECTED REGION: ${extraction.region || "Not detected"}${regionNotice}${stateInfo}
+DETECTED REGION: ${extraction.region || "Not detected"}${regionNotice}${stateInfo}${benchmarkCtx}
 
 KNOWN BILLING ERROR PATTERNS (reference knowledge base — cite these when applicable):
 ${patternsJson}
@@ -157,16 +187,17 @@ For each issue you find, return a JSON array of issue objects with this structur
     "description": "Clear explanation of what was found and why it may be an issue",
     "lineItemIndex": null or the 0-based index of the relevant line item,
     "citation": "Name of the relevant pattern or regulation, if applicable",
-    "referenceBasis": "For excessive_charge type only: the specific comparator used (e.g., 'NADAC average for this drug', 'CMS fee schedule for this geographic area', 'published regional benchmark'). If no reliable reference is available, set this to null."
+    "referenceBasis": "For excessive_charge type only: the specific comparator used. If no reliable reference is available, set this to null."
   }
 ]
 
 Rules:
 - Do NOT flag "duplicate_charge" — that is handled by a separate deterministic system and will be merged automatically.
+- Do NOT flag "excessive_charge" for items where a PRICING BENCHMARK is shown above — those are already evaluated by the benchmark system. Focus on other issue types (upcoding, unbundling, out-of-network, missing prior auth, etc.).
 - Only flag something if there is reasonable evidence from the data.
 - Use "error" for clear billing violations, "warning" for likely issues, "info" for things worth noting.
 - If no issues are found, return an empty array [].
-- For "excessive_charge" type: you MUST provide a real referenceBasis naming the actual comparator used. If you have no reliable comparison point for that line item, do NOT label it "excessive_charge" — instead output a lower-confidence "other" type entry with "worth verifying" language and referenceBasis set to null.
+- For "excessive_charge" type (for items NOT covered by benchmarks above): you MUST provide a real referenceBasis naming the actual comparator used. If you have no reliable comparison point for that line item, do NOT label it "excessive_charge" — instead output a lower-confidence "other" type entry with "worth verifying" language and referenceBasis set to null.
 - Do NOT infer "excessive" purely from general pricing intuition. Only flag if you can cite a specific fee schedule, drug pricing reference (like NADAC), or explicit regional benchmark.
 - Return ONLY valid JSON, no markdown, no extra text.`;
 
@@ -187,10 +218,7 @@ Rules:
 
   const llmFlags = JSON.parse(raw) as FlaggedIssue[];
 
-  // Post-processing: validate referenceBasis and downgrade excessive_charge flags
-  // that lack a recognized pricing reference.
   for (const flag of llmFlags) {
-    validateReferenceBasis(flag);
     if (flag.type === "excessive_charge" && !flag.referenceBasis) {
       flag.type = "other";
       flag.severity = "info";
@@ -198,10 +226,5 @@ Rules:
     }
   }
 
-  // TODO: Integrate real pricing reference APIs (e.g., CMS fee schedule, NADAC drug pricing, regional
-  // benchmark databases) to provide authoritative referenceBasis values for excessive-charge detection.
-  // Without an API, the model may still hallucinate fee schedules — a future enhancement should pass
-  // actual fee data into the prompt and validate referenceBasis claims server-side.
-
-  return mergeFlags(deterministic, llmFlags);
+  return mergeFlags([...deterministic, ...benchmarkFlags], llmFlags);
 }

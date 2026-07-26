@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { detectDuplicates, mergeFlags, validateReferenceBasis } from "./flagIssues";
+import { detectDuplicates, mergeFlags, computeBenchmarkFlags } from "./flagIssues";
 import type { BillExtraction, FlaggedIssue } from "./types";
 
 const BASE: BillExtraction = {
@@ -35,7 +35,6 @@ describe("detectDuplicates", () => {
     const result = detectDuplicates(data);
     expect(result.length).toBeGreaterThanOrEqual(2);
     expect(result.every((f) => f.type === "duplicate_charge")).toBe(true);
-    // Each flagged item should reference the correct line
     expect(result.some((f) => f.lineItemIndex === 0)).toBe(true);
     expect(result.some((f) => f.lineItemIndex === 1)).toBe(true);
   });
@@ -62,7 +61,6 @@ describe("detectDuplicates", () => {
       ],
     };
     const result = detectDuplicates(data);
-    // Should still match since descriptions are very similar
     expect(result.some((f) => f.type === "duplicate_charge")).toBe(true);
   });
 
@@ -114,88 +112,50 @@ describe("mergeFlags", () => {
   });
 });
 
-describe("validateReferenceBasis", () => {
-  it("keeps referenceBasis when it names a known source (NADAC)", () => {
-    const flag: FlaggedIssue = {
-      type: "excessive_charge",
-      severity: "warning",
-      description: "Charge exceeds NADAC average",
-      lineItemIndex: 0,
-      referenceBasis: "NADAC average for this drug is $150",
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBe("NADAC average for this drug is $150");
+describe("computeBenchmarkFlags", () => {
+  const benchMap = new Map([
+    ["99213", { cptCode: "99213", description: "Office Visit Level 3", amount: 125, state: null, source: "CMS Medicare Physician & Other Practitioners", year: 2023 }],
+    ["99214", { cptCode: "99214", description: "Office Visit Level 4", amount: 180, state: null, source: "CMS Medicare Physician & Other Practitioners", year: 2023 }],
+    ["80048", { cptCode: "80048", description: "Basic metabolic panel", amount: 12, state: null, source: "CMS Medicare Physician & Other Practitioners", year: 2023 }],
+  ]);
+
+  it("flags known CPT code with real overcharge (>2x benchmark)", () => {
+    const items = [
+      { code: "99213", description: "Office Visit Level 3", billedAmount: 500, paidAmount: null, patientOwes: 500 },
+    ];
+    const flags = computeBenchmarkFlags(items, benchMap);
+    expect(flags).toHaveLength(1);
+    expect(flags[0].type).toBe("excessive_charge");
+    expect(flags[0].referenceBasis).toContain("$125.00");
+    expect(flags[0].lineItemIndex).toBe(0);
   });
 
-  it("keeps referenceBasis when it names CMS fee schedule", () => {
-    const flag: FlaggedIssue = {
-      type: "excessive_charge",
-      severity: "warning",
-      description: "Above CMS fee schedule",
-      lineItemIndex: 0,
-      referenceBasis: "CMS Physician Fee Schedule for this locality",
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBe("CMS Physician Fee Schedule for this locality");
+  it("does not flag known CPT code with normal charge", () => {
+    const items = [
+      { code: "99213", description: "Office Visit Level 3", billedAmount: 150, paidAmount: null, patientOwes: 150 },
+    ];
+    const flags = computeBenchmarkFlags(items, benchMap);
+    expect(flags).toHaveLength(0);
   });
 
-  it("keeps referenceBasis when it mentions FAIR Health", () => {
-    const flag: FlaggedIssue = {
-      type: "excessive_charge",
-      severity: "warning",
-      description: "Above fair health benchmark",
-      lineItemIndex: 0,
-      referenceBasis: "FAIR Health regional benchmark",
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBe("FAIR Health regional benchmark");
+  it("does not flag unknown CPT code (no crash)", () => {
+    const items = [
+      { code: "99999", description: "Unknown code", billedAmount: 9999, paidAmount: null, patientOwes: 9999 },
+    ];
+    const flags = computeBenchmarkFlags(items, benchMap);
+    expect(flags).toHaveLength(0);
   });
 
-  it("clears referenceBasis when it names an unrecognized source", () => {
-    const flag: FlaggedIssue = {
-      type: "excessive_charge",
-      severity: "warning",
-      description: "Vastly overpriced",
-      lineItemIndex: 0,
-      referenceBasis: "My private pricing database says this should be $50",
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBeNull();
+  it("returns empty array for empty items", () => {
+    const flags = computeBenchmarkFlags([], benchMap);
+    expect(flags).toHaveLength(0);
   });
 
-  it("does nothing for non-excessive_charge types", () => {
-    const flag: FlaggedIssue = {
-      type: "upcoding",
-      severity: "warning",
-      description: "Upcoding detected",
-      lineItemIndex: 0,
-      referenceBasis: "Some random basis",
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBe("Some random basis");
-  });
-
-  it("does nothing when referenceBasis is null", () => {
-    const flag: FlaggedIssue = {
-      type: "excessive_charge",
-      severity: "warning",
-      description: "Above typical rate",
-      lineItemIndex: 0,
-      referenceBasis: null,
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBeNull();
-  });
-
-  it("accepts 'usual customary and reasonable' as a valid source", () => {
-    const flag: FlaggedIssue = {
-      type: "excessive_charge",
-      severity: "info",
-      description: "Above UCR",
-      lineItemIndex: 0,
-      referenceBasis: "Usual customary and reasonable rate for this geographic area",
-    };
-    validateReferenceBasis(flag);
-    expect(flag.referenceBasis).toBeTruthy();
+  it("returns empty array when benchmark map is empty", () => {
+    const items = [
+      { code: "99213", description: "Office Visit", billedAmount: 500, paidAmount: null, patientOwes: 500 },
+    ];
+    const flags = computeBenchmarkFlags(items, new Map());
+    expect(flags).toHaveLength(0);
   });
 });

@@ -1,0 +1,35 @@
+{
+  "provider": "Shon148 Reinger292",
+  "serviceDate": "2016/12/12",
+  "lineItems": [
+    {
+      "code": "270427003",
+      "description": "Patient-initiated encounter (procedure)",
+      "billedAmount": 85.55,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "10383002",
+      "description": "Counseling for termination of pregnancy (procedure)",
+      "billedAmount": 431.4,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "714812005",
+      "description": "Induced termination of pregnancy (procedure)",
+      "billedAmount": 3928.03,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 4444.9800000000005,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

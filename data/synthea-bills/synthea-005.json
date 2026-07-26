@@ -1,0 +1,21 @@
+{
+  "provider": "Shon148 Reinger292",
+  "serviceDate": "2013/08/29",
+  "lineItems": [
+    {
+      "code": "424619006",
+      "description": "Prenatal visit (regime/therapy)",
+      "billedAmount": 142.58,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 142.58,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

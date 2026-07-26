@@ -1,0 +1,35 @@
+{
+  "provider": "Shon148 Reinger292",
+  "serviceDate": "2016/11/28",
+  "lineItems": [
+    {
+      "code": "424441002",
+      "description": "Prenatal initial visit (regime/therapy)",
+      "billedAmount": 142.58,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "252160004",
+      "description": "Standard pregnancy test (procedure)",
+      "billedAmount": 2261.69,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "169230002",
+      "description": "Ultrasound scan for fetal viability (procedure)",
+      "billedAmount": 4049.7,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 6453.969999999999,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

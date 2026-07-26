@@ -1,0 +1,42 @@
+{
+  "provider": "Shon148 Reinger292",
+  "serviceDate": "2016/12/27",
+  "lineItems": [
+    {
+      "code": "424619006",
+      "description": "Prenatal visit (regime/therapy)",
+      "billedAmount": 142.58,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "386394001",
+      "description": "Pregnancy termination care (regime/therapy)",
+      "billedAmount": 438.3,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "5880005",
+      "description": "Physical examination procedure (procedure)",
+      "billedAmount": 431.4,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "171207006",
+      "description": "Depression screening (procedure)",
+      "billedAmount": 431.4,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 1443.6799999999998,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

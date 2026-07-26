@@ -50,6 +50,7 @@ Extract ALL of the following fields from the document image/PDF:
    If unsure, use null.
 10. US STATE — if the region is US, detect the two-letter US state abbreviation from addresses or state names on the document (e.g., "CA", "NY", "TX"). If unsure or if the document is not from the US, use null.
 11. DEADLINE DATE — if the document shows a response deadline, appeal deadline, or payment due date (e.g., "must be received by 07/15/2026", "appeal deadline: 30 days from receipt", "due by 08/01/2026"), extract that date as a string in MM/DD/YYYY format. If no deadline is visible, use null.
+12. DIAGNOSIS CODES — extract every ICD-10 diagnosis code visible on the document. Look for "DIAG", "DX", "Diagnosis", "ICD-10" labels followed by codes like "F41.1", "M54.5", "J45.0", "Z23", etc. Each code may have an associated description. These are typically listed in a header section near the claim/EOB details, sometimes referenced by line item.
 
 Return JSON in this exact shape (use these exact field names):
 
@@ -72,7 +73,10 @@ Return JSON in this exact shape (use these exact field names):
   "currency": "USD",
   "region": "US",
   "usState": "CA",
-  "deadlineDate": "08/15/2026"
+  "deadlineDate": "08/15/2026",
+  "diagnosisCodes": [
+    { "code": "F41.1", "description": "Generalized anxiety disorder" }
+  ]
 }
 
 Rules:
@@ -153,6 +157,12 @@ Rules:
     region: typeof parsed.region === "string" ? parsed.region.toUpperCase() : null,
     usState: typeof parsed.usState === "string" ? parsed.usState.toUpperCase() : null,
     deadlineDate: typeof parsed.deadlineDate === "string" ? parsed.deadlineDate : null,
+    diagnosisCodes: Array.isArray(parsed.diagnosisCodes)
+      ? parsed.diagnosisCodes.map((d: any) => ({
+          code: typeof d === "string" ? d : d.code || "UNKNOWN",
+          description: typeof d === "string" ? undefined : typeof d.description === "string" ? d.description : undefined,
+        }))
+      : undefined,
   };
 }
 

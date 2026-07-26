@@ -21,11 +21,14 @@ export function BillAnalyzer() {
   const [analysis, setAnalysis] = useState<AnalysisData | null>(null);
   const [letterText, setLetterText] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [queued, setQueued] = useState(false);
   const [patientName, setPatientName] = useState("");
   const [usageToken] = useState(() => crypto.randomUUID());
   const [isGenerating, setIsGenerating] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const letterRef = useRef<HTMLDivElement>(null);
+  const retryRef = useRef<ReturnType<typeof setTimeout>>(null);
+  const retryCountRef = useRef(0);
 
   const [entitlement, setEntitlement] = useState<{
     plan: "unlimited" | "free" | null;
@@ -37,6 +40,9 @@ export function BillAnalyzer() {
       .then((r) => r.json())
       .then((data) => setEntitlement(data))
       .catch(() => {});
+    return () => {
+      if (retryRef.current) clearTimeout(retryRef.current);
+    };
   }, []);
 
   const [progress, setProgress] = useState<ProgressStep[]>([
@@ -80,47 +86,63 @@ export function BillAnalyzer() {
 
     setStep("extracting");
     setError(null);
+    setQueued(false);
     setAnalysis(null);
     setLetterText(null);
     updateProgress(0, "active");
+    retryCountRef.current = 0;
 
     const formData = new FormData();
     formData.append("file", file);
 
-    try {
-      const res = await fetch("/api/bills/analyze", {
-        method: "POST",
-        body: formData,
-      });
+    async function attempt(): Promise<void> {
+      try {
+        const res = await fetch("/api/bills/analyze", {
+          method: "POST",
+          body: formData,
+        });
 
-      const data = await res.json();
+        const data = await res.json();
 
-      if (!res.ok) {
-        setError(data.error || "Analysis failed. Please try again.");
+        if (res.status === 429 && data.queued) {
+          setQueued(true);
+          const delay = Math.min(10000 * Math.pow(1.5, retryCountRef.current), 60000);
+          retryCountRef.current++;
+          retryRef.current = setTimeout(attempt, delay);
+          return;
+        }
+
+        if (!res.ok) {
+          setError(data.error || "Analysis failed. Please try again.");
+          setStep("upload");
+          updateProgress(0, "error");
+          return;
+        }
+
+        retryCountRef.current = 0;
+        setQueued(false);
+        updateProgress(0, "done");
+        updateProgress(1, "active");
+        setStep("explaining");
+        await new Promise((r) => setTimeout(r, 300));
+
+        updateProgress(1, "done");
+        updateProgress(2, "active");
+        setStep("flagging");
+
+        await new Promise((r) => setTimeout(r, 300));
+        updateProgress(2, "done");
+
+        setAnalysis(data.analysis);
+        setStep("results");
+      } catch {
+        setError("Network error. Please check your connection and try again.");
         setStep("upload");
         updateProgress(0, "error");
-        return;
       }
-
-      updateProgress(0, "done");
-      updateProgress(1, "active");
-      setStep("explaining");
-      await new Promise((r) => setTimeout(r, 300));
-
-      updateProgress(1, "done");
-      updateProgress(2, "active");
-      setStep("flagging");
-
-      await new Promise((r) => setTimeout(r, 300));
-      updateProgress(2, "done");
-
-      setAnalysis(data.analysis);
-      setStep("results");
-    } catch {
-      setError("Network error. Please check your connection and try again.");
-      setStep("upload");
-      updateProgress(0, "error");
     }
+
+    attempt();
   }
 
   async function handleGenerateLetter(e: FormEvent) {
@@ -183,8 +205,11 @@ export function BillAnalyzer() {
     setAnalysis(null);
     setLetterText(null);
     setError(null);
+    setQueued(false);
     setPatientName("");
     setIsGenerating(false);
+    if (retryRef.current) clearTimeout(retryRef.current);
+    retryCountRef.current = 0;
     setProgress([
       { label: "Reading document", status: "pending" },
       { label: "Explaining in plain English", status: "pending" },
@@ -265,7 +290,23 @@ export function BillAnalyzer() {
       {/* Processing steps */}
       {(step === "extracting" || step === "explaining" || step === "flagging") && (
         <div className="p-6 sm:p-8">
-          <h3 className="text-lg font-semibold text-ink text-center mb-6">Analyzing your document...</h3>
+          {queued ? (
+            <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5 text-center">
+              <h3 className="text-base font-semibold text-ink">High demand — you&apos;re in the queue</h3>
+              <p className="mt-2 text-sm text-muted">
+                Lots of people are checking their bills right now. You&apos;ve been added to the queue and we&apos;ll update you here as soon as it&apos;s your turn.
+              </p>
+              <div className="mt-3 flex items-center justify-center gap-2 text-sm text-muted">
+                <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                Retrying automatically...
+              </div>
+            </div>
+          ) : (
+            <h3 className="text-lg font-semibold text-ink text-center mb-6">Analyzing your document...</h3>
+          )}
           <div className="mx-auto max-w-sm space-y-4">
             {progress.map((p, i) => (
               <div key={i} className={`flex items-center gap-3 ${p.status === "active" ? "animate-pulse-step" : ""}`}>

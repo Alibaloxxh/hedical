@@ -1,0 +1,21 @@
+{
+  "provider": "Xochitl483 Haley279",
+  "serviceDate": "2016/06/06",
+  "lineItems": [
+    {
+      "code": "185349003",
+      "description": "Encounter for check up (procedure)",
+      "billedAmount": 85.55,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 85.55,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

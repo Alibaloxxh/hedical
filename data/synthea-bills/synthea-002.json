@@ -1,0 +1,21 @@
+{
+  "provider": "Omer483 Koepp521",
+  "serviceDate": "2017/01/09",
+  "lineItems": [
+    {
+      "code": "185347001",
+      "description": "Encounter for problem (procedure)",
+      "billedAmount": 85.55,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 85.55,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

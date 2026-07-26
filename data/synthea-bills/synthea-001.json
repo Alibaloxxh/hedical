@@ -1,0 +1,21 @@
+{
+  "provider": "Hong136 Schneider199",
+  "serviceDate": "2007/12/31",
+  "lineItems": [
+    {
+      "code": "410620009",
+      "description": "Well child visit (procedure)",
+      "billedAmount": 136.8,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 136.8,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

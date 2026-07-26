@@ -1,0 +1,70 @@
+{
+  "provider": "Hong136 Schneider199",
+  "serviceDate": "2017/01/23",
+  "lineItems": [
+    {
+      "code": "162673000",
+      "description": "General examination of patient (procedure)",
+      "billedAmount": 136.8,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "140",
+      "description": "Influenza  split virus  trivalent  PF",
+      "billedAmount": 136,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "430193006",
+      "description": "Medication reconciliation (procedure)",
+      "billedAmount": 215.7,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "710824005",
+      "description": "Assessment of health and social care needs (procedure)",
+      "billedAmount": 431.4,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "171207006",
+      "description": "Depression screening (procedure)",
+      "billedAmount": 0,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "171207006",
+      "description": "Depression screening (procedure)",
+      "billedAmount": 0,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "428211000124100",
+      "description": "Assessment of substance use (procedure)",
+      "billedAmount": 0,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "763302001",
+      "description": "Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure)",
+      "billedAmount": 0,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 919.9,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

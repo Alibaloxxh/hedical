@@ -1,0 +1,21 @@
+{
+  "provider": "Omer483 Koepp521",
+  "serviceDate": "2017/01/09",
+  "lineItems": [
+    {
+      "code": "206905",
+      "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+      "billedAmount": 129.94,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 129.94,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

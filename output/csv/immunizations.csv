@@ -1,0 +1,714 @@
+DATE,PATIENT,ENCOUNTER,CODE,DESCRIPTION,BASE_COST
+2017-01-23T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-3627-41fcf0a791c8,140,Influenza  split virus  trivalent  PF,136.00
+2017-01-28T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-ae31-5093cd7baccf,140,Influenza  split virus  trivalent  PF,136.00
+2017-01-25T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-985c-5b83215fb62c,140,Influenza  split virus  trivalent  PF,136.00
+2018-01-31T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-2e17-cd1fa3a53446,140,Influenza  split virus  trivalent  PF,136.00
+2019-02-06T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-9db9-cd6c86868080,140,Influenza  split virus  trivalent  PF,136.00
+2020-01-27T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-cd6b-9b9da98b8ac7,140,Influenza  split virus  trivalent  PF,136.00
+2020-02-12T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-9199-fcd9e77af970,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-03T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-e52c-8ea87642bcd3,140,Influenza  split virus  trivalent  PF,136.00
+2021-05-10T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-3f78-aa775bd64b33,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-05-31T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-1fd6-f35bec0452da,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2020-09-02T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-8e65-c4d583556658,140,Influenza  split virus  trivalent  PF,136.00
+2019-02-09T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-df9f-d8761592c91a,140,Influenza  split virus  trivalent  PF,136.00
+2019-02-09T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-df9f-d8761592c91a,43,Hep B  adult,136.00
+2021-04-14T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-fb45-73b749916f11,212,COVID-19 vaccine  vector-nr  rS-Ad26  PF  0.5 mL,136.00
+2020-02-15T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-4d74-f17b94cfaaab,140,Influenza  split virus  trivalent  PF,136.00
+2020-02-15T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-4d74-f17b94cfaaab,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-02-15T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-4d74-f17b94cfaaab,43,Hep B  adult,136.00
+2020-02-15T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-4d74-f17b94cfaaab,114,meningococcal MCV4P,136.00
+2021-02-20T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-ed4b-8997e79bb58d,140,Influenza  split virus  trivalent  PF,136.00
+2021-02-20T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-ed4b-8997e79bb58d,43,Hep B  adult,136.00
+2021-04-24T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-e6af-f659f6a7dd47,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-02-23T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-ce52-d6609886be73,140,Influenza  split virus  trivalent  PF,136.00
+2023-03-01T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-f47a-c300d134d5dd,140,Influenza  split virus  trivalent  PF,136.00
+2024-03-06T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-7380-61995439aa1b,140,Influenza  split virus  trivalent  PF,136.00
+2021-05-15T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-9072-db098d1e158f,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2025-03-12T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-a623-0324a7c08845,140,Influenza  split virus  trivalent  PF,136.00
+2025-03-12T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-a623-0324a7c08845,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2022-02-26T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-dd2e-46299c201116,140,Influenza  split virus  trivalent  PF,136.00
+2023-03-04T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-5ce5-9200252a679a,140,Influenza  split virus  trivalent  PF,136.00
+2024-03-09T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-b9e3-b6a6486bebc9,140,Influenza  split virus  trivalent  PF,136.00
+2025-03-15T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-d20e-f47e4abe055d,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-30T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-16f1-56aec5834c0b,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-30T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-16f1-56aec5834c0b,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2026-03-18T21:17:45Z,c370b4e4-a980-2e6a-d5be-74ce23d111c2,c370b4e4-a980-2e6a-7038-aa717762ea3c,140,Influenza  split virus  trivalent  PF,136.00
+2026-03-21T11:14:21Z,9575bb57-0440-ca5b-04a1-db1db794c493,9575bb57-0440-ca5b-6dd7-875d64bd7b60,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-02T05:27:28Z,d2c5d821-c9c2-1b25-52cd-a332401d4f6b,d2c5d821-c9c2-1b25-b2b6-911841907c58,140,Influenza  split virus  trivalent  PF,136.00
+2017-04-09T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-6898-a7a2d3b243c3,140,Influenza  split virus  trivalent  PF,136.00
+2018-04-15T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-389e-5642d85577ec,140,Influenza  split virus  trivalent  PF,136.00
+2019-04-21T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-61f9-cdb98c5e858f,140,Influenza  split virus  trivalent  PF,136.00
+2019-04-21T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-61f9-cdb98c5e858f,114,meningococcal MCV4P,136.00
+2020-04-26T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-da53-0130f55cea7f,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-18T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-0a56-02c1a6e57561,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-25T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-1594-1c03d601c4ec,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-05-23T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-5bd2-6eaf9bfc064f,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2017-05-09T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-0b87-d727f40be4e7,140,Influenza  split virus  trivalent  PF,136.00
+2022-05-08T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-f9f1-922dd012d8f9,140,Influenza  split virus  trivalent  PF,136.00
+2023-02-19T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-8cfd-6ba0ec1f7549,140,Influenza  split virus  trivalent  PF,136.00
+2023-05-14T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-b802-e2cd4ddef8b3,43,Hep B  adult,136.00
+2018-05-15T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-aa76-b7144783dab4,140,Influenza  split virus  trivalent  PF,136.00
+2024-05-19T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-9192-16b77082376c,140,Influenza  split virus  trivalent  PF,136.00
+2024-05-19T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-9192-16b77082376c,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2024-05-19T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-9192-16b77082376c,43,Hep B  adult,136.00
+2024-05-19T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-9192-16b77082376c,114,meningococcal MCV4P,136.00
+2019-05-21T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-7b0e-531d83883154,140,Influenza  split virus  trivalent  PF,136.00
+2025-05-25T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-bb0a-d5fa5258a2e3,140,Influenza  split virus  trivalent  PF,136.00
+2025-05-25T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-bb0a-d5fa5258a2e3,43,Hep B  adult,136.00
+2026-05-31T01:48:24Z,43996009-25c5-ba84-c8ef-fe021fb88342,43996009-25c5-ba84-ae43-43d224cce79d,140,Influenza  split virus  trivalent  PF,136.00
+2020-05-26T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-49e3-229b1ef1932f,140,Influenza  split virus  trivalent  PF,136.00
+2021-05-11T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-a58c-f23d82891367,121,zoster vaccine  live,136.00
+2021-05-11T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-a58c-f23d82891367,140,Influenza  split virus  trivalent  PF,136.00
+2021-07-20T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-9ddc-f7083c0bc4fa,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-08-17T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-53aa-ff35aeed33d4,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-06-14T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-ae58-ecb0810d97f7,121,zoster vaccine  live,136.00
+2022-06-14T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-ae58-ecb0810d97f7,140,Influenza  split virus  trivalent  PF,136.00
+2022-06-14T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-ae58-ecb0810d97f7,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2023-06-20T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-e0c9-caae241fee9d,140,Influenza  split virus  trivalent  PF,136.00
+2024-06-25T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-26da-0eaa198936dd,140,Influenza  split virus  trivalent  PF,136.00
+2025-07-01T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-69fa-499b6c188418,140,Influenza  split virus  trivalent  PF,136.00
+2026-01-20T21:26:30Z,acd905a4-e3d8-2406-e07f-ffbcc4ad0e5a,acd905a4-e3d8-2406-f788-6b051f120dc5,140,Influenza  split virus  trivalent  PF,136.00
+2016-11-29T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-15f8-10f5de385706,140,Influenza  split virus  trivalent  PF,136.00
+2017-12-05T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-4514-c08138689e7c,140,Influenza  split virus  trivalent  PF,136.00
+2018-12-11T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-e9bf-0918021bf7e8,140,Influenza  split virus  trivalent  PF,136.00
+2018-12-11T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-e9bf-0918021bf7e8,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2017-08-04T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-1a03-86d9037d9ba2,140,Influenza  split virus  trivalent  PF,136.00
+2019-12-17T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-6c78-5d60bac1af30,140,Influenza  split virus  trivalent  PF,136.00
+2020-12-22T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-a16d-2b96b5e0d789,140,Influenza  split virus  trivalent  PF,136.00
+2021-03-16T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-0e71-7f0b956877b3,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-04-13T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-187c-93c89a99ded3,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-12-28T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-6855-75dd19d3fb77,140,Influenza  split virus  trivalent  PF,136.00
+2018-08-10T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-4eac-08194442eae3,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-03T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-5efb-b4eecaca1506,140,Influenza  split virus  trivalent  PF,136.00
+2023-06-20T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-c3e9-f20f049921d7,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-16T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-b4de-754a5f442d6d,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-16T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-b4de-754a5f442d6d,43,Hep B  adult,136.00
+2020-08-21T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-7afb-c3fa7c763231,140,Influenza  split virus  trivalent  PF,136.00
+2020-08-21T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-7afb-c3fa7c763231,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-08-21T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-7afb-c3fa7c763231,43,Hep B  adult,136.00
+2020-08-21T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-7afb-c3fa7c763231,114,meningococcal MCV4P,136.00
+2021-07-23T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-a379-765e167bbc99,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-08-13T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-218f-766121e8388b,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2025-01-14T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-d9e6-0b775a6eb304,140,Influenza  split virus  trivalent  PF,136.00
+2026-01-20T17:01:04Z,73443683-ecb7-3283-b91f-2130671c6e87,73443683-ecb7-3283-45b4-1f4aecfb5ee9,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-27T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-20c0-97a2dbf289c1,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-27T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-20c0-97a2dbf289c1,43,Hep B  adult,136.00
+2022-09-02T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-dbb5-2830b9772c5a,140,Influenza  split virus  trivalent  PF,136.00
+2023-04-21T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-15d8-fe70ced4a6dc,140,Influenza  split virus  trivalent  PF,136.00
+2016-12-27T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-7bec-b42f654c0dda,21,varicella,136.00
+2016-12-27T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-7bec-b42f654c0dda,10,IPV,136.00
+2016-12-27T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-7bec-b42f654c0dda,140,Influenza  split virus  trivalent  PF,136.00
+2016-12-27T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-7bec-b42f654c0dda,20,DTaP,136.00
+2016-12-27T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-7bec-b42f654c0dda,03,MMR,136.00
+2018-01-02T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-8494-37240e595074,140,Influenza  split virus  trivalent  PF,136.00
+2019-01-08T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-4e07-4af908d7050c,140,Influenza  split virus  trivalent  PF,136.00
+2020-01-14T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-9778-40cb30967215,140,Influenza  split virus  trivalent  PF,136.00
+2021-01-19T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-5a9c-96742cfdc65c,140,Influenza  split virus  trivalent  PF,136.00
+2024-09-13T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-1cb2-1de5a81db85c,140,Influenza  split virus  trivalent  PF,136.00
+2025-09-19T14:26:05Z,c58d6513-0598-fbcf-452e-bbdb0917cea0,c58d6513-0598-fbcf-c05d-657421af6f67,140,Influenza  split virus  trivalent  PF,136.00
+2022-01-25T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-8905-af6b25f47df0,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-31T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-851a-949c4c923e33,115,Tdap,136.00
+2023-01-31T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-851a-949c4c923e33,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-31T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-851a-949c4c923e33,62,HPV  quadrivalent,136.00
+2023-01-31T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-851a-949c4c923e33,114,meningococcal MCV4P,136.00
+2024-01-23T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-491e-c6e66e329230,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2024-02-06T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-f3cd-32bd2fec9faa,140,Influenza  split virus  trivalent  PF,136.00
+2024-02-06T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-f3cd-32bd2fec9faa,62,HPV  quadrivalent,136.00
+2024-02-13T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-3b27-197fb4dbb366,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2025-02-11T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-0eab-4c9aa006f3d4,140,Influenza  split virus  trivalent  PF,136.00
+2025-02-11T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-0eab-4c9aa006f3d4,62,HPV  quadrivalent,136.00
+2017-03-08T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-5459-a74a287a3d92,140,Influenza  split virus  trivalent  PF,136.00
+2018-03-14T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-3344-60ff82eda30f,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-17T03:02:28Z,a1a7386c-650e-3175-36df-aadfad011c51,a1a7386c-650e-3175-3e28-5365e0272c2c,140,Influenza  split virus  trivalent  PF,136.00
+2019-03-20T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-29d2-7b36da87d49c,140,Influenza  split virus  trivalent  PF,136.00
+2020-03-25T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-56ae-933679d7c18d,140,Influenza  split virus  trivalent  PF,136.00
+2020-03-25T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-56ae-933679d7c18d,114,meningococcal MCV4P,136.00
+2021-03-31T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-bfa1-1bf07b34a5eb,140,Influenza  split virus  trivalent  PF,136.00
+2022-04-06T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-ec84-ec121f0fcbea,140,Influenza  split virus  trivalent  PF,136.00
+2023-04-12T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-5061-7c932b25aef2,140,Influenza  split virus  trivalent  PF,136.00
+2026-04-15T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-a1ac-0cc2a07c82e3,140,Influenza  split virus  trivalent  PF,136.00
+2026-04-15T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-a1ac-0cc2a07c82e3,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2026-04-15T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-a1ac-0cc2a07c82e3,43,Hep B  adult,136.00
+2026-04-15T11:33:35Z,c24d6040-2bf6-4c2f-f7c2-83eabea4ccc3,c24d6040-2bf6-4c2f-a1ac-0cc2a07c82e3,114,meningococcal MCV4P,136.00
+2012-11-30T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-3ae6-3691dd9276db,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2013-12-06T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-84d2-ab6d438e97a5,140,Influenza  split virus  trivalent  PF,136.00
+2014-12-12T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-034c-561eede452b4,140,Influenza  split virus  trivalent  PF,136.00
+2015-12-18T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-f8b0-8853b8cdc090,140,Influenza  split virus  trivalent  PF,136.00
+2016-12-23T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-7bde-b9a2d5d3d693,140,Influenza  split virus  trivalent  PF,136.00
+2017-12-29T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-b853-36c368b9a098,140,Influenza  split virus  trivalent  PF,136.00
+2019-01-04T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-3fd7-92d9614aace8,140,Influenza  split virus  trivalent  PF,136.00
+2020-01-10T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-3921-dabf6900e515,140,Influenza  split virus  trivalent  PF,136.00
+2020-12-18T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-1f51-715540cc194b,140,Influenza  split virus  trivalent  PF,136.00
+2021-02-12T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-b901-06d664943219,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-03-05T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-a44a-c240d08ebbaf,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-01-21T20:30:25Z,da56092a-88fa-8302-7522-8d9d6e8baede,da56092a-88fa-8302-d9d8-cb20ac8562dd,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-01T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-36e4-cac197ce742a,140,Influenza  split virus  trivalent  PF,136.00
+2019-10-09T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-799c-e0f5201b44a3,121,zoster vaccine  live,136.00
+2019-10-09T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-799c-e0f5201b44a3,140,Influenza  split virus  trivalent  PF,136.00
+2020-10-14T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-8a33-0d77a05fd424,121,zoster vaccine  live,136.00
+2020-10-14T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-8a33-0d77a05fd424,140,Influenza  split virus  trivalent  PF,136.00
+2020-10-14T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-8a33-0d77a05fd424,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-12-30T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-cc82-e64965c87c80,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-01-20T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-90a8-24f7332fc546,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-10-20T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-915a-920090adb4e4,140,Influenza  split virus  trivalent  PF,136.00
+2022-10-26T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-3c0a-3a865d4e1c7b,140,Influenza  split virus  trivalent  PF,136.00
+2023-11-01T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-e3a4-7c80b7848a5a,140,Influenza  split virus  trivalent  PF,136.00
+2024-11-06T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-0a34-fc92aecf427b,140,Influenza  split virus  trivalent  PF,136.00
+2025-11-12T13:01:17Z,2333de7f-8fa0-7f75-7802-8308f926132f,2333de7f-8fa0-7f75-1bcc-5b19e1e116e4,140,Influenza  split virus  trivalent  PF,136.00
+2016-12-22T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-f50a-7125af87e54d,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-16T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c4da-67a86f03ed63,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-16T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c4da-67a86f03ed63,43,Hep B  adult,136.00
+2017-12-28T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c076-cd0cc12a32f0,43,Hep B  adult,136.00
+2019-01-03T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c5bd-2a4c9c309835,140,Influenza  split virus  trivalent  PF,136.00
+2019-01-03T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c5bd-2a4c9c309835,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2019-01-03T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c5bd-2a4c9c309835,43,Hep B  adult,136.00
+2019-01-03T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-c5bd-2a4c9c309835,114,meningococcal MCV4P,136.00
+2020-01-09T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-cab5-74ad093eb141,140,Influenza  split virus  trivalent  PF,136.00
+2021-01-14T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-9293-9df2e37cabd7,140,Influenza  split virus  trivalent  PF,136.00
+2022-01-20T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-7be0-92d736498d69,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-26T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-34c6-a51da7d2f2d3,140,Influenza  split virus  trivalent  PF,136.00
+2024-02-01T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-0585-12e05f1e76ab,140,Influenza  split virus  trivalent  PF,136.00
+2025-02-06T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-33fc-9a463e34749c,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-12T04:14:24Z,705d91c3-e7d7-f53d-8269-57fed0263762,705d91c3-e7d7-f53d-41d5-9c9014475c16,140,Influenza  split virus  trivalent  PF,136.00
+2017-05-18T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-8f2e-b0be58351cf7,140,Influenza  split virus  trivalent  PF,136.00
+2018-07-26T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-877b-a0838dbb560b,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-01T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-66e4-1a80a86a72fd,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-01T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-66e4-1a80a86a72fd,114,meningococcal MCV4P,136.00
+2020-08-06T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-7135-8924384c4f87,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-12T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-8e54-a5581150bc19,140,Influenza  split virus  trivalent  PF,136.00
+2021-11-04T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-38de-05abf4d615df,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-11-25T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-67fc-1c2c591725c9,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-08-18T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-ecde-3d41096839b3,140,Influenza  split virus  trivalent  PF,136.00
+2023-08-24T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-aca8-f2f94fffbcdd,140,Influenza  split virus  trivalent  PF,136.00
+2023-08-24T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-aca8-f2f94fffbcdd,43,Hep B  adult,136.00
+2024-08-29T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-7382-4244735fcb54,140,Influenza  split virus  trivalent  PF,136.00
+2024-08-29T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-7382-4244735fcb54,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2024-08-29T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-7382-4244735fcb54,43,Hep B  adult,136.00
+2024-08-29T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-7382-4244735fcb54,114,meningococcal MCV4P,136.00
+2025-09-04T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-41ad-941298bed0ef,140,Influenza  split virus  trivalent  PF,136.00
+2025-09-04T11:36:39Z,a88a1ef7-a60f-2304-7aa7-85b9956fe4d8,a88a1ef7-a60f-2304-41ad-941298bed0ef,43,Hep B  adult,136.00
+2016-12-18T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-7079-01e3d4e88974,140,Influenza  split virus  trivalent  PF,136.00
+2017-12-24T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-85e8-565cde1a2a60,140,Influenza  split virus  trivalent  PF,136.00
+2018-12-30T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-32e8-993bb5b96888,140,Influenza  split virus  trivalent  PF,136.00
+2016-08-30T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-6d4a-50be58c1d7d0,140,Influenza  split virus  trivalent  PF,136.00
+2017-04-04T05:12:16Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-61cd-cc76752c011c,187,zoster vaccine recombinant,136.00
+2017-09-05T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-4e61-0d440b451b43,140,Influenza  split virus  trivalent  PF,136.00
+2018-09-11T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-43d7-9e4f213277bd,140,Influenza  split virus  trivalent  PF,136.00
+2017-01-01T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-2852-a6e7be6bca81,140,Influenza  split virus  trivalent  PF,136.00
+2018-01-07T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-9b7c-1eb4efe35a91,140,Influenza  split virus  trivalent  PF,136.00
+2019-01-13T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-3257-c2b813172482,140,Influenza  split virus  trivalent  PF,136.00
+2018-05-19T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-17a1-6712dea492a4,140,Influenza  split virus  trivalent  PF,136.00
+2018-05-19T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-17a1-6712dea492a4,52,Hep A  adult,136.00
+2019-09-17T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-a675-4bc2d79b7705,140,Influenza  split virus  trivalent  PF,136.00
+2019-09-17T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-a675-4bc2d79b7705,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-01-19T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-3c54-46d28fb41dae,140,Influenza  split virus  trivalent  PF,136.00
+2020-01-19T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-3c54-46d28fb41dae,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-05-23T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-48b0-7c8472c8ded8,140,Influenza  split virus  trivalent  PF,136.00
+2020-05-23T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-48b0-7c8472c8ded8,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-05-23T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-48b0-7c8472c8ded8,52,Hep A  adult,136.00
+2021-01-24T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-d008-ed278eadb971,140,Influenza  split virus  trivalent  PF,136.00
+2022-05-28T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-4d6d-90c35139be37,140,Influenza  split virus  trivalent  PF,136.00
+2022-01-30T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-5415-d7fc2c82e8a1,140,Influenza  split virus  trivalent  PF,136.00
+2022-07-17T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-1d68-936333bcba6f,140,Influenza  split virus  trivalent  PF,136.00
+2024-06-01T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-e845-d6d0ac5cb382,140,Influenza  split virus  trivalent  PF,136.00
+2020-03-19T16:31:59Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-599a-a964e96c5a98,115,tetanus toxoid  reduced diphtheria toxoid  and acellular pertussis vaccine  adsorbed,136.00
+2020-03-19T16:31:59Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-599a-a964e96c5a98,114,meningococcal polysaccharide (groups A  C  Y and W-135) diphtheria toxoid conjugate vaccine (MCV4P),136.00
+2020-01-05T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-23ae-f5f3dcd9cac0,121,zoster vaccine  live,136.00
+2020-01-05T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-23ae-f5f3dcd9cac0,140,Influenza  split virus  trivalent  PF,136.00
+2020-08-16T17:27:11Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-68a9-0b5b6ca25529,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2021-01-10T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-ae34-b514ed641af0,121,zoster vaccine  live,136.00
+2021-01-10T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-ae34-b514ed641af0,140,Influenza  split virus  trivalent  PF,136.00
+2021-01-10T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-ae34-b514ed641af0,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2025-02-15T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-1706-fb7014f3fc14,140,Influenza  split virus  trivalent  PF,136.00
+2020-09-22T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-c964-824059279cf5,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-04T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-2ded-4261f4447b99,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-04-25T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-acf3-c41dfbd8b094,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2026-06-06T02:37:59Z,6259c116-1899-9b4e-89d1-dee4a43f03b4,6259c116-1899-9b4e-ded6-46c7e1e0bc45,140,Influenza  split virus  trivalent  PF,136.00
+2021-05-04T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-1da7-8b01a492f57c,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-01-16T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-9dbc-998488fdc019,140,Influenza  split virus  trivalent  PF,136.00
+2021-06-01T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-86ef-a8977135bc2f,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2024-02-11T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-5f7e-21e3e4d15918,140,Influenza  split virus  trivalent  PF,136.00
+2024-02-11T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-5f7e-21e3e4d15918,133,Pneumococcal conjugate PCV 13,136.00
+2021-09-28T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-bd70-c6059ce1606e,140,Influenza  split virus  trivalent  PF,136.00
+2025-02-16T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-cff4-082154c03c0e,140,Influenza  split virus  trivalent  PF,136.00
+2025-02-16T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-cff4-082154c03c0e,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2023-01-22T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-02e4-07b80202db06,140,Influenza  split virus  trivalent  PF,136.00
+2024-01-28T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-7a91-4e16540a972d,140,Influenza  split virus  trivalent  PF,136.00
+2025-02-02T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-5253-9516767c380a,140,Influenza  split virus  trivalent  PF,136.00
+2022-10-04T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-0f44-a7b8144cfec8,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-08T11:01:44Z,3819c939-a9ed-28f1-4a1b-c2780abb1b3a,3819c939-a9ed-28f1-e567-fc27f03d59d4,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-22T04:46:20Z,01c716a3-cfc2-f5eb-e742-dea7ea8fd8e1,01c716a3-cfc2-f5eb-a572-6e49ddad1b04,140,Influenza  split virus  trivalent  PF,136.00
+2017-02-05T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-3ab6-926ad161b9cd,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-11T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-1273-5a11075833e3,140,Influenza  split virus  trivalent  PF,136.00
+2020-08-02T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-6878-899ccf3d725a,140,Influenza  split virus  trivalent  PF,136.00
+2020-08-02T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-6878-899ccf3d725a,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-08-02T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-6878-899ccf3d725a,43,Hep B  adult,136.00
+2020-08-02T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-6878-899ccf3d725a,114,meningococcal MCV4P,136.00
+2021-02-14T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-6a98-33acf0535070,140,Influenza  split virus  trivalent  PF,136.00
+2021-02-14T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-6a98-33acf0535070,43,Hep B  adult,136.00
+2024-02-18T03:49:43Z,19b7b629-3c06-6f7a-4c44-9c60e6148d31,19b7b629-3c06-6f7a-c410-f3d141c83213,140,Influenza  split virus  trivalent  PF,136.00
+2023-10-10T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-c152-5e9d5d68609e,140,Influenza  split virus  trivalent  PF,136.00
+2023-10-10T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-c152-5e9d5d68609e,133,Pneumococcal conjugate PCV 13,136.00
+2024-10-15T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-2a2b-5aebe9728e27,140,Influenza  split virus  trivalent  PF,136.00
+2024-10-15T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-2a2b-5aebe9728e27,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2025-07-03T19:53:30Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-b881-452eab27333c,114,meningococcal polysaccharide (groups A  C  Y and W-135) diphtheria toxoid conjugate vaccine (MCV4P),136.00
+2025-10-21T15:54:21Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-8708-3a6c6fd71d0c,140,Influenza  split virus  trivalent  PF,136.00
+2025-11-30T21:53:38Z,8968173d-2675-84f7-6f32-96d29fab010b,8968173d-2675-84f7-acfe-b792981639ad,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2016-12-04T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-696f-d0fcb7dfa280,140,Influenza  split virus  trivalent  PF,136.00
+2017-12-10T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-67d5-5f6950ecb9f7,140,Influenza  split virus  trivalent  PF,136.00
+2018-04-29T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-4980-263471cc1b2b,133,Pneumococcal conjugate PCV 13,136.00
+2016-07-31T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-6289-2850c015ed75,140,Influenza  split virus  trivalent  PF,136.00
+2017-05-07T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-a87e-eea28f1b28cb,140,Influenza  split virus  trivalent  PF,136.00
+2018-08-12T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-ef78-63e02908a8e8,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-18T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-9a79-69cb9bb65956,140,Influenza  split virus  trivalent  PF,136.00
+2020-08-23T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-4959-236aba00c65b,115,Tdap,136.00
+2020-08-23T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-4959-236aba00c65b,140,Influenza  split virus  trivalent  PF,136.00
+2020-08-23T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-4959-236aba00c65b,62,HPV  quadrivalent,136.00
+2020-08-23T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-4959-236aba00c65b,114,meningococcal MCV4P,136.00
+2021-08-29T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-d224-6bf40a66e629,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-29T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-d224-6bf40a66e629,62,HPV  quadrivalent,136.00
+2021-10-17T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-9ce0-9de288f8cd08,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-11-07T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-1fb9-eadc467c1c0f,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-09-04T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-f2db-dcfacb2d1948,140,Influenza  split virus  trivalent  PF,136.00
+2022-09-04T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-f2db-dcfacb2d1948,62,HPV  quadrivalent,136.00
+2023-09-10T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-a741-26a1e31069f8,140,Influenza  split virus  trivalent  PF,136.00
+2024-09-15T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-1647-1147b513a4cf,140,Influenza  split virus  trivalent  PF,136.00
+2025-09-21T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-4c9c-b75dac67ad4b,140,Influenza  split virus  trivalent  PF,136.00
+2025-09-21T18:55:03Z,3b745ee9-16dc-2c84-5b6b-e08d40d4db0e,3b745ee9-16dc-2c84-4c9c-b75dac67ad4b,114,meningococcal MCV4P,136.00
+2018-12-16T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-20a0-653a1ed334ec,140,Influenza  split virus  trivalent  PF,136.00
+2019-12-22T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-aa71-fe341394afbb,140,Influenza  split virus  trivalent  PF,136.00
+2019-12-22T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-aa71-fe341394afbb,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2020-08-16T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-464e-fa563e250d34,140,Influenza  split virus  trivalent  PF,136.00
+2021-02-28T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-11d2-69d6ad26924f,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-03-21T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-58e2-1cd424d4cddb,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-01-02T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-73f4-e33dffe74ab9,140,Influenza  split virus  trivalent  PF,136.00
+2022-11-06T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-421f-61f09e623941,140,Influenza  split virus  trivalent  PF,136.00
+2024-01-14T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-555a-88e7eadde688,140,Influenza  split virus  trivalent  PF,136.00
+2025-01-19T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-a52e-3bd0f0770897,140,Influenza  split virus  trivalent  PF,136.00
+2025-01-19T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-a52e-3bd0f0770897,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2025-08-24T09:39:07Z,8ac5c0e0-4eea-8fd5-6e70-6116926cb142,8ac5c0e0-4eea-8fd5-9496-7d02deb20c12,140,Influenza  split virus  trivalent  PF,136.00
+2018-01-29T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-6711-2acdd6ee2f8c,08,Hep B  adolescent or pediatric,136.00
+2018-03-05T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-f840-d765c45f123a,08,Hep B  adolescent or pediatric,136.00
+2018-05-07T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-d575-dcfe07c03ddf,49,Hib (PRP-OMP),136.00
+2018-05-07T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-d575-dcfe07c03ddf,119,rotavirus  monovalent,136.00
+2018-05-07T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-d575-dcfe07c03ddf,10,IPV,136.00
+2018-05-07T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-d575-dcfe07c03ddf,20,DTaP,136.00
+2018-05-07T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-d575-dcfe07c03ddf,133,Pneumococcal conjugate PCV 13,136.00
+2018-07-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-bcad-ba9806a202ea,49,Hib (PRP-OMP),136.00
+2018-07-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-bcad-ba9806a202ea,119,rotavirus  monovalent,136.00
+2018-07-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-bcad-ba9806a202ea,10,IPV,136.00
+2018-07-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-bcad-ba9806a202ea,20,DTaP,136.00
+2018-07-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-bcad-ba9806a202ea,133,Pneumococcal conjugate PCV 13,136.00
+2018-10-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-b73f-ca6b7634818b,10,IPV,136.00
+2018-10-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-b73f-ca6b7634818b,140,Influenza  split virus  trivalent  PF,136.00
+2018-10-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-b73f-ca6b7634818b,20,DTaP,136.00
+2018-10-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-b73f-ca6b7634818b,133,Pneumococcal conjugate PCV 13,136.00
+2018-10-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-b73f-ca6b7634818b,08,Hep B  adolescent or pediatric,136.00
+2019-04-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-c3fc-9a71b0b0fd7a,49,Hib (PRP-OMP),136.00
+2019-04-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-c3fc-9a71b0b0fd7a,21,varicella,136.00
+2019-04-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-c3fc-9a71b0b0fd7a,03,MMR,136.00
+2019-04-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-c3fc-9a71b0b0fd7a,133,Pneumococcal conjugate PCV 13,136.00
+2019-04-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-c3fc-9a71b0b0fd7a,83,Hep A  ped/adol  2 dose,136.00
+2019-07-08T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-f9d0-c972425126b4,20,DTaP,136.00
+2020-01-06T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-27be-37686271e0b2,140,Influenza  split virus  trivalent  PF,136.00
+2020-07-06T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-bcd1-eba2c59ddf47,83,Hep A  ped/adol  2 dose,136.00
+2021-01-04T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-2cce-f4f2260c21eb,140,Influenza  split virus  trivalent  PF,136.00
+2022-01-03T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-9d1a-2bd955cb376e,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-a0a5-be448f3c1e83,21,varicella,136.00
+2023-01-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-a0a5-be448f3c1e83,10,IPV,136.00
+2023-01-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-a0a5-be448f3c1e83,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-a0a5-be448f3c1e83,20,DTaP,136.00
+2023-01-09T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-a0a5-be448f3c1e83,03,MMR,136.00
+2024-01-15T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-d851-bd73ed21b1f0,140,Influenza  split virus  trivalent  PF,136.00
+2025-01-20T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-3480-2404bc12f285,140,Influenza  split virus  trivalent  PF,136.00
+2026-01-26T02:49:12Z,d0a8ca41-d452-cc61-1a07-473a92abed12,d0a8ca41-d452-cc61-fa8c-438b69e2d22d,140,Influenza  split virus  trivalent  PF,136.00
+1982-09-13T14:53:10Z,fe91f3fc-d75e-cdd1-aa77-ae0dfa75d9a5,fe91f3fc-d75e-cdd1-3dc2-283ac1f32153,140,Influenza  split virus  trivalent  PF,136.00
+1985-09-16T14:53:10Z,fe91f3fc-d75e-cdd1-aa77-ae0dfa75d9a5,fe91f3fc-d75e-cdd1-f24f-aed92848c673,140,Influenza  split virus  trivalent  PF,136.00
+1988-09-19T14:53:10Z,fe91f3fc-d75e-cdd1-aa77-ae0dfa75d9a5,fe91f3fc-d75e-cdd1-6382-1b6f91ff80e5,140,Influenza  split virus  trivalent  PF,136.00
+2017-03-22T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-6e4f-d7d4c2daea23,140,Influenza  split virus  trivalent  PF,136.00
+2018-03-28T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-4dfb-861f579a2629,140,Influenza  split virus  trivalent  PF,136.00
+2019-04-03T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-e16b-ac0e8bb35350,140,Influenza  split virus  trivalent  PF,136.00
+2020-04-08T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-74ca-a72c7161f34d,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-14T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-7c61-6a30c10af8a9,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-14T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-7c61-6a30c10af8a9,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-05-05T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-c948-c22604d4fb8e,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-04-20T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-6905-a2119ddf18da,140,Influenza  split virus  trivalent  PF,136.00
+2022-04-20T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-6905-a2119ddf18da,52,Hep A  adult,136.00
+2023-04-26T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-fbfa-7f4875752610,140,Influenza  split virus  trivalent  PF,136.00
+2023-04-26T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-fbfa-7f4875752610,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2023-04-26T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-fbfa-7f4875752610,52,Hep A  adult,136.00
+2024-05-01T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-9bf6-fd0b8d88676a,140,Influenza  split virus  trivalent  PF,136.00
+2025-05-07T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-0f4e-84936a1d2321,140,Influenza  split virus  trivalent  PF,136.00
+2026-05-13T08:29:19Z,d1b0340c-3da7-bc30-08c5-32b32d4d6112,d1b0340c-3da7-bc30-59e5-cedccff18f37,140,Influenza  split virus  trivalent  PF,136.00
+2016-08-21T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-4984-420fc59c0158,140,Influenza  split virus  trivalent  PF,136.00
+2017-08-27T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-747b-4ba53328263e,140,Influenza  split virus  trivalent  PF,136.00
+2018-09-02T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-02b2-2d935c685d2e,140,Influenza  split virus  trivalent  PF,136.00
+2019-09-08T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-df73-7874412913f7,140,Influenza  split virus  trivalent  PF,136.00
+2020-09-13T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-d01a-5bb50165c4a8,115,Tdap,136.00
+2020-09-13T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-d01a-5bb50165c4a8,140,Influenza  split virus  trivalent  PF,136.00
+2020-09-13T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-d01a-5bb50165c4a8,62,HPV  quadrivalent,136.00
+2020-09-13T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-d01a-5bb50165c4a8,114,meningococcal MCV4P,136.00
+2021-07-11T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-a360-72d886662223,140,Influenza  split virus  trivalent  PF,136.00
+2021-07-11T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-a360-72d886662223,62,HPV  quadrivalent,136.00
+2021-07-18T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-1d79-524578943d81,62,HPV  quadrivalent,136.00
+2021-09-12T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-30f9-f3e52a91ecb3,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-10-10T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-1d95-bd841af2f327,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-09-25T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-7330-7ea185cf10a0,140,Influenza  split virus  trivalent  PF,136.00
+2023-10-01T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-cc69-8abd2ddc03cd,140,Influenza  split virus  trivalent  PF,136.00
+2003-08-03T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-71d1-8f690c697e09,140,Influenza  split virus  trivalent  PF,136.00
+2004-08-08T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-5a7a-00992ea0858f,140,Influenza  split virus  trivalent  PF,136.00
+2005-08-14T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-d4a4-2aa25c2c771a,115,Tdap,136.00
+2005-08-14T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-d4a4-2aa25c2c771a,140,Influenza  split virus  trivalent  PF,136.00
+2005-08-14T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-d4a4-2aa25c2c771a,114,meningococcal MCV4P,136.00
+2006-08-20T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-96ab-6433a932da6e,140,Influenza  split virus  trivalent  PF,136.00
+2006-08-20T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-96ab-6433a932da6e,62,HPV  quadrivalent,136.00
+2007-08-26T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-f1cb-cca51b85f63f,140,Influenza  split virus  trivalent  PF,136.00
+2007-08-26T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-f1cb-cca51b85f63f,62,HPV  quadrivalent,136.00
+2008-08-31T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-9b9d-288e674a7e65,140,Influenza  split virus  trivalent  PF,136.00
+2008-08-31T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-9b9d-288e674a7e65,114,meningococcal MCV4P,136.00
+2009-09-06T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-417d-77f2bfef9187,140,Influenza  split virus  trivalent  PF,136.00
+2010-09-12T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-7fb5-dc02325b7125,140,Influenza  split virus  trivalent  PF,136.00
+2011-09-18T07:43:02Z,1507f341-65e5-a2e2-abb7-29d3ec1925a5,1507f341-65e5-a2e2-50f5-21bfcdb5fff6,140,Influenza  split virus  trivalent  PF,136.00
+2024-10-06T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-4c75-a77c12e81c97,140,Influenza  split virus  trivalent  PF,136.00
+2025-10-12T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-61d1-52b797e9167d,140,Influenza  split virus  trivalent  PF,136.00
+2025-10-12T01:53:42Z,485095ee-a1f6-3cf9-3e6a-344b3208dffe,485095ee-a1f6-3cf9-61d1-52b797e9167d,114,meningococcal MCV4P,136.00
+2016-08-11T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-a581-2d2b4d2a6ba5,140,Influenza  split virus  trivalent  PF,136.00
+2017-08-17T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-4b46-c5df85d3351d,140,Influenza  split virus  trivalent  PF,136.00
+2018-08-23T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-1fd1-1419872ef23f,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-29T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-d488-686b74317cc4,140,Influenza  split virus  trivalent  PF,136.00
+2020-09-03T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-79b0-33f21ff21a36,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-01T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-08f7-7c4cc4f1410b,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-15T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-2ba8-679b98f69ec2,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-05-13T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-015c-7f3b5e85216f,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-09-15T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-a99d-801c73023ec7,140,Influenza  split virus  trivalent  PF,136.00
+2023-02-09T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-643d-03580622d24f,140,Influenza  split virus  trivalent  PF,136.00
+2023-09-21T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-6b33-27997ceacace,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2024-09-26T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-6628-bad6bb8ccf89,140,Influenza  split virus  trivalent  PF,136.00
+2025-10-02T18:05:08Z,9e1b810e-552e-a0ca-cba6-b820584b2002,9e1b810e-552e-a0ca-34d7-ebbc596f3119,140,Influenza  split virus  trivalent  PF,136.00
+2017-06-20T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-58df-273cddae22ca,140,Influenza  split virus  trivalent  PF,136.00
+2019-06-25T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-c30d-bbbe2ae60f82,140,Influenza  split virus  trivalent  PF,136.00
+2021-06-01T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-f6bf-e97124c57025,121,zoster vaccine  live,136.00
+2021-06-01T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-f6bf-e97124c57025,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-03T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-963a-03e215d288d9,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-08-31T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-4952-39644bf94661,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-06-07T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-2886-e67d439b77f0,121,zoster vaccine  live,136.00
+2022-06-07T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-2886-e67d439b77f0,140,Influenza  split virus  trivalent  PF,136.00
+2022-06-07T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-2886-e67d439b77f0,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2023-06-13T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-f286-fe475d117d71,140,Influenza  split virus  trivalent  PF,136.00
+2024-04-02T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-bd74-52b9ae957d06,140,Influenza  split virus  trivalent  PF,136.00
+2025-06-24T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-4eb1-8909158c0b65,140,Influenza  split virus  trivalent  PF,136.00
+2026-06-30T04:52:51Z,8dd988f6-7425-ab84-52ca-3a82a646ccb0,8dd988f6-7425-ab84-97eb-44f59de3d5ee,140,Influenza  split virus  trivalent  PF,136.00
+2017-01-13T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-2c34-3946455a6505,83,Hep A  ped/adol  2 dose,136.00
+2017-07-14T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-5671-e19e3927d553,140,Influenza  split virus  trivalent  PF,136.00
+2018-07-13T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-21e3-ff12c2e290d8,140,Influenza  split virus  trivalent  PF,136.00
+2019-07-19T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-4182-66efede7c3b8,21,varicella,136.00
+2019-07-19T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-4182-66efede7c3b8,10,IPV,136.00
+2019-07-19T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-4182-66efede7c3b8,140,Influenza  split virus  trivalent  PF,136.00
+2019-07-19T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-4182-66efede7c3b8,20,DTaP,136.00
+2019-07-19T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-4182-66efede7c3b8,03,MMR,136.00
+2020-07-24T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-b1e3-938f9683a4d8,140,Influenza  split virus  trivalent  PF,136.00
+2021-07-30T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-89d9-ebf4c2b76bbf,140,Influenza  split virus  trivalent  PF,136.00
+2022-08-05T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-27b6-949c85ab20d5,140,Influenza  split virus  trivalent  PF,136.00
+2023-08-11T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-0ced-e4f1e0efbd09,140,Influenza  split virus  trivalent  PF,136.00
+2024-08-16T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-6ecc-6e62110431df,140,Influenza  split virus  trivalent  PF,136.00
+2025-08-22T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-d993-8667fd60d243,115,Tdap,136.00
+2025-08-22T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-d993-8667fd60d243,140,Influenza  split virus  trivalent  PF,136.00
+2025-08-22T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-d993-8667fd60d243,62,HPV  quadrivalent,136.00
+2025-08-22T18:00:18Z,0ae684b3-c628-6aca-bb23-9c059e514651,0ae684b3-c628-6aca-d993-8667fd60d243,114,meningococcal MCV4P,136.00
+2016-08-01T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-9884-dd3202aa8a56,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-05T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-595b-24c32248b1c9,140,Influenza  split virus  trivalent  PF,136.00
+2019-08-05T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-595b-24c32248b1c9,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2019-08-05T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-595b-24c32248b1c9,43,Hep B  adult,136.00
+2019-08-05T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-595b-24c32248b1c9,114,meningococcal MCV4P,136.00
+2021-05-10T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-875d-cc69bcf6cd1b,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-05-31T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-53c5-4c05eedff2d1,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-08-08T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-38ad-95dbf4807d11,140,Influenza  split virus  trivalent  PF,136.00
+2016-09-15T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-9493-c618a4eaacc2,140,Influenza  split virus  trivalent  PF,136.00
+2018-06-14T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-9d77-190d16cb0107,140,Influenza  split virus  trivalent  PF,136.00
+2023-12-04T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-d934-c9b8e023e351,140,Influenza  split virus  trivalent  PF,136.00
+2025-08-11T01:53:23Z,4e04beea-3c53-fa23-a9e6-685a8e7c7886,4e04beea-3c53-fa23-8218-1f02bbd691b7,140,Influenza  split virus  trivalent  PF,136.00
+2020-06-18T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-0097-c7b5a29b5398,140,Influenza  split virus  trivalent  PF,136.00
+2021-06-24T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-566e-477c2a5109e0,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-07-15T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-34e9-6ed63b8f1ff3,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-05-26T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-08d9-2cd57d089c72,121,zoster vaccine  live,136.00
+2022-05-26T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-08d9-2cd57d089c72,140,Influenza  split virus  trivalent  PF,136.00
+2023-06-01T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-0c3a-06024ec5ef9c,121,zoster vaccine  live,136.00
+2023-06-01T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-0c3a-06024ec5ef9c,140,Influenza  split virus  trivalent  PF,136.00
+2023-06-01T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-0c3a-06024ec5ef9c,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2024-06-06T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-3e94-ce7d55272150,140,Influenza  split virus  trivalent  PF,136.00
+2025-06-12T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-7aca-32a421a814dc,140,Influenza  split virus  trivalent  PF,136.00
+2026-06-18T19:10:42Z,a44429d7-c492-652a-3f79-a683f235a64b,a44429d7-c492-652a-9d5d-d33c739dde98,140,Influenza  split virus  trivalent  PF,136.00
+2017-02-11T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-812f-81048ce04fe0,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-24T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-cb2d-414c6167d69e,140,Influenza  split virus  trivalent  PF,136.00
+2019-03-02T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-5ab7-a34cacbb5b96,140,Influenza  split virus  trivalent  PF,136.00
+2020-03-07T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-8f66-0b4d9206f14d,140,Influenza  split virus  trivalent  PF,136.00
+2021-03-13T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-bf0f-3e0d9f1ae5b3,140,Influenza  split virus  trivalent  PF,136.00
+2021-06-05T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-1e37-369b30cf838b,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-07-03T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-c564-595992d12500,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-03-19T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-6571-67f138a8a07a,140,Influenza  split virus  trivalent  PF,136.00
+2023-03-25T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-a0cf-db777beb71f3,140,Influenza  split virus  trivalent  PF,136.00
+2023-03-25T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-a0cf-db777beb71f3,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2024-03-30T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-0843-7235abf5318a,140,Influenza  split virus  trivalent  PF,136.00
+2016-11-09T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-1634-534d325e118f,121,zoster vaccine  live,136.00
+2016-11-09T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-1634-534d325e118f,140,Influenza  split virus  trivalent  PF,136.00
+2025-04-05T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-abb6-0c06ea66f4e6,140,Influenza  split virus  trivalent  PF,136.00
+2026-04-11T03:18:04Z,15402a22-6d89-829c-a292-95e6a04a0f06,15402a22-6d89-829c-df77-82457acf59b9,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-15T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-1a72-47844c285acc,121,zoster vaccine  live,136.00
+2017-11-15T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-1a72-47844c285acc,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-15T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-1a72-47844c285acc,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2018-11-21T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-ea47-4eb4712e93df,140,Influenza  split virus  trivalent  PF,136.00
+2019-11-27T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-a547-a14245aa4e26,140,Influenza  split virus  trivalent  PF,136.00
+2020-12-02T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-8624-93ea253d8f35,140,Influenza  split virus  trivalent  PF,136.00
+2021-10-13T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-1adf-aae777d54d1f,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-11-10T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-7c8e-ffbc5c610dc4,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-12-08T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-fd4b-d2c7e8d7e34b,140,Influenza  split virus  trivalent  PF,136.00
+2022-12-14T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-f3d1-3c9cd51cd34c,140,Influenza  split virus  trivalent  PF,136.00
+2023-12-20T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-7f96-25d05e6141b5,140,Influenza  split virus  trivalent  PF,136.00
+2024-12-25T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-0dc7-74b0ed47e0f2,140,Influenza  split virus  trivalent  PF,136.00
+2025-12-31T07:01:01Z,9fc67a36-d913-34c2-5352-709ddec44b50,9fc67a36-d913-34c2-e504-5bb2b867a5f6,140,Influenza  split virus  trivalent  PF,136.00
+2025-01-29T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-3bd7-84c276896dc6,08,Hep B  adolescent or pediatric,136.00
+2025-03-05T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-74b8-1f7d4c2fd11e,08,Hep B  adolescent or pediatric,136.00
+2025-05-07T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-81bf-96f4d2b20273,49,Hib (PRP-OMP),136.00
+2025-05-07T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-81bf-96f4d2b20273,119,rotavirus  monovalent,136.00
+2025-05-07T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-81bf-96f4d2b20273,10,IPV,136.00
+2025-05-07T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-81bf-96f4d2b20273,20,DTaP,136.00
+2025-05-07T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-81bf-96f4d2b20273,133,Pneumococcal conjugate PCV 13,136.00
+2025-07-09T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-1e97-d5fb1aa737bb,49,Hib (PRP-OMP),136.00
+2025-07-09T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-1e97-d5fb1aa737bb,119,rotavirus  monovalent,136.00
+2025-07-09T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-1e97-d5fb1aa737bb,10,IPV,136.00
+2025-07-09T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-1e97-d5fb1aa737bb,20,DTaP,136.00
+2025-07-09T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-1e97-d5fb1aa737bb,133,Pneumococcal conjugate PCV 13,136.00
+2025-10-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-d7bd-5441dc7b5eb0,10,IPV,136.00
+2025-10-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-d7bd-5441dc7b5eb0,140,Influenza  split virus  trivalent  PF,136.00
+2025-10-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-d7bd-5441dc7b5eb0,20,DTaP,136.00
+2025-10-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-d7bd-5441dc7b5eb0,133,Pneumococcal conjugate PCV 13,136.00
+2025-10-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-d7bd-5441dc7b5eb0,08,Hep B  adolescent or pediatric,136.00
+2026-04-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-0ab0-c1465fd9c877,49,Hib (PRP-OMP),136.00
+2026-04-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-0ab0-c1465fd9c877,21,varicella,136.00
+2026-04-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-0ab0-c1465fd9c877,03,MMR,136.00
+2026-04-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-0ab0-c1465fd9c877,133,Pneumococcal conjugate PCV 13,136.00
+2026-04-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-0ab0-c1465fd9c877,83,Hep A  ped/adol  2 dose,136.00
+2026-07-08T14:19:14Z,3ea769a0-5e50-c8ea-9698-217262b1c93d,3ea769a0-5e50-c8ea-5dba-d5a39a639fff,20,DTaP,136.00
+2018-03-10T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-2de2-eebf62f8e19c,140,Influenza  split virus  trivalent  PF,136.00
+2019-06-29T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-5fbd-574306d98bb8,140,Influenza  split virus  trivalent  PF,136.00
+2021-03-13T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-dbab-cce11eb4630b,140,Influenza  split virus  trivalent  PF,136.00
+2021-03-13T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-dbab-cce11eb4630b,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2021-05-01T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-3e92-033107bf89bd,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-05-29T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-cd23-48e6ab0e60cb,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2023-09-02T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-b206-ab2a45e79c38,140,Influenza  split virus  trivalent  PF,136.00
+2024-03-16T02:58:17Z,b10e9343-5de1-b00a-bea8-743a9b5ee42c,b10e9343-5de1-b00a-fb81-1c020e010e12,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-25T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-0f43-023e95ca03ea,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-03T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-0c0c-8ff6dab6802e,140,Influenza  split virus  trivalent  PF,136.00
+2020-11-14T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-9974-7eff46d12e23,140,Influenza  split virus  trivalent  PF,136.00
+2020-11-14T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-9974-7eff46d12e23,52,Hep A  adult,136.00
+2021-04-24T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-199a-4fb809d4f541,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-05-22T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-c8ad-554043122393,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-06-26T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-a2fd-30a81a0ec42a,140,Influenza  split virus  trivalent  PF,136.00
+2021-06-26T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-a2fd-30a81a0ec42a,52,Hep A  adult,136.00
+2021-07-03T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-3bd1-6db2ceb97117,140,Influenza  split virus  trivalent  PF,136.00
+2021-11-20T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-cc80-590dd7b3fc75,140,Influenza  split virus  trivalent  PF,136.00
+2021-11-20T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-cc80-590dd7b3fc75,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2022-11-26T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-cce0-a972351b0a82,140,Influenza  split virus  trivalent  PF,136.00
+2023-12-02T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-e2c6-7f86a8791fe6,140,Influenza  split virus  trivalent  PF,136.00
+2024-12-07T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-19dc-1f4125289b3d,140,Influenza  split virus  trivalent  PF,136.00
+2025-12-13T05:06:45Z,c5d89570-63de-cf63-db7f-5669d88d8ce8,c5d89570-63de-cf63-0c5f-0742f3140e86,140,Influenza  split virus  trivalent  PF,136.00
+2016-12-25T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-cf17-955b11e06860,140,Influenza  split virus  trivalent  PF,136.00
+2016-12-25T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-cf17-955b11e06860,43,Hep B  adult,136.00
+2017-12-31T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-8a61-b14febd90d83,140,Influenza  split virus  trivalent  PF,136.00
+2019-01-06T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-7846-45b44641e96b,140,Influenza  split virus  trivalent  PF,136.00
+2020-01-12T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-09bc-7c1d83c00e20,140,Influenza  split virus  trivalent  PF,136.00
+2021-01-17T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-4e2f-fcb2ef92c7c7,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-08T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-5a00-f2f2141539a2,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-09-05T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-a83c-f109bf6c4118,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-01-23T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-de6c-a3507b0f50d5,140,Influenza  split virus  trivalent  PF,136.00
+2023-01-29T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-316f-393756651f1e,140,Influenza  split virus  trivalent  PF,136.00
+2024-02-04T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-53e6-7cf3d89098d6,140,Influenza  split virus  trivalent  PF,136.00
+2025-02-09T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-171e-6dac80ea6b71,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-15T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-b444-a366fe5f6dd0,140,Influenza  split virus  trivalent  PF,136.00
+2026-02-15T11:36:40Z,3473e790-362b-0013-e1b3-d8275e917efc,3473e790-362b-0013-b444-a366fe5f6dd0,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2017-02-19T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-4f03-f7402200edc0,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-25T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-8c24-80a4162a5dfd,115,Tdap,136.00
+2018-02-25T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-8c24-80a4162a5dfd,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-25T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-8c24-80a4162a5dfd,62,HPV  quadrivalent,136.00
+2018-02-25T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-8c24-80a4162a5dfd,114,meningococcal MCV4P,136.00
+2018-10-14T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-4863-2d592d65d51c,140,Influenza  split virus  trivalent  PF,136.00
+2018-10-14T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-4863-2d592d65d51c,62,HPV  quadrivalent,136.00
+2019-03-03T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-31cc-4af6afd051df,62,HPV  quadrivalent,136.00
+2019-12-08T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-a251-343a44608624,140,Influenza  split virus  trivalent  PF,136.00
+2021-03-14T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-e1c3-9106f10e58f9,140,Influenza  split virus  trivalent  PF,136.00
+2022-03-20T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-1d49-17c8a54dba94,140,Influenza  split virus  trivalent  PF,136.00
+2022-09-11T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-bde1-f770a9dc2479,140,Influenza  split virus  trivalent  PF,136.00
+2023-03-26T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-be10-296829a44d22,114,meningococcal MCV4P,136.00
+2024-03-31T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-a495-3b0697e046cc,140,Influenza  split virus  trivalent  PF,136.00
+2025-04-06T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-0065-e2a75cd9b4b7,140,Influenza  split virus  trivalent  PF,136.00
+2026-04-12T23:12:57Z,9f6baf95-5561-08f7-da08-264ce3f3739a,9f6baf95-5561-08f7-05ff-48738c41cddc,140,Influenza  split virus  trivalent  PF,136.00
+2016-10-31T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-aed2-5375539aab0f,140,Influenza  split virus  trivalent  PF,136.00
+2016-10-31T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-aed2-5375539aab0f,52,Hep A  adult,136.00
+2018-11-05T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-6a7f-6470d76c7ac3,140,Influenza  split virus  trivalent  PF,136.00
+2018-11-05T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-6a7f-6470d76c7ac3,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2018-11-05T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-6a7f-6470d76c7ac3,52,Hep A  adult,136.00
+2020-11-09T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-753e-0509b9d26dd4,140,Influenza  split virus  trivalent  PF,136.00
+2021-05-03T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-f376-283356334fd7,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-05-31T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-a236-084a31348e3f,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2022-11-14T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-4c87-a56811ac3413,140,Influenza  split virus  trivalent  PF,136.00
+2024-11-18T04:34:02Z,73e5be85-85e9-ce8b-713a-ba9a0190696a,73e5be85-85e9-ce8b-bb26-030eb81228d4,140,Influenza  split virus  trivalent  PF,136.00
+2017-02-02T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-7fe1-657b02d31b5c,140,Influenza  split virus  trivalent  PF,136.00
+2018-02-08T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-9eea-441407978f89,140,Influenza  split virus  trivalent  PF,136.00
+2018-04-19T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-c10d-ba5ba428dc6c,140,Influenza  split virus  trivalent  PF,136.00
+2019-02-14T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-10d3-d47f17d77fbc,140,Influenza  split virus  trivalent  PF,136.00
+2020-02-20T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-eba6-ddeb54ea111c,140,Influenza  split virus  trivalent  PF,136.00
+2021-01-21T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-ca77-8ffb1e9a1365,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-02-11T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-9356-4faf26db269b,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-02-25T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-3ef4-376f61d141b8,140,Influenza  split virus  trivalent  PF,136.00
+2022-03-03T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-7b10-bbb8186b1287,140,Influenza  split virus  trivalent  PF,136.00
+2023-03-09T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-1c36-c67527d3c863,140,Influenza  split virus  trivalent  PF,136.00
+2024-03-14T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-3296-cb146cd0e5bc,140,Influenza  split virus  trivalent  PF,136.00
+2024-08-15T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-a7e8-ab8576e44f79,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2025-02-13T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-e854-251edd0d6054,140,Influenza  split virus  trivalent  PF,136.00
+2017-03-07T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-bbb0-088a161b7cc9,140,Influenza  split virus  trivalent  PF,136.00
+2018-03-13T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-50e7-581c07b90ab1,140,Influenza  split virus  trivalent  PF,136.00
+2019-03-19T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-f6d5-1eff506d7a5a,140,Influenza  split virus  trivalent  PF,136.00
+2020-03-24T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-974f-ef341858b277,140,Influenza  split virus  trivalent  PF,136.00
+2017-01-01T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-c918-8ef2370af255,21,varicella,136.00
+2017-01-01T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-c918-8ef2370af255,10,IPV,136.00
+2017-01-01T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-c918-8ef2370af255,140,Influenza  split virus  trivalent  PF,136.00
+2017-01-01T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-c918-8ef2370af255,20,DTaP,136.00
+2017-01-01T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-c918-8ef2370af255,03,MMR,136.00
+2026-03-26T13:57:11Z,b2d9173e-b1cf-b45e-9165-e6e7ad45a596,b2d9173e-b1cf-b45e-3cec-7d128772b09c,140,Influenza  split virus  trivalent  PF,136.00
+2021-03-30T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-a62b-09e92b42e29e,140,Influenza  split virus  trivalent  PF,136.00
+2018-06-03T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-cd52-1f5009742561,140,Influenza  split virus  trivalent  PF,136.00
+2019-06-09T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-93b5-b627fef4f554,140,Influenza  split virus  trivalent  PF,136.00
+2020-06-14T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-9a7c-1a7bd99d4a39,140,Influenza  split virus  trivalent  PF,136.00
+2021-06-20T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-eff2-e6f338455ebf,140,Influenza  split virus  trivalent  PF,136.00
+2022-06-26T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-e3c3-3e3431f46375,140,Influenza  split virus  trivalent  PF,136.00
+2022-04-05T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-0365-a4e0e62a3b1e,140,Influenza  split virus  trivalent  PF,136.00
+2023-07-02T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-ce02-59f129f6047d,115,Tdap,136.00
+2023-07-02T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-ce02-59f129f6047d,140,Influenza  split virus  trivalent  PF,136.00
+2023-07-02T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-ce02-59f129f6047d,62,HPV  quadrivalent,136.00
+2023-07-02T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-ce02-59f129f6047d,114,meningococcal MCV4P,136.00
+2024-06-30T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-eb98-3b372bee69d0,212,COVID-19 vaccine  vector-nr  rS-Ad26  PF  0.5 mL,136.00
+2024-07-07T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-520d-93d56eff2f13,140,Influenza  split virus  trivalent  PF,136.00
+2024-07-07T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-520d-93d56eff2f13,62,HPV  quadrivalent,136.00
+2023-04-11T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-11ae-01b0f7c9a27a,140,Influenza  split virus  trivalent  PF,136.00
+2025-07-13T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-b0b5-25424eaf8db5,140,Influenza  split virus  trivalent  PF,136.00
+2025-07-13T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-b0b5-25424eaf8db5,62,HPV  quadrivalent,136.00
+2026-04-19T15:29:38Z,3901eac2-b8fd-3ff2-3ecf-2a78274ef6e6,3901eac2-b8fd-3ff2-a679-3fabb1e73f77,140,Influenza  split virus  trivalent  PF,136.00
+2024-04-16T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-00a9-3c58fc123a88,140,Influenza  split virus  trivalent  PF,136.00
+2025-04-22T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-b282-192fc8bf54fd,140,Influenza  split virus  trivalent  PF,136.00
+2025-04-22T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-b282-192fc8bf54fd,52,Hep A  adult,136.00
+2026-04-28T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-3388-752f7a12cde3,140,Influenza  split virus  trivalent  PF,136.00
+2026-04-28T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-3388-752f7a12cde3,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2026-04-28T15:42:10Z,2a713fde-183b-98e2-178f-46295866a73e,2a713fde-183b-98e2-3388-752f7a12cde3,52,Hep A  adult,136.00
+2024-02-22T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-efe1-8dfb3d8f6307,08,Hep B  adolescent or pediatric,136.00
+2024-03-28T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-59e6-e2a23f62b8bb,08,Hep B  adolescent or pediatric,136.00
+2024-05-30T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-9344-29497c46c4dd,49,Hib (PRP-OMP),136.00
+2024-05-30T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-9344-29497c46c4dd,119,rotavirus  monovalent,136.00
+2024-05-30T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-9344-29497c46c4dd,10,IPV,136.00
+2024-05-30T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-9344-29497c46c4dd,20,DTaP,136.00
+2024-05-30T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-9344-29497c46c4dd,133,Pneumococcal conjugate PCV 13,136.00
+2024-08-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-4b44-882550a7f947,49,Hib (PRP-OMP),136.00
+2024-08-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-4b44-882550a7f947,119,rotavirus  monovalent,136.00
+2024-08-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-4b44-882550a7f947,10,IPV,136.00
+2024-08-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-4b44-882550a7f947,20,DTaP,136.00
+2024-08-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-4b44-882550a7f947,133,Pneumococcal conjugate PCV 13,136.00
+2024-10-31T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-ca3c-d761a5a2f8e0,10,IPV,136.00
+2024-10-31T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-ca3c-d761a5a2f8e0,140,Influenza  split virus  trivalent  PF,136.00
+2024-10-31T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-ca3c-d761a5a2f8e0,20,DTaP,136.00
+2024-10-31T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-ca3c-d761a5a2f8e0,133,Pneumococcal conjugate PCV 13,136.00
+2024-10-31T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-ca3c-d761a5a2f8e0,08,Hep B  adolescent or pediatric,136.00
+2025-05-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-e53f-a35c3fb0b6d3,49,Hib (PRP-OMP),136.00
+2025-05-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-e53f-a35c3fb0b6d3,21,varicella,136.00
+2025-05-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-e53f-a35c3fb0b6d3,03,MMR,136.00
+2025-05-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-e53f-a35c3fb0b6d3,133,Pneumococcal conjugate PCV 13,136.00
+2025-05-01T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-e53f-a35c3fb0b6d3,83,Hep A  ped/adol  2 dose,136.00
+2025-07-31T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-43e4-050079b64b5e,20,DTaP,136.00
+2026-01-29T17:55:36Z,484b93b6-9a4b-cc24-d53a-ee9f3d34b835,484b93b6-9a4b-cc24-b9be-447a1b1f6b38,140,Influenza  split virus  trivalent  PF,136.00
+2016-09-17T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-e53f-ab77561cf78a,140,Influenza  split virus  trivalent  PF,136.00
+2017-09-23T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-9c8d-89e09dfcb18f,140,Influenza  split virus  trivalent  PF,136.00
+2017-09-23T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-9c8d-89e09dfcb18f,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2018-09-29T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-c388-d4c2ada20fb9,140,Influenza  split virus  trivalent  PF,136.00
+2019-10-05T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-9854-58c301d76d6f,140,Influenza  split virus  trivalent  PF,136.00
+2020-10-10T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-d093-719bf0fe7548,140,Influenza  split virus  trivalent  PF,136.00
+2021-10-16T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-f888-348d3ed7ccca,140,Influenza  split virus  trivalent  PF,136.00
+2021-10-16T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-f888-348d3ed7ccca,133,Pneumococcal conjugate PCV 13,136.00
+2022-10-22T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-cb05-4bd1b978bfbe,140,Influenza  split virus  trivalent  PF,136.00
+2022-10-22T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-cb05-4bd1b978bfbe,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2023-10-28T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-d78c-3abd9642957c,140,Influenza  split virus  trivalent  PF,136.00
+2024-11-02T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-e2d7-cc75fd11fe52,140,Influenza  split virus  trivalent  PF,136.00
+2025-11-08T23:18:21Z,2bb39ecf-cd1a-fc10-a5d0-62fcf68274db,2bb39ecf-cd1a-fc10-3a7f-1cca56d88707,140,Influenza  split virus  trivalent  PF,136.00
+2016-11-09T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-6f68-dfc8a1743840,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-15T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-fd4f-869a6d040e9d,140,Influenza  split virus  trivalent  PF,136.00
+2017-11-15T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-fd4f-869a6d040e9d,114,meningococcal MCV4P,136.00
+2018-11-21T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-25af-b952f3fe4bd0,140,Influenza  split virus  trivalent  PF,136.00
+2019-11-06T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-3daa-a217941e9d03,140,Influenza  split virus  trivalent  PF,136.00
+2020-12-02T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-15f7-208ecf58ef86,140,Influenza  split virus  trivalent  PF,136.00
+2021-05-05T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-edb7-37d7c9e6c46a,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-06-02T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-7af7-02d500e7c86c,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2023-12-06T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-2f85-0237f0130cca,140,Influenza  split virus  trivalent  PF,136.00
+2023-12-06T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-2f85-0237f0130cca,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2023-12-06T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-2f85-0237f0130cca,43,Hep B  adult,136.00
+2023-12-06T06:18:56Z,de4c06a0-1ed2-50cb-5b35-fc590f908e9a,de4c06a0-1ed2-50cb-2f85-0237f0130cca,114,meningococcal MCV4P,136.00
+2018-08-14T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-0462-ddfdfbf859f0,140,Influenza  split virus  trivalent  PF,136.00
+2018-10-02T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-1fa0-9371f4b4ca50,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-10T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-bd3e-d49b5be8c95f,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-08-17T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-0580-ff12801d53d3,140,Influenza  split virus  trivalent  PF,136.00
+2021-08-31T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-745f-5164401775cf,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+1978-05-25T18:28:46Z,ccd107ab-78cc-0c3d-fb02-cc99576cd610,ccd107ab-78cc-0c3d-3313-0c7fc977628b,140,Influenza  split virus  trivalent  PF,136.00
+2024-06-04T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-dc3f-64cb7facfdb6,140,Influenza  split virus  trivalent  PF,136.00
+2024-06-04T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-dc3f-64cb7facfdb6,52,Hep A  adult,136.00
+1981-05-28T18:28:46Z,ccd107ab-78cc-0c3d-fb02-cc99576cd610,ccd107ab-78cc-0c3d-2336-256a818870a3,140,Influenza  split virus  trivalent  PF,136.00
+1984-05-31T18:28:46Z,ccd107ab-78cc-0c3d-fb02-cc99576cd610,ccd107ab-78cc-0c3d-27e5-1ad0302b70f2,140,Influenza  split virus  trivalent  PF,136.00
+1987-06-04T18:28:46Z,ccd107ab-78cc-0c3d-fb02-cc99576cd610,ccd107ab-78cc-0c3d-1cd8-3d29fccd6d88,140,Influenza  split virus  trivalent  PF,136.00
+2026-06-09T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-5209-f53da3f1a06a,140,Influenza  split virus  trivalent  PF,136.00
+2026-06-09T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-5209-f53da3f1a06a,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2026-06-09T01:27:04Z,c1410262-be39-4043-5334-ed79f66513dc,c1410262-be39-4043-5209-f53da3f1a06a,52,Hep A  adult,136.00
+2001-03-22T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-b78c-787714f28ac6,140,Influenza  split virus  trivalent  PF,136.00
+2002-03-28T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-ff76-a09dc0c455c8,140,Influenza  split virus  trivalent  PF,136.00
+2003-04-03T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-750f-0e41f3a52e95,140,Influenza  split virus  trivalent  PF,136.00
+2004-04-08T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-cb3e-326872ef3ab2,140,Influenza  split virus  trivalent  PF,136.00
+2018-07-22T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-4719-a0f496263b76,140,Influenza  split virus  trivalent  PF,136.00
+2018-07-22T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-4719-a0f496263b76,52,Hep A  adult,136.00
+2018-07-29T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-f615-3c8ed8ac5d44,140,Influenza  split virus  trivalent  PF,136.00
+2005-04-14T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-f266-30a6fd6c3c97,140,Influenza  split virus  trivalent  PF,136.00
+2006-04-20T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-ffea-0a72fddfe5d7,140,Influenza  split virus  trivalent  PF,136.00
+2020-07-26T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-f21f-2c8c4d3693f9,140,Influenza  split virus  trivalent  PF,136.00
+2020-07-26T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-f21f-2c8c4d3693f9,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2020-07-26T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-f21f-2c8c4d3693f9,52,Hep A  adult,136.00
+2021-04-18T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-a1b8-d7666b200972,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2021-05-16T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-ecb7-37e56fcc2659,207,COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose,136.00
+2007-04-26T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-1768-910afd5d86a3,140,Influenza  split virus  trivalent  PF,136.00
+2007-04-26T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-1768-910afd5d86a3,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2022-07-31T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-8558-b1118e89c18d,140,Influenza  split virus  trivalent  PF,136.00
+2023-08-20T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-4b6f-60e9e58257eb,140,Influenza  split virus  trivalent  PF,136.00
+2008-05-01T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-2158-9852ed79c0b5,140,Influenza  split virus  trivalent  PF,136.00
+2024-08-04T08:05:27Z,bb84c0cb-6f8d-5a0f-eab7-e68938cd8c17,bb84c0cb-6f8d-5a0f-a692-aa7e949e6f67,140,Influenza  split virus  trivalent  PF,136.00
+2009-05-07T13:54:57Z,01b6daa3-f676-2b02-116b-9c04750c4eb6,01b6daa3-f676-2b02-0b00-a64c40155759,140,Influenza  split virus  trivalent  PF,136.00
+2017-03-10T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-0061-18aaf6ecaeb2,140,Influenza  split virus  trivalent  PF,136.00
+2018-03-16T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-e597-60a139d7608e,140,Influenza  split virus  trivalent  PF,136.00
+2019-03-22T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-b2a7-24c1bf2ebdc8,140,Influenza  split virus  trivalent  PF,136.00
+2019-10-18T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-1c89-5fb8dd1cf0c5,140,Influenza  split virus  trivalent  PF,136.00
+2021-04-02T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-1b30-d734033cdac0,140,Influenza  split virus  trivalent  PF,136.00
+2021-10-15T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-0bb7-6ec5b8d61d40,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-11-05T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-f002-2bdc25d72ee7,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2022-04-08T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-fea9-47975cd3fa4a,140,Influenza  split virus  trivalent  PF,136.00
+2023-04-14T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-b572-c153a2ede949,140,Influenza  split virus  trivalent  PF,136.00
+2024-04-19T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-eb64-dd45aa464100,140,Influenza  split virus  trivalent  PF,136.00
+2025-04-25T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-1ff3-e76392ee14c9,140,Influenza  split virus  trivalent  PF,136.00
+2025-04-25T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-1ff3-e76392ee14c9,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2026-05-01T19:19:05Z,32688147-39a0-f3c8-3030-ab8b79787521,32688147-39a0-f3c8-1f25-5d48e0a79547,140,Influenza  split virus  trivalent  PF,136.00
+2013-03-29T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-e7ad-c7875f3172e5,140,Influenza  split virus  trivalent  PF,136.00
+2014-02-28T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-3236-7826c4f70a76,140,Influenza  split virus  trivalent  PF,136.00
+2015-01-23T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-0428-a5fe34754e9b,140,Influenza  split virus  trivalent  PF,136.00
+2015-10-23T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-2716-40767a8f366b,140,Influenza  split virus  trivalent  PF,136.00
+2016-04-15T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-1eaa-4f78357fb2ad,113,Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed,136.00
+2016-09-16T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-8374-02ef66cbdae2,140,Influenza  split virus  trivalent  PF,136.00
+2017-09-01T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-922f-47c994fdda9a,140,Influenza  split virus  trivalent  PF,136.00
+2018-11-02T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-9432-037ff07ef1c7,140,Influenza  split virus  trivalent  PF,136.00
+2019-09-06T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-6580-911255b44b94,140,Influenza  split virus  trivalent  PF,136.00
+2020-02-14T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-356d-96932b882084,133,Pneumococcal conjugate PCV 13,136.00
+2020-08-14T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-3237-5a028b4b1de2,140,Influenza  split virus  trivalent  PF,136.00
+2021-02-12T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-7b78-83bfe1c56b64,33,pneumococcal polysaccharide vaccine  23 valent,136.00
+2021-03-19T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-ed75-cd2f96ded49e,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-04-09T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-63e3-36b9416cdc06,208,COVID-19  mRNA  LNP-S  PF  30 mcg/0.3 mL dose,136.00
+2021-08-13T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-2bef-34141c781b1c,140,Influenza  split virus  trivalent  PF,136.00
+2022-09-30T09:18:23Z,404b1f25-f17b-c742-a545-88923898fb0e,404b1f25-f17b-c742-f6c1-75f257990827,140,Influenza  split virus  trivalent  PF,136.00

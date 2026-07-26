@@ -1,3 +1,8 @@
+export interface DiagnosisCode {
+  code: string;
+  description?: string;
+}
+
 export interface LineItem {
   code: string;
   description: string;
@@ -15,6 +20,7 @@ export interface BillExtraction {
   provider: string;
   serviceDate: string;
   lineItems: LineItem[];
+  diagnosisCodes?: DiagnosisCode[];
   denialReasonCode: string | null;
   denialReasonText: string | null;
   totalBilled: number | null;

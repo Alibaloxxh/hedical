@@ -1,0 +1,21 @@
+{
+  "provider": "Maricruz991 Considine820",
+  "serviceDate": "2017/01/25",
+  "lineItems": [
+    {
+      "code": "309362",
+      "description": "Clopidogrel 75 MG Oral Tablet",
+      "billedAmount": 68.82,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 68.82,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

@@ -1,0 +1,21 @@
+{
+  "provider": "Maricruz991 Considine820",
+  "serviceDate": "2016/01/20",
+  "lineItems": [
+    {
+      "code": "162673000",
+      "description": "General examination of patient (procedure)",
+      "billedAmount": 136.8,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 136.8,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

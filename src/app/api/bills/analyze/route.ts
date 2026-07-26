@@ -84,6 +84,15 @@ export async function POST(request: NextRequest) {
   } catch (err: any) {
     console.error("Bill analysis error:", err);
 
+    const isRateLimit = err.message && /rate limit|too many requests|429/i.test(err.message);
+
+    if (isRateLimit) {
+      return NextResponse.json(
+        { error: "High demand — you're in the queue", queued: true },
+        { status: 429 }
+      );
+    }
+
     logAnalysis(supabase, {
       user_id: user?.id ?? null,
       product: "bill_navigator",

@@ -1,0 +1,28 @@
+{
+  "provider": "Floy720 Greenfelder433",
+  "serviceDate": "2017/01/18",
+  "lineItems": [
+    {
+      "code": "308335008",
+      "description": "Patient encounter procedure (procedure)",
+      "billedAmount": 142.58,
+      "paidAmount": null,
+      "patientOwes": null
+    },
+    {
+      "code": "229064008",
+      "description": "Movement therapy (regime/therapy)",
+      "billedAmount": 431.4,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 573.98,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

@@ -29,7 +29,7 @@ export async function proxy(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  const protectedPaths = ["/account", "/dashboard", "/admin"];
+  const protectedPaths = ["/account", "/admin"];
   const isProtected = protectedPaths.some((p) => pathname.startsWith(p));
   const isGuestPage = pathname.startsWith("/login") || pathname.startsWith("/signup");
 

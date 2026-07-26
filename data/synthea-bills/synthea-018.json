@@ -1,0 +1,21 @@
+{
+  "provider": "Willian804 Batz141",
+  "serviceDate": "1999/08/20",
+  "lineItems": [
+    {
+      "code": "305408004",
+      "description": "Admission to surgical department (procedure)",
+      "billedAmount": 146.18,
+      "paidAmount": null,
+      "patientOwes": null
+    }
+  ],
+  "totalBilled": 146.18,
+  "totalPatientResponsibility": 0,
+  "denialReasonCode": null,
+  "denialReasonText": null,
+  "currency": "USD",
+  "region": "US",
+  "usState": null,
+  "deadlineDate": null
+}

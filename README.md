@@ -64,13 +64,3 @@ hedical/
 ## Legal
 
 The Privacy Policy and Terms of Service in this repo are marketing-site boilerplate. **Before handling PHI or launching the product**, engage a healthcare attorney to review and update them for HIPAA compliance.
-
-## SEO
-
-- Dynamic `metadata` exports on every page (with `alternates.canonical`)
-- JSON-LD Organization schema in root layout
-- JSON-LD FAQPage schema on guide pages
-- Auto-generated `robots.txt` and `sitemap.xml` from env vars
-- Open Graph + Twitter Card meta tags on every page
-- `llms.txt` at root for LLM discovery
-
